@@ -218,7 +218,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/items",
+    href: "/cordillera-huayhuash",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -244,7 +244,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "Olleros to Chavin Cultural Trek")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/orders",
+    href: "/quiilcayhuanca",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
@@ -257,7 +257,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "Quiilcayhuanca")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/me",
+    href: "/about-us",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17

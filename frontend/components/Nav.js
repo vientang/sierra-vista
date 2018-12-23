@@ -5,16 +5,16 @@ import NavStyles from './styles/NavStyles';
 const Nav = () => {
     return (
         <NavStyles>
-            <Link href="/items">
+            <Link href="/cordillera-huayhuash">
                 <a>Cordillera Huayhuash</a>
             </Link>
             <Link href="/ollerostochavin">
                 <a>Olleros to Chavin Cultural Trek</a>
             </Link>
-            <Link href="/orders">
+            <Link href="/quiilcayhuanca">
                 <a>Quiilcayhuanca</a>
             </Link>
-            <Link href="/me">
+            <Link href="/about-us">
                 <a>About Us</a>
             </Link>
         </NavStyles>

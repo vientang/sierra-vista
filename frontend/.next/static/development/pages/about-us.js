@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/ollerostochavin.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about-us.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -9817,10 +9817,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/ollerostochavin.js":
-/*!**********************************!*\
-  !*** ./pages/ollerostochavin.js ***!
-  \**********************************/
+/***/ "./pages/about-us.js":
+/*!***************************!*\
+  !*** ./pages/about-us.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9830,11 +9830,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/pages/ollerostochavin.js";
+var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/pages/about-us.js";
 
 
 
-var Sell = function Sell() {
+var AboutUs = function AboutUs() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
@@ -9847,10 +9847,10 @@ var Sell = function Sell() {
       lineNumber: 6
     },
     __self: this
-  }, "Olleros to Chavin Cultural Trek"));
+  }, "AboutUs"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Sell);
+/* harmony default export */ __webpack_exports__["default"] = (AboutUs);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -9867,21 +9867,21 @@ var Sell = function Sell() {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/ollerostochavin")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about-us")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 4:
-/*!****************************************!*\
-  !*** multi ./pages/ollerostochavin.js ***!
-  \****************************************/
+/***/ 7:
+/*!*********************************!*\
+  !*** multi ./pages/about-us.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/ollerostochavin', function() {
-module.exports = __webpack_require__(/*! ./pages/ollerostochavin.js */"./pages/ollerostochavin.js");
+__NEXT_REGISTER_PAGE('/about-us', function() {
+module.exports = __webpack_require__(/*! ./pages/about-us.js */"./pages/about-us.js");
 
 return { page: module.exports.default }});
 
@@ -9898,5 +9898,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=ollerostochavin.js.map
+},[[7,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=about-us.js.map

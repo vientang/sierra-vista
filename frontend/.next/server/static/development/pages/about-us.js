@@ -88,15 +88,15 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/ollerostochavin.js":
-/*!**********************************!*\
-  !*** ./pages/ollerostochavin.js ***!
-  \**********************************/
+/***/ "./pages/about-us.js":
+/*!***************************!*\
+  !*** ./pages/about-us.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -106,11 +106,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/pages/ollerostochavin.js";
+var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/pages/about-us.js";
 
 
 
-var Sell = function Sell() {
+var AboutUs = function AboutUs() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
@@ -123,21 +123,21 @@ var Sell = function Sell() {
       lineNumber: 6
     },
     __self: this
-  }, "Olleros to Chavin Cultural Trek"));
+  }, "AboutUs"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Sell);
+/* harmony default export */ __webpack_exports__["default"] = (AboutUs);
 
 /***/ }),
 
-/***/ 4:
-/*!****************************************!*\
-  !*** multi ./pages/ollerostochavin.js ***!
-  \****************************************/
+/***/ 7:
+/*!*********************************!*\
+  !*** multi ./pages/about-us.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/ollerostochavin.js */"./pages/ollerostochavin.js");
+module.exports = __webpack_require__(/*! ./pages/about-us.js */"./pages/about-us.js");
 
 
 /***/ }),
@@ -165,4 +165,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=ollerostochavin.js.map
+//# sourceMappingURL=about-us.js.map

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Sell = () => {
+const Olleros = () => {
     return (
         <div>
             <p>Olleros to Chavin Cultural Trek</p>            
@@ -8,4 +8,4 @@ const Sell = () => {
     )
 }
 
-export default Sell;
+export default Olleros;
