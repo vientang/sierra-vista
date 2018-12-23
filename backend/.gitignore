@@ -1,0 +1,20 @@
+# Project dependencies
+.cache
+.idea
+node_modules
+
+# Build directory
+/public
+.DS_Store
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+variables.env.sample
