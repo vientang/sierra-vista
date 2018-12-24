@@ -43,7 +43,7 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h1.withConf
   displayName: "Header__Logo",
   componentId: "sc-1i3qtuf-0"
 })(["font-size:1rem;margin:1rem;position:relative;z-index:2;transform:skew(-7deg);a{padding:0.5rem 1rem;background-color:", ";color:white;text-transform:uppercase;text-decoration:none;}@media(max-width:1300px){margin:0;text-align:center;}"], function (props) {
-  return props.theme.red;
+  return props.theme.blue;
 });
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].header.withConfig({
   displayName: "Header__StyledHeader",
@@ -329,6 +329,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var theme = {
   red: '#FF0000',
   black: '#393939',
+  blue: '#00BDFF',
   grey: '#3A3A3A',
   lightGrey: '#E1E1E1',
   offWhite: '#EDEDED',
@@ -348,7 +349,7 @@ var Inner = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
 })(["max-width:", ";margin:0 auto;padding:1rem;background-color:", ";"], function (props) {
   return props.theme.maxWidth;
 }, function (props) {
-  return props.theme.red;
+  return props.theme.lightGrey;
 });
 
 var Page =
@@ -369,31 +370,31 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 61
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 62
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 63
         },
         __self: this
       }, this.props.children)));

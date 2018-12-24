@@ -6,6 +6,7 @@ import Header from './Header';
 const theme = {
     red: '#FF0000',
     black: '#393939',
+    blue: '#00BDFF',
     grey: '#3A3A3A',
     lightGrey: '#E1E1E1',
     offWhite: '#EDEDED',
@@ -49,7 +50,7 @@ const Inner = styled.div`
     max-width: ${props => props.theme.maxWidth};
     margin: 0 auto;
     padding: 1rem;
-    background-color: ${props => props.theme.red};
+    background-color: ${props => props.theme.lightGrey};
 `;
 
 class Page extends Component {
