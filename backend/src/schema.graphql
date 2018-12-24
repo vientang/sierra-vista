@@ -1,14 +1,15 @@
-type User {
-    id: ID!
-    first: String!
-    last: String!
-    email: String!
-}
+# Public facing api 
+# We interface with this api via JS
+# Prisma provides a non-standard way to import files
+# using the comment hashtag. The import statement
+# below imports all types from prisma.graphql file
+
+# import * from './generated/prisma.graphql'
 
 type Mutation {
-    createUser(first: String!): User
+    createUser(first: String!, last: String!, email: String!, phone: String!): User
 }
 
 type Query {
-    user: [User]!
+    users: [User]!
 }

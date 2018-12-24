@@ -1,5 +1,28 @@
+# Data model for Prisma
+# Run deploy and Prisma will generate graphql queries and mutation
+# via post deploy hook
+# See prisma.graphql
+
 type User {
   id: ID! @unique
-  name: String!
+  first: String!
+  last: String!
   email: String!
+  phone: String!
+}
+
+type Trip {
+  id: ID! @unique
+  title: String!
+  description: String!
+  price: Int!
+  rsvp: Int!
+  available: Int!
+  level: Int!
+  private: Boolean
+  createAt: DateTime!
+  updatedAt: DateTime!
+  startDate: DateTime!
+  endDate: DateTime!
+  # users: [User!]! # list of users signed up for this trip
 }
