@@ -1,5 +1,5 @@
 /**
- * prisma-binding provides database queries
+ * prisma-binding provides database resolvers for queries
  * It replaces this syntax if no custom resolver logic is required
  * async users(parent, args, context, info) {
  *       const users = await context.db.query.users();

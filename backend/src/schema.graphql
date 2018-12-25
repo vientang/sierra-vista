@@ -1,5 +1,5 @@
 # Public facing api 
-# We interface with this api via JS
+# Our React app will interface with this api
 # Prisma provides a non-standard way to import files
 # using the comment hashtag. The import statement
 # below imports all types from prisma.graphql file
