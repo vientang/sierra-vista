@@ -1,6 +1,7 @@
 # Project dependencies
 .cache
 .idea
+.next
 node_modules
 
 # Build directory
