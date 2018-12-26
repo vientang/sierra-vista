@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import styled from 'styled-components';
 import { 
     ReserveButton, 
     TripHeader, 
@@ -8,13 +6,9 @@ import {
     TripContent, 
     TripContainer, 
     TripSidePanel,
+    ContentContainer,
     ContentSection,
 } from '../components/styles';
-
-const StyledContent = styled.div`
-    width: 60%;
-    font-size: 0.9rem;
-`;
 
 /**
  * This page holds the content for Ishina 13 day trip.
@@ -39,7 +33,7 @@ const Olleros = () => {
                 </TripHeader>
                 
                 <TripContent>
-                    <StyledContent>
+                    <ContentContainer>
                         <ContentSection>
                             <h3 id="overview">Olleros to Chavin de Huantar</h3>  
                             <p>
@@ -124,7 +118,7 @@ const Olleros = () => {
                                 in this day hike.
                             </p>
                         </ContentSection>
-                    </StyledContent>
+                    </ContentContainer>
                     
                     <TripSidePanel>
                         <p>Date: </p>

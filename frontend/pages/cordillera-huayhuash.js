@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import styled from 'styled-components';
 import { 
     ReserveButton, 
     TripHeader, 
@@ -8,14 +6,10 @@ import {
     TripContent, 
     TripContainer, 
     TripSidePanel,
+    ContentContainer,
     ContentSection,
     GearList,
 } from '../components/styles';
-
-const StyledContent = styled.div`
-    width: 60%;
-    font-size: 0.9rem;
-`;
 
 const CordilleraHuayhuash = () => {
     return (
@@ -34,7 +28,7 @@ const CordilleraHuayhuash = () => {
                 </TripHeader>
                 
                 <TripContent>
-                    <StyledContent>
+                    <ContentContainer>
                         <ContentSection>
                             <p id="overview">
                                 The Cordillera Huayhuash is an isolated and compact collection of mountains in the Peruvian Andes.
@@ -150,7 +144,7 @@ const CordilleraHuayhuash = () => {
                                 in this day hike.
                             </p>
                         </ContentSection>
-                    </StyledContent>
+                    </ContentContainer>
                     
                     <TripSidePanel>
                         <p>Date: </p>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TripImage = styled.img`    
+const HomePageImage = styled.img`    
     background-size: cover;
     width: 100%;
     max-width: 100%;
@@ -9,4 +9,4 @@ const TripImage = styled.img`
     filter: brightness(80%); 
 `;
 
-export default TripImage;
+export default HomePageImage;

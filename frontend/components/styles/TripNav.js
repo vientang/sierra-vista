@@ -19,12 +19,12 @@ const TripNav = styled.ul`
             position: absolute;
             height: 2px;
             width: 0;
-            background: red;
+            left: 50%;
+            margin-top: 2rem;
+            background: ${props => props.theme.red};
             transform: translateX(-50%);
             transition: width 0.4s;
             transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
-            left: 50%;
-            margin-top: 2rem;
         }
         &:hover,
         &:focus {
@@ -38,10 +38,10 @@ const TripNav = styled.ul`
         }
     }
     @media (max-width: 1200px) {
-        border-top: 1px solid ${props => props.theme.lightGrey};
-        width: 100%;
         justify-content: center;
+        width: 100%;
         font-size: 1rem;    
+        border-top: 1px solid ${props => props.theme.lightGrey};
     }
 `;
 

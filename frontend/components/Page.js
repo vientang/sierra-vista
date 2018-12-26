@@ -2,20 +2,13 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Meta from './Meta';
 import Header from './Header';
+import Footer from './Footer';
+import theme from './theme';
 
-const theme = {
-    red: '#FF0000',
-    black: '#393939',
-    blue: '#00BDFF',
-    grey: '#3A3A3A',
-    lightGrey: '#E1E1E1',
-    offWhite: '#EDEDED',
-    maxWidth: '1200px',
-    bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-    padding: '1rem 5rem',
-    imgCrop: '-12% 0',
-};
-
+/**
+ * Injects global styles into the application
+ * Just need to call it here
+ */
 injectGlobal`
     @font-face {
         font-family: 'radnika_next';
@@ -59,6 +52,7 @@ class Page extends Component {
                     <Meta />
                     <Header />
                     <InnerPage>{this.props.children}</InnerPage>
+                    <Footer />
                 </StyledPage>
             </ThemeProvider>            
         );

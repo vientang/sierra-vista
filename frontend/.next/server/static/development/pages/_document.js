@@ -197,7 +197,7 @@ function (_Document) {
 
     /**
      * Next.js static method that is called before render()
-     * @param {*} param0 
+     * @param {*} 
      */
     value: function getInitialProps(_ref) {
       var renderPage = _ref.renderPage;

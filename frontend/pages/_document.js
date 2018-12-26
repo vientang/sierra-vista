@@ -12,7 +12,7 @@ import { ServerStyleSheet } from 'styled-components';
 class ServerDocument extends Document {
     /**
      * Next.js static method that is called before render()
-     * @param {*} param0 
+     * @param {*} 
      */
     static getInitialProps({ renderPage }) {
         const sheet = new ServerStyleSheet();

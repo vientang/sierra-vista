@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import styled from 'styled-components';
 import { 
     ReserveButton, 
     TripHeader, 
@@ -8,13 +6,9 @@ import {
     TripContent, 
     TripContainer, 
     TripSidePanel,
+    ContentContainer,
     ContentSection,
 } from '../components/styles';
-
-const StyledContent = styled.div`
-    width: 60%;
-    font-size: 0.9rem;
-`;
 
 /**
  * This page holds the content for Ishina 13 day trip.
@@ -40,7 +34,7 @@ const Pisco = () => {
                 </TripHeader>
                 
                 <TripContent>
-                    <StyledContent>
+                    <ContentContainer>
                         <ContentSection>
                             <p id="overview">
                                 Pisco is a classic mountain in the Cordillera Blanca. With relatively high altitude, This makes a great
@@ -130,7 +124,7 @@ const Pisco = () => {
                                 20,000ft. Lunch and transportation will be included in this day hike.
                             </p>
                         </ContentSection>
-                    </StyledContent>
+                    </ContentContainer>
                     
                     <TripSidePanel>
                         <p>Dates: </p>

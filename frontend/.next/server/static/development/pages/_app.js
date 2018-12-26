@@ -93,6 +93,53 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/Footer.js":
+/*!******************************!*\
+  !*** ./components/Footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/components/Footer.js";
+
+
+var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer.withConfig({
+  displayName: "Footer__StyledFooter",
+  componentId: "sc-1lh932w-0"
+})(["display:grid;grid-template-columns:1fr;justify-content:space-between;align-items:flex-end;max-width:100%;height:4rem;overflow:hidden;padding:", ";background-color:", ";border-top:1px solid ", ";span{font-family:Arial,Helvetica,sans-serif;font-size:0.5rem;font-weight:200;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;}"], function (props) {
+  return props.theme.padding;
+}, function (props) {
+  return props.theme.offWhite;
+}, function (props) {
+  return props.theme.lightGrey;
+});
+
+var Footer = function Footer() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Sierra Vista Expeditions, LLC"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -409,6 +456,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./theme */ "./components/theme.js");
 var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/components/Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -445,19 +494,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var theme = {
-  red: '#FF0000',
-  black: '#393939',
-  blue: '#00BDFF',
-  grey: '#3A3A3A',
-  lightGrey: '#E1E1E1',
-  offWhite: '#EDEDED',
-  maxWidth: '1200px',
-  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-  padding: '1rem 5rem',
-  imgCrop: '-12% 0'
-};
-Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_templateObject(), theme.black);
+
+
+/**
+ * Injects global styles into the application
+ * Just need to call it here
+ */
+
+Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_templateObject(), _theme__WEBPACK_IMPORTED_MODULE_5__["default"].black);
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
   componentId: "sc-1yp396i-0"
@@ -484,37 +528,43 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
-        theme: theme,
+        theme: _theme__WEBPACK_IMPORTED_MODULE_5__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 52
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 53
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InnerPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 54
         },
         __self: this
-      }, this.props.children)));
+      }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      })));
     }
   }]);
 
@@ -549,6 +599,99 @@ var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.with
 
 /***/ }),
 
+/***/ "./components/theme.js":
+/*!*****************************!*\
+  !*** ./components/theme.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * Style variables that are pass through context via ThemeProvider
+ * This is injected in the Page component
+ */
+var theme = {
+  red: '#FF0000',
+  black: '#393939',
+  blue: '#00BDFF',
+  grey: '#3A3A3A',
+  lightGrey: '#E1E1E1',
+  offWhite: '#EDEDED',
+  maxWidth: '1200px',
+  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
+  padding: '1rem 5rem',
+  imgCrop: '-12% 0',
+  standardFont: 'Arial, Helvetica, sans-serif'
+};
+/* harmony default export */ __webpack_exports__["default"] = (theme);
+
+/***/ }),
+
+/***/ "./config.js":
+/*!*******************!*\
+  !*** ./config.js ***!
+  \*******************/
+/*! exports provided: endpoint, prodEndpoint, perPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "endpoint", function() { return endpoint; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prodEndpoint", function() { return prodEndpoint; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "perPage", function() { return perPage; });
+// This is client side config only - don't put anything in here that shouldn't be public!
+var endpoint = "http://localhost:4444";
+var prodEndpoint = 'https://sierra-vista-yoga-prod.herokuapp.com/';
+var perPage = 4;
+
+/***/ }),
+
+/***/ "./lib/withData.js":
+/*!*************************!*\
+  !*** ./lib/withData.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_with_apollo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next-with-apollo */ "next-with-apollo");
+/* harmony import */ var next_with_apollo__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_with_apollo__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config */ "./config.js");
+
+
+
+/**
+ * Creates a client side application
+ * ApolloClient is state management, aka, database on the client
+ * withApollo (HOC) to enable ApolloClient when rendering on the server
+ * @param {*} param0 
+ */
+
+function createClient(_ref) {
+  var headers = _ref.headers;
+  return new apollo_boost__WEBPACK_IMPORTED_MODULE_1___default.a({
+    uri:  true ? _config__WEBPACK_IMPORTED_MODULE_2__["endpoint"] : undefined,
+    request: function request(operation) {
+      // pass cookies through
+      operation.setContext({
+        fetchOptions: {
+          credentials: 'include'
+        },
+        headers: headers
+      });
+    }
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (next_with_apollo__WEBPACK_IMPORTED_MODULE_0___default()(createClient));
+
+/***/ }),
+
 /***/ "./pages/_app.js":
 /*!***********************!*\
   !*** ./pages/_app.js ***!
@@ -558,15 +701,27 @@ var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.with
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/app */ "next/app");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "next/app");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "react-apollo");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _lib_withData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/withData */ "./lib/withData.js");
+
 var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/pages/_app.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -587,47 +742,112 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var MyApp =
+
+
+var Application =
 /*#__PURE__*/
 function (_App) {
-  _inherits(MyApp, _App);
+  _inherits(Application, _App);
 
-  function MyApp() {
-    _classCallCheck(this, MyApp);
+  function Application() {
+    _classCallCheck(this, Application);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MyApp).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Application).apply(this, arguments));
   }
 
-  _createClass(MyApp, [{
+  _createClass(Application, [{
     key: "render",
     value: function render() {
-      var Component = this.props.Component;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+      var _this$props = this.props,
+          Component = _this$props.Component,
+          apollo = _this$props.apollo,
+          pageProps = _this$props.pageProps;
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_2__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 28
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_4__["ApolloProvider"], {
+        client: apollo,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 29
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 30
         },
         __self: this
-      })));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      })))));
     }
+  }], [{
+    key: "getInitialProps",
+
+    /**
+     * Next.js custom lifecycle method to crawl through all pages
+     * to get data that's needed on the server side before render.
+     * This enables querying and mutating data on the server.
+     * @param Component
+     * @param ctx
+     */
+    value: function () {
+      var _getInitialProps = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+        var Component, ctx, pageProps;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                Component = _ref.Component, ctx = _ref.ctx;
+                pageProps = {};
+
+                if (!Component.getInitialProps) {
+                  _context.next = 6;
+                  break;
+                }
+
+                _context.next = 5;
+                return Component.getInitialProps(ctx);
+
+              case 5:
+                pageProps = _context.sent;
+
+              case 6:
+                pageProps.query = ctx.query;
+                return _context.abrupt("return", {
+                  pageProps: pageProps
+                });
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function getInitialProps(_x) {
+        return _getInitialProps.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
   }]);
 
-  return MyApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_1___default.a);
+  return Application;
+}(next_app__WEBPACK_IMPORTED_MODULE_2___default.a);
 
-/* harmony default export */ __webpack_exports__["default"] = (MyApp);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_withData__WEBPACK_IMPORTED_MODULE_5__["default"])(Application));
 
 /***/ }),
 
@@ -640,6 +860,39 @@ function (_App) {
 
 module.exports = __webpack_require__(/*! ./pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "@babel/runtime/regenerator":
+/*!*********************************************!*\
+  !*** external "@babel/runtime/regenerator" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/regenerator");
+
+/***/ }),
+
+/***/ "apollo-boost":
+/*!*******************************!*\
+  !*** external "apollo-boost" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("apollo-boost");
+
+/***/ }),
+
+/***/ "next-with-apollo":
+/*!***********************************!*\
+  !*** external "next-with-apollo" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next-with-apollo");
 
 /***/ }),
 
@@ -706,6 +959,17 @@ module.exports = require("nprogress");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-apollo":
+/*!*******************************!*\
+  !*** external "react-apollo" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-apollo");
 
 /***/ }),
 

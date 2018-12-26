@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { ReserveButton, HomeImage } from '../components/styles';
+import { ReserveButton, HomePageImage } from '../components/styles';
 
 const StyledHomePage = styled.div`
     padding: ${props => props.theme.padding};
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ${props => props.theme.standardFont};
     font-size: 1rem;
 `;
 
@@ -30,7 +30,7 @@ const StyledOverlay = styled.div`
         line-height: normal;
     }
     p {
-        font-size: 3rem;        
+        font-size: 3rem; 
     }
     span {
         display: block;
@@ -43,7 +43,7 @@ const StyledOverlay = styled.div`
 const Home = () => {
     return (
         <div>
-            <HomeImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
+            <HomePageImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
             <StyledOverlay>
                 <h2>Next Trip</h2>
                 <p>Cordillera Huayhash</p>

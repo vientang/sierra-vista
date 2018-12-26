@@ -5,7 +5,8 @@ import TripHeader from './TripHeader';
 import TripNav from './TripNav';
 import TripSidePanel from './TripSidePanel';
 import ReserveButton from './ReserveButton';
-import HomeImage from './HomeImage';
+import HomePageImage from './HomeImage';
+import ContentContainer from './ContentContainer';
 import ContentSection from './ContentSection';
 import GearList from './GearList';
 
@@ -17,7 +18,8 @@ export {
     TripNav,
     TripSidePanel,
     ReserveButton,
-    HomeImage,
+    HomePageImage,
+    ContentContainer,
     ContentSection,
     GearList,
 }
