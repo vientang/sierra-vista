@@ -25,10 +25,10 @@ const StyledContent = styled.div`
  * skill level, cost, gear, elevation, experience gained, routes,
  * not included in cost
  */
-const Quiilcayhuanca = () => {
+const Ishinca14 = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/mountain1.jpg" />
+            <TripImage src="static/images/IMG_3676.JPG" />
             <TripContainer>
                 <TripHeader>
                     <h2>Ishinca 13 day trek</h2>
@@ -243,4 +243,4 @@ const Quiilcayhuanca = () => {
     )
 }
 
-export default Quiilcayhuanca;
+export default Ishinca14;

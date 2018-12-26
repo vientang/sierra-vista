@@ -35,39 +35,32 @@ const Logo = styled.h1`
 `;
 
 const StyledHeader = styled.header`
-    .bar {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        justify-content: space-between;
-        align-items: stretch;
-        border-bottom: 10px solid ${props => props.theme.black};
-        @media(max-width: 1300px) {
-            grid-template-columns: 1fr;
-            justify-content: center;
-        }
-    }
-    .sub-bar {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        border-bottom: 1px solid ${props => props.theme.lightGrey};
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: stretch;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    border-bottom: 10px solid ${props => props.theme.black};
+    z-index: 2;
+    @media(max-width: 1300px) {
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 `;
 
 const Header = () => {
     return (
         <StyledHeader>
-            <div className="bar">
-                <Logo>
-                    <Link href="/">
-                        <a>Sierra Vista</a>                
-                    </Link>
-                </Logo>
-                <Nav />
-            </div>
-            <div className="sub-bar">
-                <p>Search</p>
-            </div>
-            <div>Trips</div>
+            <Logo>
+                <Link href="/">
+                    <a>Sierra</a>                
+                </Link>
+            </Logo>
+            <Nav />      
         </StyledHeader>
     );
 };

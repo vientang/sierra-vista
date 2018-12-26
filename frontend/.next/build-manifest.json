@@ -11,11 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/cordillera-huayhuash": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/about-us": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

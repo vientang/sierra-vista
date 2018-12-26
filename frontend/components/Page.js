@@ -12,6 +12,8 @@ const theme = {
     offWhite: '#EDEDED',
     maxWidth: '1200px',
     bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
+    padding: '1rem 5rem',
+    imgCrop: '-12% 0',
 };
 
 injectGlobal`
@@ -42,15 +44,11 @@ injectGlobal`
 `;
 
 const StyledPage = styled.div`
-    background-color: white;
     color: ${props => props.theme.black};
 `;
 
-const Inner = styled.div`
-    max-width: ${props => props.theme.maxWidth};
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: ${props => props.theme.lightGrey};
+const InnerPage = styled.div`
+    max-width: 100%;
 `;
 
 class Page extends Component {
@@ -60,7 +58,7 @@ class Page extends Component {
                 <StyledPage>
                     <Meta />
                     <Header />
-                    <Inner>{this.props.children}</Inner>
+                    <InnerPage>{this.props.children}</InnerPage>
                 </StyledPage>
             </ThemeProvider>            
         );

@@ -25,10 +25,10 @@ const StyledContent = styled.div`
  * skill level, cost, gear, elevation, experience gained, routes,
  * not included in cost
  */
-const Quiilcayhuanca = () => {
+const Ishinca13 = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/mountain1.jpg" />
+            <TripImage src="static/images/IMG_0010_4.JPG" />
             <TripContainer>
                 <TripHeader>
                     <h2>Ishinca 13 day trek</h2>
@@ -42,7 +42,7 @@ const Quiilcayhuanca = () => {
                 </TripHeader>
                 
                 <TripContent>
-                    <StyledContent>
+                <StyledContent>
                         <ContentSection>
                             <p id="overview">
                                 The Cordillera Blanca is the perfect destination for novice and advanced climbers alike. Also, for those
@@ -243,4 +243,4 @@ const Quiilcayhuanca = () => {
     )
 }
 
-export default Quiilcayhuanca;
+export default Ishinca13;
