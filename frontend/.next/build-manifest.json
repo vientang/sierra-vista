@@ -1,65 +1,27 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_0a5735af42686c2a38b2.js"
+  ],
   "pages": {
     "/_app": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/about-us": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/cordillera-huayhuash": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/ishinca13": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/ishinca14": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/ollerostochavin": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/pisco": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/quiilcayhuanca": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
-    ],
-    "/quilvalluna": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/": [
-      "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.87e556dc2f30a84964de.js",
-      "static/runtime/main-8de128672c9ba581be4a.js"
+    "/quiilcayhuanca": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/pisco": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/quilvalluna": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

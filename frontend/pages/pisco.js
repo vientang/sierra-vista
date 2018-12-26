@@ -14,9 +14,6 @@ import {
 const StyledContent = styled.div`
     width: 60%;
     font-size: 0.9rem;
-    span {
-        display: block;
-    }
 `;
 
 /**
@@ -31,11 +28,12 @@ const Pisco = () => {
             <TripImage src="static/images/climber.jpg" />
             <TripContainer>
                 <TripHeader>
-                    <h2>Ishinca 13 day trek</h2>
+                    <h2>Pisco 12 day 5,750m (18,870ft)</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#routes">Routes</a></li>
+                        <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li><ReserveButton>Book this trip</ReserveButton></li>
                     </TripNav>                    
@@ -45,19 +43,9 @@ const Pisco = () => {
                     <StyledContent>
                         <ContentSection>
                             <p id="overview">
-                                The Cordillera Blanca is the perfect destination for novice and advanced climbers alike. Also, for those
-                                looking to develop glacier experience, high altitude snow and ice climbing, climbers looking for partners
-                                or just to broaden your alpine climbing resume.
-                            </p>
-                            <p>
-                                Sierra Vista Expeditions offers a cost effective high altitude expedition to 2 incredible introductory
-                                peaks. This expedition is limited to 6 climbers and two expedition leaders. With a 1:3 leader climber
-                                ratio.
-                            </p>
-                            <p>
-                                Our experience shows that with a high level of fitness and basic crampon skills, you will enjoy the
-                                adventure more and perform better. We will review and discuss all practices needed for a safe, fast, light
-                                expedition of two 5,000 meter summits.
+                                Pisco is a classic mountain in the Cordillera Blanca. With relatively high altitude, This makes a great
+                                choice for those new to the Cordillera Blanca, and also for those who are short on time. Once on the
+                                summit, we will have one of the best 360 degree views in the Cordillera Blanca.
                             </p>
                             <p>
                                 Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques,
@@ -65,120 +53,88 @@ const Pisco = () => {
                                 boundary's. This expedition is not guided, rather led. All expedition leaders have summited the mountains
                                 they are leading multiple times, and have adequate, sufficient experience to lead the team in a hazardous,
                                 high altitude environment.
-                            </p>
+                            </p>                            
                         </ContentSection>
                         <ContentSection>
                             <h3 id="itinerary">Itinerary</h3>                    
-                            <p>
-                                <span>Day 1: Arrive in Lima, hotel in Lima</span>
-                                <span>Day 2: Luxury bus to Huaraz</span>
-                                <span>Day 3: Acclimatization hike to Laguna Wilcacocha, hotel in Huaraz</span>
-                                <span>Day 4: Acclimatization hike to Laguna Churup, hotel in Huaraz</span>
-                                <span>Day 5: Private transport to Pashpa, hike to Ishinca Valley base camp</span>
-                                <span>Day 6: Rest Day at base camp</span>
-                                <span>Day 7: Glacier review day on Ishinca</span>
-                                <span>Day 8: Climb Ishinca</span>
-                                <span>Day 9: Rest day at base camp</span>
-                                <span>Day 10: Climb Urus Este</span>
-                                <span>Day 11: Hike to Pashpa, private transport to hotel in Huaraz</span>
-                                <span>Day 12: Luxury bus to Lima, hotel in Lima.</span>
-                                <span>Day 13: Depart Lima</span>
-                            </p>
-                            <h4>Detailed Itinerary</h4>
-                            <p>
-                                <span>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
-                                Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</span>
-                                <span>Day 2: Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz
-                                3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.</span>
-                                <span>Day 3: Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin
-                                our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return
-                                to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.
-                                Dinner not included.</span>
-                                <span>Day 4: Starting early again we will take our transportation to the trail head of Laguna Churup, our second
-                                acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the
-                                trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not
-                                included.</span>
-                                <span>Day 5: Our team will begin with breakfast at our hotel in Huaraz and depart at 8am. We will then make the one
-                                hour drive, as a team, with private transportation to Pashpa at the mouth of the Ishinca Valley. This is where we will
-                                meet the burros and arrieros. After loading, we will begin our 3 to 4 hour trek into Ishinca Valley base camp
-                                4,350m (14,270ft) with light packs and lunch on the trail. Once camp is set up, we will enjoy a delicious and wholesome
-                                dinner surrounded with incredible views. All meals included.</span>
-                                <span>Day 6: Rest day at base camp. Today is a day for catching up on hydration and calories. We continue to
-                                acclimatize in anticipation for our summit days. All meals included.</span>
-                                <span>Day 7: Today we will depart base camp and hike 3 hours to the toe of the Ishinca glacier. Once on the
-                                glacier, we will practice roped travel, building anchors, crampon placement, ice axe placement, and
-                                crevasse rescue. We will stash all of our climbing gear and return to base camp. All meals included.</span>
-                                <span>Day 8: Departing base camp at 4 am, out by 5 am we will head back to the Ishinca gacier. Once on the
-                                glacier, our climb begins. After the summit 5,530m (18,145ft) and once off the glacier, we return to base
-                                camp. All meals included.</span>
-                                <span>Day 9: Relaxed morning and rest. After lunch, we will review crevasse rescue and anchor construction.
-                                All meals included.</span>
-                                <span>Day 10: Another alpine start leaving base camp by 5 am we will climb Urus Este 5,420m (18,145ft).
-                                Once off the glacier, we return to base camp in time for lunch. All meals included.</span>
+                            <p>Day 1: Arrive in Lima</p>
+                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                            <p>Day 3: Acclimatization day hike</p>
+                            <p>Day 4: Drive to Pisco base camp</p>
+                            <p>Day 5: Move to Pisco cave camp</p>
+                            <p>Day 6: Rest day in cave camp</p>
+                            <p>Day 7: Carry to moraine camp, return to cave camp</p>
+                            <p>Day 8: Move to moraine camp, review climbing skills on glacier</p>
+                            <p>Day 9: Summit day back to cave camp</p>
+                            <p>Day 10: Return to Huaraz</p>
+                            <p>Day 11: Luxury bus Huaraz to Lima</p>
+                            <p>Day 12: Depart Lima</p>
 
-                                <span>Day 11: Depart base camp in the morning and trek back to Pashpa. Private transportation back to our
-                                hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.</span>
-                                <span>Day 12: Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with
-                                time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
-                                one additional night to enjoy fresh seafood and nightlife. Dinner not included.</span>
-                                <span>Day 14: Depart Lima for your next adventure.</span>
-                            </p>
+                            <h4>Detailed Itinerary</h4>
+                            <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
+                            Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
+                            <p>Day 2: Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz
+                            3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.</p>
+                            <p>Day 3: Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin
+                            our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return
+                            to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.
+                            Dinner not included.</p>
+                            <p>Day 4: We will depart our hotel in Huaraz at 8am and drive as a team to Pisco base camp 3,810m
+                            (12,500ft) in the Llanganuco valley. The scenic 3 hour drive will take us through beautiful farming
+                            communities and past the notorious ice blue Llanganuco lakes. Here we will set up base camp and
+                            continue to acclimatize. All meals included.</p>
+                            <p>Day 5: From base camp we will hike as a team to Pisco cave camp 4,265m (14,000ft). All meals
+                            included.</p>
+                            <p>Day 6: Active rest day in cave camp. Today we will review glacier and crevasse rescue skills. All meals
+                            included.</p>
+                            <p>Day 7: Carry loads to moraine camp 4,877m (16,000ft). This day crosses a challenging morainal glacier.
+                            Return to sleep in cave camp. All meals included.</p>
+                            <p>Day 8: Move as a team to moraine camp. After lunch and a rest we head onto the glacier. We will
+                            review all skills covered on day 6, now including crampon and ice axe skills. This day greatly aids in
+                            acclimatization and allows a huge gain in summit possibility making tomorrows climb shorter. Return to
+                            moraine camp for the night. All meals included.</p>
+                            <p>Day 9: Summit day 5,750m (18,870ft). With an early alpine start, we will gain the summit of Pisco and
+                            return to cave camp. All meals included.</p>
+                            <p>Day 10: Depart from cave camp in the morning and trek back to base camp. With our private
+                            transportation we drive back to our hotel in Huaraz. Celebratory dinner provided by Sierra Vista
+                            Expeditions. All meals included.</p>
+                            <p>Day 11: Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with
+                            time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
+                            one additional night to enjoy fresh seafood and nightlife. Dinner not included.</p>
+                            <p>Day 12: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
                             <h3 id="routes">Routes</h3>  
-                            <h4>Urus Este South East Face/East Ridge:</h4>  
+                            <h4>Pisco South West Ridge:</h4>  
                             <p>
-                                We will begin on a trail immediately out of base camp on the north side of the valley. The trail is well
-                                marked and climbs 400 meters to the edge of the moraine ridge. Snow line is reached in 2-3 hours from
-                                base camp.
-                            </p>
-                            <p>
-                                Climbing begins with a 45 degree snow slope while crossing over rock slabs leading to the base of the
-                                south east face snow slopes. The slopes climb 45 degree snow and relaxing gradually to the base of the
-                                east ridge.
-                            </p>
-                            <p>
-                                The east ridge climbs at 45-50 degrees on snow, with some granite rock scrambling. The ridge leads to a
-                                30 degree snow slope to the summit. The summit takes on average 1-3 hours from the base of the snow
-                                line.
-                            </p>
-                            <h4>Ishinca North West ridge to South West ridge:</h4>  
-                            <p>
-                                Leading out of the south end of base camp lies a trail to take us to Laguna Ishinca. Once past the lake, the
-                                trail steepens and ends at the foot of the Ishinca glacier. 3-4 hours expected from base camp.
-                            </p>
-                            <p>
-                                Once on the glacier the route takes us gradually onto the north west ridge, gaining the summit with a short
-                                but steep 50 degree snow climb. 2-3 hours from the edge of the glacier to summit.
-                            </p>
-                            <p>
-                                Making a full traverse of the mountain, we will descend the south west ridge with gentle snow slopes
-                                leading off the glacier. Time to base camp can be anywhere from 3-5 hours total.
-                            </p>
+                                We will climb the normal route on Pisco's south west ridge beginning with 3rd
+                                class rock scrambles before the snow line. From the toe of the glacier we climb moderate slopes to the 
+                                saddle between Huandoy este and Pisco. With a gradual sloping glacier weaving around crevasses we climb
+                                to the final summit wall. The wall is often steep, requiring 60 degree snow and ice climbing and 
+                                excellent crampon and ice axe placement.
+                            </p>                            
                         </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
                             <p>
                                 To have the best opportunity for summit success we have an optimized and ideal acclimatization plan.
                                 Acclimatization starts during the 7 hour luxurious bus ride from Lima and ending in Huaraz at 3,050m
-                                (10,000ft). We allow a gradual plan prior to base camp with 3 nights sleeping in Huaraz, and two day
-                                hikes slowly increasing with altitude ending at 4,450m (14,600ft). Once in base camp, we allow ample
-                                rest days to recover increasing strength and acclimatization.
+                                (10,000ft). We allow a gradual plan with 2 nights sleeping in Huaraz, and one day hike to 3,720m
+                                (12,200ft). Pisco is a long wandering climb to the summit. It is crucial to take our time with
+                                acclimatization, all the while learning and practicing the skills required.
                             </p>
                             <h4>Acclimatization Day Hikes:</h4>
                             <p>
                                 Laguna Wilcacocha is a high alpine lake which sits at 3,720m (12,200ft) in the Cordillera Negra. This
                                 lake boasts incredible views of the southern Cordillera Blanca range with towering peaks, many over
                                 20,000ft. Lunch and transportation will be included in this day hike.
-                                Laguna Churup is yet another high alpine lake residing at 4,450m (14,600ft). The mountain Nevado
-                                Churup sits directly above the lake and offers amazing views. Lunch and transportation will be included
-                                in this day hike.
                             </p>
                         </ContentSection>
                     </StyledContent>
                     
                     <TripSidePanel>
-                        <span>Skill Level: 1</span>
+                        <p>Dates: </p>
+                        <p>Skill Level: 5</p>
                         <p>Price: 1</p>
                         <div>
                             <span>Included in the price:</span>
@@ -216,10 +172,10 @@ const Pisco = () => {
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>
-                                <li>Laguna Churup 4,450m (14,600ft)</li>
-                                <li>Ishinca Base Camp: 4,350m (14,270ft)</li>
-                                <li>Urus Este Summit 5,420m (17,780ft)</li>
-                                <li>Ishinca Summit 5,530m (18,145ft)</li>
+                                <li>Pisco base camp 3,810m (12,500ft)</li>
+                                <li>Cave camp 4,265m (14,000ft)</li>
+                                <li>Moraine camp 4,877m (16,000ft)</li>
+                                <li>Pisco summit 5750m (18,870ft)</li>
                             </ul>
                         </div>
                         <div>

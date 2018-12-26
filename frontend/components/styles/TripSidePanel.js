@@ -5,10 +5,12 @@ const TripSidePanel = styled.div`
     padding: 1rem;
     font-size: 0.9rem;    
     background-color: ${props => props.theme.lightGrey};
-
+    p,
+    ul {        
+        margin: 0;
+    }
     ul {
         list-style-type: none;
-        margin: 0;
     }
 `;
 

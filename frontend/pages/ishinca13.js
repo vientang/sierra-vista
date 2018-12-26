@@ -14,9 +14,6 @@ import {
 const StyledContent = styled.div`
     width: 60%;
     font-size: 0.9rem;
-    span {
-        display: block;
-    }
 `;
 
 /**
@@ -44,7 +41,8 @@ const Ishinca13 = () => {
                 <TripContent>
                 <StyledContent>
                         <ContentSection>
-                            <p id="overview">
+                            <h3 id="overview">Urus Este, and Ishinca. Cordillera Blanca, Ancash, Peru</h3>
+                            <p>
                                 The Cordillera Blanca is the perfect destination for novice and advanced climbers alike. Also, for those
                                 looking to develop glacier experience, high altitude snow and ice climbing, climbers looking for partners
                                 or just to broaden your alpine climbing resume.
@@ -69,60 +67,56 @@ const Ishinca13 = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="itinerary">Itinerary</h3>                    
-                            <p>
-                                <span>Day 1: Arrive in Lima, hotel in Lima</span>
-                                <span>Day 2: Luxury bus to Huaraz</span>
-                                <span>Day 3: Acclimatization hike to Laguna Wilcacocha, hotel in Huaraz</span>
-                                <span>Day 4: Acclimatization hike to Laguna Churup, hotel in Huaraz</span>
-                                <span>Day 5: Private transport to Pashpa, hike to Ishinca Valley base camp</span>
-                                <span>Day 6: Rest Day at base camp</span>
-                                <span>Day 7: Glacier review day on Ishinca</span>
-                                <span>Day 8: Climb Ishinca</span>
-                                <span>Day 9: Rest day at base camp</span>
-                                <span>Day 10: Climb Urus Este</span>
-                                <span>Day 11: Hike to Pashpa, private transport to hotel in Huaraz</span>
-                                <span>Day 12: Luxury bus to Lima, hotel in Lima.</span>
-                                <span>Day 13: Depart Lima</span>
-                            </p>
+                            <p>Day 1: Arrive in Lima, hotel in Lima</p>
+                            <p>Day 2: Luxury bus to Huaraz</p>
+                            <p>Day 3: Acclimatization hike to Laguna Wilcacocha, hotel in Huaraz</p>
+                            <p>Day 4: Acclimatization hike to Laguna Churup, hotel in Huaraz</p>
+                            <p>Day 5: Private transport to Pashpa, hike to Ishinca Valley base camp</p>
+                            <p>Day 6: Rest Day at base camp</p>
+                            <p>Day 7: Glacier review day on Ishinca</p>
+                            <p>Day 8: Climb Ishinca</p>
+                            <p>Day 9: Rest day at base camp</p>
+                            <p>Day 10: Climb Urus Este</p>
+                            <p>Day 11: Hike to Pashpa, private transport to hotel in Huaraz</p>
+                            <p>Day 12: Luxury bus to Lima, hotel in Lima.</p>
+                            <p>Day 13: Depart Lima</p>
                             <h4>Detailed Itinerary</h4>
-                            <p>
-                                <span>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
-                                Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</span>
-                                <span>Day 2: Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz
-                                3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.</span>
-                                <span>Day 3: Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin
-                                our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return
-                                to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.
-                                Dinner not included.</span>
-                                <span>Day 4: Starting early again we will take our transportation to the trail head of Laguna Churup, our second
-                                acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the
-                                trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not
-                                included.</span>
-                                <span>Day 5: Our team will begin with breakfast at our hotel in Huaraz and depart at 8am. We will then make the one
-                                hour drive, as a team, with private transportation to Pashpa at the mouth of the Ishinca Valley. This is where we will
-                                meet the burros and arrieros. After loading, we will begin our 3 to 4 hour trek into Ishinca Valley base camp
-                                4,350m (14,270ft) with light packs and lunch on the trail. Once camp is set up, we will enjoy a delicious and wholesome
-                                dinner surrounded with incredible views. All meals included.</span>
-                                <span>Day 6: Rest day at base camp. Today is a day for catching up on hydration and calories. We continue to
-                                acclimatize in anticipation for our summit days. All meals included.</span>
-                                <span>Day 7: Today we will depart base camp and hike 3 hours to the toe of the Ishinca glacier. Once on the
-                                glacier, we will practice roped travel, building anchors, crampon placement, ice axe placement, and
-                                crevasse rescue. We will stash all of our climbing gear and return to base camp. All meals included.</span>
-                                <span>Day 8: Departing base camp at 4 am, out by 5 am we will head back to the Ishinca gacier. Once on the
-                                glacier, our climb begins. After the summit 5,530m (18,145ft) and once off the glacier, we return to base
-                                camp. All meals included.</span>
-                                <span>Day 9: Relaxed morning and rest. After lunch, we will review crevasse rescue and anchor construction.
-                                All meals included.</span>
-                                <span>Day 10: Another alpine start leaving base camp by 5 am we will climb Urus Este 5,420m (18,145ft).
-                                Once off the glacier, we return to base camp in time for lunch. All meals included.</span>
+                            <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
+                            Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
+                            <p>Day 2: Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz
+                            3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.</p>
+                            <p>Day 3: Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin
+                            our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return
+                            to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.
+                            Dinner not included.</p>
+                            <p>Day 4: Starting early again we will take our transportation to the trail head of Laguna Churup, our second
+                            acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the
+                            trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not
+                            included.</p>
+                            <p>Day 5: Our team will begin with breakfast at our hotel in Huaraz and depart at 8am. We will then make the one
+                            hour drive, as a team, with private transportation to Pashpa at the mouth of the Ishinca Valley. This is where we will
+                            meet the burros and arrieros. After loading, we will begin our 3 to 4 hour trek into Ishinca Valley base camp
+                            4,350m (14,270ft) with light packs and lunch on the trail. Once camp is set up, we will enjoy a delicious and wholesome
+                            dinner surrounded with incredible views. All meals included.</p>
+                            <p>Day 6: Rest day at base camp. Today is a day for catching up on hydration and calories. We continue to
+                            acclimatize in anticipation for our summit days. All meals included.</p>
+                            <p>Day 7: Today we will depart base camp and hike 3 hours to the toe of the Ishinca glacier. Once on the
+                            glacier, we will practice roped travel, building anchors, crampon placement, ice axe placement, and
+                            crevasse rescue. We will stash all of our climbing gear and return to base camp. All meals included.</p>
+                            <p>Day 8: Departing base camp at 4 am, out by 5 am we will head back to the Ishinca gacier. Once on the
+                            glacier, our climb begins. After the summit 5,530m (18,145ft) and once off the glacier, we return to base
+                            camp. All meals included.</p>
+                            <p>Day 9: Relaxed morning and rest. After lunch, we will review crevasse rescue and anchor construction.
+                            All meals included.</p>
+                            <p>Day 10: Another alpine start leaving base camp by 5 am we will climb Urus Este 5,420m (18,145ft).
+                            Once off the glacier, we return to base camp in time for lunch. All meals included.</p>
 
-                                <span>Day 11: Depart base camp in the morning and trek back to Pashpa. Private transportation back to our
-                                hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.</span>
-                                <span>Day 12: Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with
-                                time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
-                                one additional night to enjoy fresh seafood and nightlife. Dinner not included.</span>
-                                <span>Day 14: Depart Lima for your next adventure.</span>
-                            </p>
+                            <p>Day 11: Depart base camp in the morning and trek back to Pashpa. Private transportation back to our
+                            hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.</p>
+                            <p>Day 12: Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with
+                            time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
+                            one additional night to enjoy fresh seafood and nightlife. Dinner not included.</p>
+                            <p>Day 13: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
                             <h3 id="routes">Routes</h3>  
@@ -178,7 +172,8 @@ const Ishinca13 = () => {
                     </StyledContent>
                     
                     <TripSidePanel>
-                        <span>Skill Level: 1</span>
+                        <p>Dates: </p>
+                        <p>Skill Level: 1</p>
                         <p>Price: 1</p>
                         <div>
                             <span>Included in the price:</span>

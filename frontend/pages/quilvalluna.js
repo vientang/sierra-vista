@@ -14,9 +14,6 @@ import {
 const StyledContent = styled.div`
     width: 60%;
     font-size: 0.9rem;
-    span {
-        display: block;
-    }
 `;
 
 /**
@@ -31,11 +28,12 @@ const QuilValluna = () => {
             <TripImage src="static/images/mountain2.jpg" />
             <TripContainer>
                 <TripHeader>
-                    <h2>Ishinca 13 day trek</h2>
+                    <h2>Quilcayhuanca 3 Day Trek Vallunaraju 2 Day Climb</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#routes">Routes</a></li>
+                        <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li><ReserveButton>Book this trip</ReserveButton></li>
                     </TripNav>                    
@@ -44,20 +42,29 @@ const QuilValluna = () => {
                 <TripContent>
                 <StyledContent>
                         <ContentSection>
+                            <h3>Quilcayhuanca to Cojup Trek</h3>
                             <p id="overview">
-                                The Cordillera Blanca is the perfect destination for novice and advanced climbers alike. Also, for those
-                                looking to develop glacier experience, high altitude snow and ice climbing, climbers looking for partners
-                                or just to broaden your alpine climbing resume.
+                                This relatively relaxed two night three day trek is an ideal entry level trip to high altitude trekking. The
+                                first days trek to Tullpacocha is absolutely stunning. We will be hiking on soft grass areas know as
+                                pampas, all the while next to stunning alpine creeks, surrounded by incredible high valley walls, with
+                                high alpine wild flowers galore. Our active rest day includes a chance to explore a second valley,
+                                Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included.
+                                Our final day, we descend gradually out of the valley to meet our transportation and head back to Huraz.
                             </p>
+                            <h3>Vallunaraju Climb</h3>
                             <p>
-                                Sierra Vista Expeditions offers a cost effective high altitude expedition to 2 incredible introductory
-                                peaks. This expedition is limited to 6 climbers and two expedition leaders. With a 1:3 leader climber
-                                ratio.
+                                Nevado Vallunaraju sits directly above the city of Huaraz with a striking twin summit. After our
+                                acclimatization day hikes and our 3 day trek we will be well acclimatized. Vallunaraju offers wonderful
+                                views of the city of Huaraz and the peaks that surround it. This is en entry level climb with relatively
+                                high altitude, and a great chance to practice cramponing, ice axe, and roped glacial travel techniques.
                             </p>
+                            <h3>Vallunaraju Southwest Slopes</h3>
                             <p>
-                                Our experience shows that with a high level of fitness and basic crampon skills, you will enjoy the
-                                adventure more and perform better. We will review and discuss all practices needed for a safe, fast, light
-                                expedition of two 5,000 meter summits.
+                                Departing moraine camp we will step onto the glacier after 20 minutes. Here we will gear up and begin
+                                our roped climb on the glacier. Walking on gradual glacial slopes while weaving around crevasses will
+                                take us to the col of the north and south summits. The north summit is higher and will be steeper, up to
+                                40 degree snow climbing. If time allows, we will climb the south summit as well before returning to
+                                moraine camp. 4-5 hours to north summit, 1-2 hours descent.
                             </p>
                             <p>
                                 Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques,
@@ -68,61 +75,59 @@ const QuilValluna = () => {
                             </p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="itinerary">Itinerary</h3>                    
-                            <p>
-                                <span>Day 1: Arrive in Lima, hotel in Lima</span>
-                                <span>Day 2: Luxury bus to Huaraz</span>
-                                <span>Day 3: Acclimatization hike to Laguna Wilcacocha, hotel in Huaraz</span>
-                                <span>Day 4: Acclimatization hike to Laguna Churup, hotel in Huaraz</span>
-                                <span>Day 5: Private transport to Pashpa, hike to Ishinca Valley base camp</span>
-                                <span>Day 6: Rest Day at base camp</span>
-                                <span>Day 7: Glacier review day on Ishinca</span>
-                                <span>Day 8: Climb Ishinca</span>
-                                <span>Day 9: Rest day at base camp</span>
-                                <span>Day 10: Climb Urus Este</span>
-                                <span>Day 11: Hike to Pashpa, private transport to hotel in Huaraz</span>
-                                <span>Day 12: Luxury bus to Lima, hotel in Lima.</span>
-                                <span>Day 13: Depart Lima</span>
-                            </p>
-                            <h4>Detailed Itinerary</h4>
-                            <p>
-                                <span>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
-                                Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</span>
-                                <span>Day 2: Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz
-                                3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.</span>
-                                <span>Day 3: Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin
-                                our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return
-                                to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.
-                                Dinner not included.</span>
-                                <span>Day 4: Starting early again we will take our transportation to the trail head of Laguna Churup, our second
-                                acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the
-                                trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not
-                                included.</span>
-                                <span>Day 5: Our team will begin with breakfast at our hotel in Huaraz and depart at 8am. We will then make the one
-                                hour drive, as a team, with private transportation to Pashpa at the mouth of the Ishinca Valley. This is where we will
-                                meet the burros and arrieros. After loading, we will begin our 3 to 4 hour trek into Ishinca Valley base camp
-                                4,350m (14,270ft) with light packs and lunch on the trail. Once camp is set up, we will enjoy a delicious and wholesome
-                                dinner surrounded with incredible views. All meals included.</span>
-                                <span>Day 6: Rest day at base camp. Today is a day for catching up on hydration and calories. We continue to
-                                acclimatize in anticipation for our summit days. All meals included.</span>
-                                <span>Day 7: Today we will depart base camp and hike 3 hours to the toe of the Ishinca glacier. Once on the
-                                glacier, we will practice roped travel, building anchors, crampon placement, ice axe placement, and
-                                crevasse rescue. We will stash all of our climbing gear and return to base camp. All meals included.</span>
-                                <span>Day 8: Departing base camp at 4 am, out by 5 am we will head back to the Ishinca gacier. Once on the
-                                glacier, our climb begins. After the summit 5,530m (18,145ft) and once off the glacier, we return to base
-                                camp. All meals included.</span>
-                                <span>Day 9: Relaxed morning and rest. After lunch, we will review crevasse rescue and anchor construction.
-                                All meals included.</span>
-                                <span>Day 10: Another alpine start leaving base camp by 5 am we will climb Urus Este 5,420m (18,145ft).
-                                Once off the glacier, we return to base camp in time for lunch. All meals included.</span>
+                            <h3 id="itinerary">Itinerary</h3>
+                            <p>Day 1: Arrive in Lima</p>
+                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                            <p>Day 3: Acclimatization day hike</p>
+                            <p>Day 4: Acclimatization day hike</p>
+                            <p>Day 5: Drive to the base of Quilcayhuanca, hike to first camp Tullpacocha</p>
+                            <p>Day 6: Active rest day</p>
+                            <p>Day 7: Hike to base of Quilcayhuanca, Drive back to Huaraz</p>
+                            <p>Day 8: Huaraz rest day, gear check</p>
+                            <p>Day 9: Drive to Vallunaraju base camp, carry to moraine camp</p>
+                            <p>Day 10: Climb Vallunaraju, back to Huaraz</p>
+                            <p>Day 11: Luxury bus Huaraz to Lima</p>
+                            <p>Day 12: Depart Lima</p>
 
-                                <span>Day 11: Depart base camp in the morning and trek back to Pashpa. Private transportation back to our
-                                hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.</span>
-                                <span>Day 12: Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with
-                                time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
-                                one additional night to enjoy fresh seafood and nightlife. Dinner not included.</span>
-                                <span>Day 14: Depart Lima for your next adventure.</span>
-                            </p>
+                            <h4>Detailed Itinerary</h4>
+                            <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
+                            Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
+                            <p>Day 2: Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz
+                            3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.</p>
+                            <p>Day 3: Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin
+                            our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return
+                            to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.
+                            Dinner not included.</p>
+                            <p>Day 4: Starting early again we will take our transportation to the trail head of Laguna Churup, our second
+                            acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the
+                            trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not
+                            included.</p>
+                            <p>Day 5: We will depart our hotel in Huaraz at 8am and drive with private transportaion to the base of the
+                            Quilcayhuanca valley. Here we will organize our burros and begin hiking to the head of the valley to
+                            make our first camp at Tullpacocha (4,250m) 13,940ft. 4-5 hours walking. All meals included.</p>
+                            <p>Day 6: Today we have a nice active rest day. In the mid morning,, we will take a day hike up into the
+                            Cayesh valley. Or for those who wish to relax, you can spend your day hiking around the lake or just
+                            read a book while looking at the mountains. All meals included.</p>
+                            <p>Day 7: Once breakfast is finished and the camp is packed, we will begin hiking out of the Quilcayhuanca
+                            valley. Once at the entrance, our transportation will be waiting to take us back to Huaraz. Dinner not
+                            included.</p>
+                            <p>Day 8: Active rest day in Huaraz. We have the recommended option of an additional acclimatization
+                            day hike to lake 69 4,550m (14,925ft) where lunch will be provided at the lake. Otherwise we will take a
+                            lazy rest day enjoying the town and restaurants, with a gear check in the evening. Dinner not included.</p>
+                            <p>Day 9: After breakfast in our hotel, we will depart for Vallunaraju base camp in our private
+                            transportation, driving right up to the camp. Here we will organize packs and begin our hike to moraine
+                            camp 4,760m (15,600ft) Total hiking 3-4 hours. Once camp is setup we will review glacier and crampon
+                            techniques. We will get a good nights rest in anticipation of our early morning summit bid. *Porters are
+                            provided for our carry to moraine camp. All meals included.</p>
+                            <p>Day 10: Leaving camp by 4am we will begin our climb to the summit of Vallunaraju 5,686m (18,650ft).
+                            A minimum of 4 hours climbing with a descent of 1-2 hours. Once back to moraine camp, we will spend
+                            1-2 hours resting and make our way back to base camp. Here our transportation will be waiting to drive
+                            us back to our hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals
+                            included.</p>
+                            <p>Day 11: Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with
+                            time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
+                            one additional night to enjoy fresh seafood and nightlife. Dinner not included.</p>
+                            <p>Day 12: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
                             <h3 id="routes">Routes</h3>  
@@ -161,15 +166,17 @@ const QuilValluna = () => {
                             <p>
                                 To have the best opportunity for summit success we have an optimized and ideal acclimatization plan.
                                 Acclimatization starts during the 7 hour luxurious bus ride from Lima and ending in Huaraz at 3,050m
-                                (10,000ft). We allow a gradual plan prior to base camp with 3 nights sleeping in Huaraz, and two day
-                                hikes slowly increasing with altitude ending at 4,450m (14,600ft). Once in base camp, we allow ample
-                                rest days to recover increasing strength and acclimatization.
+                                (10,000ft). We allow a gradual plan prior to the trek with 3 nights sleeping in Huaraz, and two day hikes
+                                slowly increasing with altitude ending at 4,450m (14,600ft). On our 8th day, we have a highly
+                                recommended additional day hike to 69 4,550m (14,925ft).
                             </p>
                             <h4>Acclimatization Day Hikes:</h4>
                             <p>
                                 Laguna Wilcacocha is a high alpine lake which sits at 3,720m (12,200ft) in the Cordillera Negra. This
                                 lake boasts incredible views of the southern Cordillera Blanca range with towering peaks, many over
                                 20,000ft. Lunch and transportation will be included in this day hike.
+                            </p>
+                            <p>
                                 Laguna Churup is yet another high alpine lake residing at 4,450m (14,600ft). The mountain Nevado
                                 Churup sits directly above the lake and offers amazing views. Lunch and transportation will be included
                                 in this day hike.
@@ -178,7 +185,8 @@ const QuilValluna = () => {
                     </StyledContent>
                     
                     <TripSidePanel>
-                        <span>Skill Level: 1</span>
+                        <p>Dates: </p>
+                        <p>Skill Level: 5</p>
                         <p>Price: 1</p>
                         <div>
                             <span>Included in the price:</span>
@@ -216,10 +224,10 @@ const QuilValluna = () => {
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>
+                                <li>Tullpacocha: 4,250m (13,940ft)</li>
                                 <li>Laguna Churup 4,450m (14,600ft)</li>
-                                <li>Ishinca Base Camp: 4,350m (14,270ft)</li>
-                                <li>Urus Este Summit 5,420m (17,780ft)</li>
-                                <li>Ishinca Summit 5,530m (18,145ft)</li>
+                                <li>Vallunaraju Moraine Camp 4,760m (15,600ft)</li>
+                                <li>Vallunaraju Summit 5,686m (18,650ft)</li>
                             </ul>
                         </div>
                         <div>
