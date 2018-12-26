@@ -5,7 +5,7 @@ const TripContainer = styled.div`
     padding: ${props => props.theme.padding};
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background-color: ${props => props.theme.offWhite};
+    background-color: white;
 `;
 
 export default TripContainer;

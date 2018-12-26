@@ -11,15 +11,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/quiilcayhuanca": [
+    "/cordillera-huayhuash": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/pisco": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/quilvalluna": [
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

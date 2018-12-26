@@ -7,6 +7,7 @@ import TripSidePanel from './TripSidePanel';
 import ReserveButton from './ReserveButton';
 import HomeImage from './HomeImage';
 import ContentSection from './ContentSection';
+import GearList from './GearList';
 
 export {
     TripContainer,
@@ -18,4 +19,5 @@ export {
     ReserveButton,
     HomeImage,
     ContentSection,
+    GearList,
 }

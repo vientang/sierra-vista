@@ -9,6 +9,7 @@ import {
     TripContainer, 
     TripSidePanel,
     ContentSection,
+    GearList,
 } from '../components/styles';
 
 const StyledContent = styled.div`
@@ -124,7 +125,11 @@ const CordilleraHuayhuash = () => {
                             time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
                             one additional night to enjoy fresh seafood and nightlife. Dinner not included.</p>
                             <p>Day 16: Depart Lima for your next adventure.</p>
-                        </ContentSection>                        
+                        </ContentSection>
+                        <ContentSection>
+                            <h3 id="gear">Gear List</h3> 
+                            <GearList trek />                      
+                        </ContentSection>                     
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
                             <p>
