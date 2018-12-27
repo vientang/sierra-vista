@@ -112,7 +112,7 @@ var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/c
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.footer.withConfig({
   displayName: "Footer__StyledFooter",
   componentId: "sc-1lh932w-0"
-})(["display:grid;grid-template-columns:1fr;justify-content:space-between;align-items:flex-end;max-width:100%;height:4rem;overflow:hidden;padding:", ";background-color:", ";border-top:1px solid ", ";span{font-family:Arial,Helvetica,sans-serif;font-size:0.5rem;font-weight:200;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;}"], function (props) {
+})(["display:grid;grid-template-columns:1fr;justify-content:space-between;align-items:flex-end;width:100%;max-width:100%;height:4rem;bottom:0;overflow:hidden;padding:", ";background-color:", ";border-top:1px solid ", ";box-sizing:border-box;span{font-family:Arial,Helvetica,sans-serif;font-size:0.5rem;font-weight:200;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;}"], function (props) {
   return props.theme.padding;
 }, function (props) {
   return props.theme.offWhite;
@@ -124,13 +124,13 @@ var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 32
     },
     __self: this
   }, "Sierra Vista Expeditions, LLC"));
@@ -505,7 +505,7 @@ Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_template
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
   componentId: "sc-1yp396i-0"
-})(["color:", ";"], function (props) {
+})(["color:", ";overflow:hidden;"], function (props) {
   return props.theme.black;
 });
 var InnerPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
@@ -531,37 +531,37 @@ function (_Component) {
         theme: _theme__WEBPACK_IMPORTED_MODULE_5__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 54
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InnerPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 55
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       })));
@@ -590,7 +590,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-17wrysj-0"
-})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1rem;a,button{padding:0.5rem 1rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:900;font-size:0.8rem;white-space:nowrap;background:none;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';width:2px;background:", ";height:100%;left:0;position:absolute;transform:skew(-20deg);top:0;bottom:0;}&:after{height:2px;background:red;content:'';width:0;position:absolute;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);left:50%;margin-top:2rem;}&:hover,&:focus{outline:none;&:after{width:calc(100% - 60px);}@media (max-width:700px){width:calc(100% - 10px);}}}@media (max-width:1200px){border-top:1px solid ", ";width:100%;justify-content:center;font-size:1rem;}"], function (props) {
+})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1rem;a,button{padding:0.5rem 1rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:900;font-size:0.8rem;white-space:nowrap;background:none;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';width:2px;background:", ";height:100%;left:0;position:absolute;transform:skew(-20deg);top:0;bottom:0;}&:after{height:2px;background:red;content:'';width:0;position:absolute;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);left:50%;margin-top:2rem;}&:hover,&:focus{outline:none;&:after{width:calc(100% - 60px);}@media (max-width:700px){width:calc(100% - 10px);}}}@media (max-width:1300px){border-top:1px solid ", ";width:100%;justify-content:center;a{font-size:0.6rem;}}"], function (props) {
   return props.theme.lightGrey;
 }, function (props) {
   return props.theme.lightGrey;
@@ -613,17 +613,18 @@ __webpack_require__.r(__webpack_exports__);
  * This is injected in the Page component
  */
 var theme = {
-  red: '#FF0000',
+  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
   black: '#393939',
   blue: '#00BDFF',
   grey: '#3A3A3A',
-  lightGrey: '#E1E1E1',
-  offWhite: '#EDEDED',
-  maxWidth: '1200px',
-  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-  padding: '1rem 5rem',
   imgCrop: '-12% 0',
-  standardFont: 'Arial, Helvetica, sans-serif'
+  lightGrey: '#E1E1E1',
+  maxWidth: '1300px',
+  offWhite: '#EDEDED',
+  padding: '1rem 5rem',
+  red: '#FF0000',
+  standardFont: 'Arial, Helvetica, sans-serif',
+  top: '75px'
 };
 /* harmony default export */ __webpack_exports__["default"] = (theme);
 

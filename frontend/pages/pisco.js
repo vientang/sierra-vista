@@ -1,5 +1,5 @@
 import { 
-    ReserveButton, 
+    RentButton, 
     TripHeader, 
     TripNav, 
     TripImage, 
@@ -29,7 +29,7 @@ const Pisco = () => {
                         <li><a href="#routes">Routes</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
-                        <li><ReserveButton>Book this trip</ReserveButton></li>
+                        <li><RentButton>Book this trip</RentButton></li>
                     </TripNav>                    
                 </TripHeader>
                 

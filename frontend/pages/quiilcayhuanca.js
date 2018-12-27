@@ -1,5 +1,5 @@
 import { 
-    ReserveButton, 
+    RentButton, 
     TripHeader, 
     TripNav, 
     TripImage, 
@@ -28,7 +28,7 @@ const Quiilcayhuanca = () => {
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
-                        <li><ReserveButton>Book this trip</ReserveButton></li>
+                        <li><RentButton>Book this trip</RentButton></li>
                     </TripNav>                    
                 </TripHeader>
                 

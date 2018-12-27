@@ -38,6 +38,7 @@ injectGlobal`
 
 const StyledPage = styled.div`
     color: ${props => props.theme.black};
+    overflow: hidden;
 `;
 
 const InnerPage = styled.div`

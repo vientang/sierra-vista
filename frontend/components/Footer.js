@@ -6,12 +6,15 @@ const StyledFooter = styled.footer`
     grid-template-columns: 1fr;
     justify-content: space-between;
     align-items: flex-end;
+    width: 100%;
     max-width: 100%;
     height: 4rem;
+    bottom: 0;
     overflow: hidden;
     padding: ${props => props.theme.padding};
     background-color: ${props => props.theme.offWhite};
     border-top: 1px solid ${props => props.theme.lightGrey};
+    box-sizing: border-box;
     span {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.5rem;

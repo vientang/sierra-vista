@@ -1,5 +1,5 @@
 import { 
-    ReserveButton, 
+    RentButton, 
     TripHeader, 
     TripNav, 
     TripImage, 
@@ -9,6 +9,7 @@ import {
     ContentContainer,
     ContentSection,
     GearList,
+    GearInfo,
 } from '../components/styles';
 
 const CordilleraHuayhuash = () => {
@@ -23,7 +24,7 @@ const CordilleraHuayhuash = () => {
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
-                        <li><ReserveButton>Book this trip</ReserveButton></li>
+                        <li><RentButton>Book this trip</RentButton></li>
                     </TripNav>                    
                 </TripHeader>
                 
@@ -121,7 +122,8 @@ const CordilleraHuayhuash = () => {
                             <p>Day 16: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="gear">Gear List</h3> 
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
                             <GearList trek />                      
                         </ContentSection>                     
                         <ContentSection>

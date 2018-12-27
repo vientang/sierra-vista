@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-const ReserveButton = styled.button`
+const RentButton = styled.button`
     position: relative;              
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
+    height: 2rem;
+    padding: 0 1rem;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 900;
@@ -40,4 +41,4 @@ const ReserveButton = styled.button`
     }
 `;
 
-export default ReserveButton;
+export default RentButton;

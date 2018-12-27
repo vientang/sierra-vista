@@ -4,11 +4,14 @@ import TripImage from './TripImage';
 import TripHeader from './TripHeader';
 import TripNav from './TripNav';
 import TripSidePanel from './TripSidePanel';
-import ReserveButton from './ReserveButton';
+import RentButton from './RentButton';
 import HomePageImage from './HomeImage';
 import ContentContainer from './ContentContainer';
 import ContentSection from './ContentSection';
+import GearShop from './GearShop';
 import GearList from './GearList';
+import GearItem from './GearItem';
+import GearInfo from './GearInfo';
 
 export {
     TripContainer,
@@ -17,9 +20,12 @@ export {
     TripHeader,
     TripNav,
     TripSidePanel,
-    ReserveButton,
+    RentButton,
     HomePageImage,
     ContentContainer,
     ContentSection,
+    GearShop,
     GearList,
+    GearItem,
+    GearInfo,
 }

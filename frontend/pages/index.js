@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { ReserveButton, HomePageImage } from '../components/styles';
+import { RentButton, HomePageImage } from '../components/styles';
 
 const StyledHomePage = styled.div`
     padding: ${props => props.theme.padding};
@@ -49,7 +49,7 @@ const Home = () => {
                 <p>Cordillera Huayhash</p>
                 <span>April 14th - April 22nd</span>
                 <Link href="/cordillera-huayhuash">
-                    <a><ReserveButton>Reserve a spot</ReserveButton></a>
+                    <a><RentButton>Reserve a spot</RentButton></a>
                 </Link>
             </StyledOverlay>
             <StyledHomePage>                
