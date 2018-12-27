@@ -8,7 +8,10 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
+    GearList,
+    GearInfo,
 } from '../components/styles';
+import DownloadLink from '../components/DownloadLink';
 
 /**
  * This page holds the content for Ishina 13 day trip.
@@ -97,6 +100,11 @@ const Olleros = () => {
                             time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
                             one additional night to enjoy fresh seafood and nightlife. Dinner not included.</p>
                             <p>Day 10: Depart Lima for your next adventure.</p>
+                        </ContentSection> 
+                        <ContentSection>
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
+                            <GearList trek />                      
                         </ContentSection>                        
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
@@ -124,6 +132,7 @@ const Olleros = () => {
                         <p>Date: </p>
                         <p>Skill Level: 3</p>
                         <p>Price: 1</p>
+                        <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>

@@ -11,7 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/gear-shop": [
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/ollerostochavin": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -19,7 +23,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/gear-shop": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

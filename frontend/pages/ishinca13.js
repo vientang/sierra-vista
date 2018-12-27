@@ -8,7 +8,10 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
+    GearList,
+    GearInfo,
 } from '../components/styles';
+import DownloadLink from '../components/DownloadLink';
 
 /**
  * This page holds the content for Ishina 13 day trip.
@@ -27,6 +30,7 @@ const Ishinca13 = () => {
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#routes">Routes</a></li>
+                        <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li><RentButton>Book this trip</RentButton></li>
                     </TripNav>                    
@@ -113,6 +117,11 @@ const Ishinca13 = () => {
                             <p>Day 13: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
+                            <GearList />
+                        </ContentSection> 
+                        <ContentSection>
                             <h3 id="routes">Routes</h3>  
                             <h4>Urus Este South East Face/East Ridge:</h4>  
                             <p>
@@ -169,6 +178,7 @@ const Ishinca13 = () => {
                         <p>Dates: </p>
                         <p>Skill Level: 1</p>
                         <p>Price: 1</p>
+                        <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>

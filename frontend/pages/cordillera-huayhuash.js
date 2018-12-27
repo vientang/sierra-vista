@@ -11,6 +11,7 @@ import {
     GearList,
     GearInfo,
 } from '../components/styles';
+import DownloadLink from '../components/DownloadLink';
 
 const CordilleraHuayhuash = () => {
     return (
@@ -124,8 +125,8 @@ const CordilleraHuayhuash = () => {
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
-                            <GearList trek />                      
-                        </ContentSection>                     
+                            <GearList trek />
+                        </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
                             <p>
@@ -152,6 +153,7 @@ const CordilleraHuayhuash = () => {
                         <p>Date: </p>
                         <p>Skill Level: 4</p>
                         <p>Price: 1</p>
+                        <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TripImage, GearShop } from '../components/styles';
+import { GearShop } from '../components/styles';
 
 const GearImage = styled.img`
     position: absolute;

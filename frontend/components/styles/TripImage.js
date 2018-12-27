@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TripImage = styled.img`    
+const TripImage = styled.img`
     background-size: cover;
     width: 100%;
     max-width: 100%;

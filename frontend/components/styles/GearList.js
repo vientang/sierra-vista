@@ -1,14 +1,17 @@
-import Link from 'next/link';
 import styled from 'styled-components';
+import DownloadLink from '../DownloadLink';
 
 const StyledGearList = styled.div`
     display: flex;
     justify-content: space-between;
+    background-color: ${props => props.theme.offWhite};
+    padding: 1rem;
+    font-size: 0.8rem;
     ul {
         list-style-type: none;
         width: 30%; 
         margin: 0;
-        padding: 0;       
+        padding: 0;        
     }
 `;
 
@@ -18,6 +21,7 @@ const GearList = (props) => {
     if (trek) {
         return (
             <React.Fragment>
+                <DownloadLink linkText="printable version" text="Download a" url="/gear-list" />
                 <StyledGearList>
                     <ul>
                         <li>Trekking Poles</li>
@@ -33,10 +37,10 @@ const GearList = (props) => {
                         <li>Trekking Shorts (1)</li>
                         <li>Insulated Synthetic Pant, Full Side Zips</li>
                         <li>Mid Layer Top</li>
-                        <li>Insulated Down or Synthetic Jacket</li>
-                        <li>Hard Shell Jacket with Hood</li>
+                        <li>Insulated Down or Synthetic Jacket</li>                        
                     </ul>
                     <ul>
+                        <li>Hard Shell Jacket with Hood</li>
                         <li>Hard Shell Pant, Full side Zips</li>
                         <li>Light Trekking Boots or Shoes</li>
                         <li>Down Booties (optional)</li>
@@ -51,10 +55,10 @@ const GearList = (props) => {
                         <li>Water Bottle (2) (1 liter bottles)</li>
                         <li>Pee Bottler (1 Liter)</li>
                         <li>Pee Funnel (women)</li>
-                        <li>PASSPORT</li>
-                        <li>Travel Clothes</li>
+                        <li>PASSPORT</li>                        
                     </ul>
                     <ul>
+                        <li>Travel Clothes</li>
                         <li>Non-cotton Underwear (4)</li>
                         <li>Sunscreen (2)</li>
                         <li>Lip Balm (2)</li>
@@ -72,13 +76,13 @@ const GearList = (props) => {
                         <li>Fit and Able Body!</li>
                     </ul> 
                 </StyledGearList>
-                <Link href="/gear-list"><a className="print-gear-list">Printable version</a></Link>
             </React.Fragment>
         );
     }
 
     return (
         <React.Fragment>
+            <DownloadLink linkText="printable version" text="Download a" url="/gear-list" />
             <StyledGearList>
                 <ul>
                     <li>Basic Ice Axe With Adze</li>
@@ -97,15 +101,15 @@ const GearList = (props) => {
                     <li>Headlamp</li>
                     <li>Glacier Glasses</li>
                     <li>Ski Goggles</li>
-                </ul>
-                <ul>
                     <li>Lightweight Baselayer Tops and Bottoms (2) Each</li>
                     <li>Heavyweight Baselayer Bottom (1)</li>
                     <li>Synthetic Short Sleeve Shirts (2)</li>
                     <li>Soft Shell Trekking Pants (2)</li>
                     <li>Soft Shell Climbing Pant</li>
+                </ul>
+                <ul>
                     <li>Insulated Synthetic Pant, Full Side Zips</li>
-                    <li>Synthetic Soft Shell Jacket</li>
+                    <li>Synthetic Soft Shell Jacket</li>                    
                     <li>Mid Layer Top</li>
                     <li>Insulated Synthetic Jacket</li>
                     <li>Hard Shell Jacket with Hood</li>
@@ -119,16 +123,16 @@ const GearList = (props) => {
                     <li>Lightweight Gloves</li>
                     <li>MidWeight Gloves</li>
                     <li>Heavyweight Gloves</li>
-                </ul>
-                <ul>
                     <li>Duffle Bag 150 Liter</li>
                     <li>Duffle Bag 40-50 Liter</li>
                     <li>0 Degree Sleeping Bag</li>
                     <li>Sleeping Pad</li>
                     <li>Backpack 40-50 Liter</li>
-                    <li>Hydration System</li>
+                    <li>Hydration System</li>                    
+                </ul>
+                <ul>   
                     <li>Thermos (1 Liter) (optional)</li>
-                    <li>Water Bottle (2) (1 liter bottles)</li>
+                    <li>Water Bottle (2) (1 liter bottles)</li>                 
                     <li>Pee Bottler (1 Liter)</li>
                     <li>Pee Funnel (women)</li>
                     <li>Travel Clothes</li>
@@ -150,7 +154,6 @@ const GearList = (props) => {
                     <li>Fit and Able Body!</li>
                 </ul>
             </StyledGearList>
-            <Link href="/gear-list"><a className="print-gear-list">Printable version</a></Link>
         </React.Fragment>
     )
 }

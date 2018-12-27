@@ -8,7 +8,10 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
+    GearList,
+    GearInfo,
 } from '../components/styles';
+import DownloadLink from '../components/DownloadLink';
 
 /**
  * This page holds the content for Ishina 13 day trip.
@@ -89,37 +92,10 @@ const Quiilcayhuanca = () => {
                             <p>Day 10: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="routes">Routes</h3>  
-                            <h4>Urus Este South East Face/East Ridge:</h4>  
-                            <p>
-                                We will begin on a trail immediately out of base camp on the north side of the valley. The trail is well
-                                marked and climbs 400 meters to the edge of the moraine ridge. Snow line is reached in 2-3 hours from
-                                base camp.
-                            </p>
-                            <p>
-                                Climbing begins with a 45 degree snow slope while crossing over rock slabs leading to the base of the
-                                south east face snow slopes. The slopes climb 45 degree snow and relaxing gradually to the base of the
-                                east ridge.
-                            </p>
-                            <p>
-                                The east ridge climbs at 45-50 degrees on snow, with some granite rock scrambling. The ridge leads to a
-                                30 degree snow slope to the summit. The summit takes on average 1-3 hours from the base of the snow
-                                line.
-                            </p>
-                            <h4>Ishinca North West ridge to South West ridge:</h4>  
-                            <p>
-                                Leading out of the south end of base camp lies a trail to take us to Laguna Ishinca. Once past the lake, the
-                                trail steepens and ends at the foot of the Ishinca glacier. 3-4 hours expected from base camp.
-                            </p>
-                            <p>
-                                Once on the glacier the route takes us gradually onto the north west ridge, gaining the summit with a short
-                                but steep 50 degree snow climb. 2-3 hours from the edge of the glacier to summit.
-                            </p>
-                            <p>
-                                Making a full traverse of the mountain, we will descend the south west ridge with gentle snow slopes
-                                leading off the glacier. Time to base camp can be anywhere from 3-5 hours total.
-                            </p>
-                        </ContentSection>
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
+                            <GearList trek />                      
+                        </ContentSection> 
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
                             <p>
@@ -146,6 +122,7 @@ const Quiilcayhuanca = () => {
                         <p>Date: </p>
                         <p>Skill Level: 2</p>
                         <p>Price: 1</p>
+                        <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>

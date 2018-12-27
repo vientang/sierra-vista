@@ -8,7 +8,10 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
+    GearList,
+    GearInfo,
 } from '../components/styles';
+import DownloadLink from '../components/DownloadLink';
 
 /**
  * This page holds the content for Ishina 13 day trip.
@@ -98,6 +101,11 @@ const Pisco = () => {
                             <p>Day 12: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
+                            <GearList />
+                        </ContentSection> 
+                        <ContentSection>
                             <h3 id="routes">Routes</h3>  
                             <h4>Pisco South West Ridge:</h4>  
                             <p>
@@ -130,6 +138,7 @@ const Pisco = () => {
                         <p>Dates: </p>
                         <p>Skill Level: 5</p>
                         <p>Price: 1</p>
+                        <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>

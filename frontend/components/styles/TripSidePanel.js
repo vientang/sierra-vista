@@ -12,6 +12,12 @@ const TripSidePanel = styled.div`
     ul {
         list-style-type: none;
     }
+    .print-gear-list {
+        color: ${props => props.theme.blue};
+    }
+    .print-gear-list::before {
+        content: ' ';
+    }
 `;
 
 export default TripSidePanel;

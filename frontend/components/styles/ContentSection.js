@@ -5,5 +5,8 @@ const ContentSection = styled.div`
     .print-gear-list {
         color: ${props => props.theme.blue};
     }
+    .print-gear-list::before {
+        content: ' ';
+    }
 `;
 export default ContentSection;

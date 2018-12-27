@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const GearInfo = () => (
     <React.Fragment>
@@ -11,10 +12,11 @@ const GearInfo = () => (
             years on mountains similar in height, in any range throughout the world.
         </p>
         <p>
-            Most of these items are available for rent from Sierra Vista Expeditions. Please visit our rental page in
-            the link below. You must submit your rental requests 60 days prior to your trip start date. Around 30
-            days before your start date you will receive your rental equipment in the mail. You are responsible for
-            this equipment until it is shipped back to us once you have arrived home.
+            Most of these items are available for rent from Sierra Vista Expeditions on our 
+            <Link href="/gear-shop"><a className="print-gear-list">rental page</a></Link>. You must submit your rental 
+            requests 60 days prior to your trip start date. Around 30 days before your start date you will receive your 
+            rental equipment in the mail. You are responsible for this equipment until it is shipped back to us once you 
+            have arrived home.
         </p>
         <p>
             Please do not hesitate to contact us about any questions regarding any and all things related to your trip.
