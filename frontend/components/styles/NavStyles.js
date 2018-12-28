@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 const NavStyles = styled.ul`
-    margin: 0;
-    padding: 0;
+    position: relative;
     display: flex;
     justify-self: end;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
     font-size: 1rem;
     a,
     button {
@@ -14,7 +16,7 @@ const NavStyles = styled.ul`
         padding: 0.5rem 1rem;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         background: none;
         white-space: nowrap;
         border: 0;

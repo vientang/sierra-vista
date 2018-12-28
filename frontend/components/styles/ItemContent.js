@@ -5,8 +5,7 @@ const ItemContent = styled.div`
     display: flex;
     flex-direction: column;
     background: white;
-    min-width: 24rem;
-    min-width: 24rem; 
+    min-width: 100%;
     p {
         font-size: 0.8rem;
         line-height: normal;
@@ -23,11 +22,14 @@ const ItemContent = styled.div`
         grid-gap: 1px;
         background: ${props => props.theme.lightGrey};
         & > * {
-        background: white;
-        border: 0;
-        font-size: 1rem;
-        padding: 1rem;
+            background: white;
+            border: 0;
+            font-size: 1rem;
+            padding: 1rem;
         }
+    }
+    @media(max-width: 1300px) {
+        min-width: 100%;
     }
 `;
 

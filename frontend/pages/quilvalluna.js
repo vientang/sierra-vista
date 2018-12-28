@@ -10,6 +10,7 @@ import {
     ContentSection,
     GearList,
     GearInfo,
+    PriceChart,
 } from '../components/styles';
 import DownloadLink from '../components/DownloadLink';
 
@@ -189,8 +190,8 @@ const QuilValluna = () => {
                     <TripSidePanel>
                         <p>Dates: </p>
                         <p>Skill Level: 5</p>
-                        <p>Price: 1</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
+                        <PriceChart trip="quilvaluna" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>
@@ -223,7 +224,7 @@ const QuilValluna = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Elevations:</span>
+                            <p>Elevations:</p>
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>
@@ -234,7 +235,7 @@ const QuilValluna = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Experience gained:</span>
+                            <p>Experience gained:</p>
                             <ul>
                                 <li>Crampon and ice axe technique</li>
                                 <li>Snow and ice anchors</li>

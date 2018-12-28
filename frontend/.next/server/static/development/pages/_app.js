@@ -317,7 +317,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
+/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Logo */ "./components/Logo.js");
 var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/components/Header.js";
+
 
 
 
@@ -337,16 +339,14 @@ next_router__WEBPACK_IMPORTED_MODULE_2___default.a.onRouteChangeError = function
   nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.done();
 };
 
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.h1.withConfig({
-  displayName: "Header__Logo",
+var LogoContainer = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
+  displayName: "Header__LogoContainer",
   componentId: "sc-1i3qtuf-0"
-})(["font-size:1rem;margin:1rem;position:relative;z-index:2;transform:skew(-7deg);a{padding:0.5rem 1rem;background-color:", ";color:white;text-transform:uppercase;text-decoration:none;}@media(max-width:1300px){margin:0;text-align:center;}"], function (props) {
-  return props.theme.blue;
-});
+})(["position:relative;display:flex;align-items:center;a{line-height:0;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;margin:1rem 0;}"]);
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-1i3qtuf-1"
-})(["position:fixed;display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;top:0;width:100%;max-width:100%;background-color:white;border-bottom:10px solid ", ";z-index:2;@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;}"], function (props) {
+})(["position:fixed;display:grid;grid-template-columns:auto auto 1fr;justify-content:space-between;align-items:stretch;top:0;width:100%;max-width:100%;min-height:5rem;padding-left:5rem;background-color:white;border-bottom:10px solid ", ";box-sizing:border-box;z-index:2;h3{font-size:1rem;line-height:normal;padding:0 1rem;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;padding:0;h3{margin:0.4rem auto;}}"], function (props) {
   return props.theme.black;
 });
 
@@ -354,38 +354,291 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 65
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 67
     },
     __self: this
-  }, "Sierra"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 67
+    },
+    __self: this
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, "Sierra Vista Expeditions"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
     },
     __self: this
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Logo.js":
+/*!****************************!*\
+  !*** ./components/Logo.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/components/Logo.js";
+
+var black = '#393939';
+var white = '#FFFFFF';
+var topSky = '#E1FCFF';
+var midSky = '#C3F9FF';
+var btmSky = '#00E8FF';
+var size = '50px';
+
+var Logo = function Logo() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    width: size,
+    height: size,
+    viewBox: "0 0 519 519",
+    version: "1.1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xlinkHref: "http://www.w3.org/1999/xlink",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Sierra Vista Expeditions Logo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("defs", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    id: "path-1",
+    cx: "258.5",
+    cy: "258.5",
+    r: "258.5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    id: "Page-1",
+    stroke: "none",
+    "stroke-width": "1",
+    fill: "none",
+    "fill-rule": "evenodd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    id: "mountain-logo",
+    transform: "translate(1.000000, 1.000000)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("mask", {
+    id: "mask-2",
+    fill: white,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+    xlinkHref: "#path-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("use", {
+    id: "Oval",
+    stroke: "#979797",
+    xlinkHref: "#path-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    id: "sky",
+    mask: "url(#mask-2)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    transform: "translate(0.000000, -6.000000)",
+    id: "Rectangle",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("rect", {
+    fill: topSky,
+    x: "0",
+    y: "0",
+    width: "517",
+    height: "158",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M-5.68434189e-14,156 C148.222222,106.666667 259.888889,82 335,82 C410.111111,82 470.777778,106.666667 517,156 L517,268 L-5.68434189e-14,268 L-5.68434189e-14,156 Z",
+    fill: midSky,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M-1.13686838e-13,218 C66.4555108,206.189885 113.788844,201.189885 142,203 C235.661158,209.009589 306.977848,237 363,237 C444.333333,237 495.666667,230.666667 517,218 L517,378 L-1.13686838e-13,378 L-1.13686838e-13,218 Z",
+    fill: btmSky,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    id: "Mountain",
+    mask: "url(#mask-2)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    transform: "translate(-3.000000, 155.000000)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M70.257,80.631 L103.591,119.802 L121.096,121.995 L160.825,159.914 L232.207,74.676 L257.458,66.217 L298.872,0.407 L312.003,6.362 L347.356,70.291 L402.238,99.121 L431.866,135.471 L444.323,117.922 L454.088,117.922 L516.294,180.926 C514.938,227.594 501.18,324.727 478.211,362 L38.716,362 C14.493,322.698 0.519,222.831 0.519,173.275 C0.519,160.137 1.509,147.23 3.402,134.621 L32.213,88.467 L70.257,80.631 Z",
+    id: "Path",
+    fill: black,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    id: "Group",
+    "stroke-width": "1",
+    fill: "none",
+    transform: "translate(50.000000, 7.000000)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("polygon", {
+    id: "Path",
+    fill: white,
+    points: "251.688 2.424 260.315 42.591 251.564 42.906 257.957 89.598 284.893 145.378 310.888 195.203 344.828 195.203 332.368 151.331 338.764 149.137 366 187 449.872 225.288 441.121 201.159 385.129 135.902 382.404 139.738 345.827 94.864 310.888 76.51 321.596 114.038 316.879 115.606 293.608 67.434 290.175 65.63 254.969 1.965 252.64 0.909",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("polygon", {
+    id: "Path",
+    fill: white,
+    points: "209.84 63.77 230.688 139.423 223.952 141.616 186.924 72.407 188.037 71.077",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("polygon", {
+    id: "Path",
+    fill: white,
+    points: "0.947 82.618 24.968 153.052531 39 141.616 67.053 187.053 73.448 190.188 104.655 155.657 66.561 119.302 48.499 117.039 16.483 79.417",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M398.02,117.742 L398.02,139.735 L421.249,166.372 L427.311,152.271 L432.025,153.835 L463.311,206.356 C464.533,198.534 465.385,190.593 465.889,182.557 L399.895,115.716 L399.456,115.716 L398.02,117.742 Z",
+    id: "Path",
+    fill: white,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M258.5,517 C115.734392,517 0,401.265608 0,258.5 C0,115.734392 115.734392,0 258.5,0 C401.265608,0 517,115.734392 517,258.5 C517,401.265608 401.265608,517 258.5,517 Z M259,504 C394.309764,504 504,394.309764 504,259 C504,123.690236 394.309764,14 259,14 C123.690236,14 14,123.690236 14,259 C14,394.309764 123.690236,504 259,504 Z",
+    id: "Combined-Shape",
+    fill: black,
+    mask: "url(#mask-2)",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Logo);
 
 /***/ }),
 
@@ -773,7 +1026,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-17wrysj-0"
-})(["margin:0;padding:0;display:flex;justify-self:end;font-size:1rem;a,button{display:flex;align-items:center;position:relative;padding:0.5rem 1rem;text-transform:uppercase;font-weight:900;font-size:0.8rem;background:none;white-space:nowrap;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';position:absolute;width:2px;height:100%;background:", ";left:0;top:0;bottom:0;transform:skew(-20deg);}&:after{content:'';position:absolute;height:2px;width:0;background:red;margin-top:2rem;left:50%;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);}&:hover,&:focus{outline:none;&:after{width:calc(100% - 60px);}@media (max-width:700px){width:calc(100% - 10px);}}}@media (max-width:1300px){justify-content:center;width:100%;border-top:1px solid ", ";a{font-size:0.6rem;}}"], function (props) {
+})(["position:relative;display:flex;justify-self:end;margin:0;padding:0;max-width:100%;font-size:1rem;a,button{display:flex;align-items:center;position:relative;padding:0.5rem 1rem;text-transform:uppercase;font-weight:900;font-size:0.7rem;background:none;white-space:nowrap;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';position:absolute;width:2px;height:100%;background:", ";left:0;top:0;bottom:0;transform:skew(-20deg);}&:after{content:'';position:absolute;height:2px;width:0;background:red;margin-top:2rem;left:50%;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);}&:hover,&:focus{outline:none;&:after{width:calc(100% - 60px);}@media (max-width:700px){width:calc(100% - 10px);}}}@media (max-width:1300px){justify-content:center;width:100%;border-top:1px solid ", ";a{font-size:0.6rem;}}"], function (props) {
   return props.theme.lightGrey;
 }, function (props) {
   return props.theme.lightGrey;

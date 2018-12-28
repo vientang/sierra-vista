@@ -3,19 +3,21 @@ import styled from 'styled-components';
 const RentButton = styled.button`
     position: relative;              
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 2rem;
-    padding: 0 1rem;
+    min-width: 3.2rem;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 900;
     white-space: nowrap;        
     border: 0;
     background: ${props => props.theme.blue};
+    box-sizing: border-box;
     cursor: pointer;
     @media (max-width: 700px) {
         font-size: 0.8rem;      
-        padding: 0 15px;
+        padding: 0 1rem;
     }
     &:after {
         content: '';

@@ -21,7 +21,7 @@ const ALL_GEAR_QUERY = gql`
 const StyledGearShop = styled.div`
     position: relative;
     max-width: 100%;
-    padding: ${props => props.theme.padding};
+    padding: 1rem 5rem 6rem;
     top: ${props => props.theme.top};
     font-family: ${props => props.theme.standardFont};
     font-size: 0.9rem;
@@ -35,6 +35,9 @@ const StyledGearShop = styled.div`
         margin: 1rem 0;
         display: block;
         font-style: italic;
+    }
+    @media(max-width: 1300px) {
+        top: 120px;
     }
 `;
 
@@ -53,8 +56,14 @@ const StyledGearList = styled.div`
     background: white;    
     border: 1px solid ${props => props.theme.offWhite};
     box-shadow: ${props => props.theme.bs};
+    overflow: auto;
     h3 {
         padding: 0 3rem;
+    }
+    @media(max-width: 1300px) {
+        h3 {
+            padding: 0 1rem;
+        }
     }
 `;
 

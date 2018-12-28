@@ -4,6 +4,7 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import styled from 'styled-components';
 import Nav from './Nav';
+import Logo from './Logo';
 
 Router.onRouteChangeStart = () => {
     NProgress.start();
@@ -15,52 +16,58 @@ Router.onRouteChangeError = () => {
     NProgress.done();
 };
 
-const Logo = styled.h1`
-    font-size: 1rem;
-    margin: 1rem;
+const LogoContainer = styled.div`
     position: relative;
-    z-index: 2;
-    transform: skew(-7deg);
+    display: flex;
+    align-items: center;
     a {
-        padding: 0.5rem 1rem;
-        background-color: ${props => props.theme.blue};
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
+        line-height: 0;
     }
     @media(max-width: 1300px) {
-        margin: 0;
-        text-align: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 1rem 0;        
     }
 `;
 
 const StyledHeader = styled.header`
     position: fixed;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr;
     justify-content: space-between;
     align-items: stretch;
     top: 0;
     width: 100%;
     max-width: 100%;
+    min-height: 5rem;    
+    padding-left: 5rem;
     background-color: white;
     border-bottom: 10px solid ${props => props.theme.black};
+    box-sizing: border-box;
     z-index: 2;
+    h3 {
+        font-size: 1rem;
+        line-height: normal;
+        padding: 0 1rem;
+    }
     @media(max-width: 1300px) {
         grid-template-columns: 1fr;
         justify-content: center;
+        padding: 0;
+        h3 {
+            margin: 0.4rem auto;
+        }
     }
 `;
 
 const Header = () => {
     return (
-        <StyledHeader>
-            <Logo>
-                <Link href="/">
-                    <a>Sierra</a>                
-                </Link>
-            </Logo>
-            <Nav />      
+        <StyledHeader> 
+            <LogoContainer>
+                <Link href="/"><a><Logo /></a></Link>
+            </LogoContainer>
+            <Link href="/"><a><h3>Sierra Vista Expeditions</h3></a></Link>
+            <Nav />
         </StyledHeader>
     );
 };

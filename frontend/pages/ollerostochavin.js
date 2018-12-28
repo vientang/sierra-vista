@@ -10,6 +10,7 @@ import {
     ContentSection,
     GearList,
     GearInfo,
+    PriceChart,
 } from '../components/styles';
 import DownloadLink from '../components/DownloadLink';
 
@@ -131,8 +132,8 @@ const Olleros = () => {
                     <TripSidePanel>
                         <p>Date: </p>
                         <p>Skill Level: 3</p>
-                        <p>Price: 1</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
+                        <PriceChart trip="chavin" />
                         <div>
                             <span>Included in the price:</span>
                             <ul>

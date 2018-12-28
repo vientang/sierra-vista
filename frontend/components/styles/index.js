@@ -12,6 +12,8 @@ import GearShop from './GearShop';
 import GearList from './GearList';
 import GearItem from './GearItem';
 import GearInfo from './GearInfo';
+import PriceChart from './PriceChart';
+import HomeInfoSection from './HomeInfoSection';
 
 export {
     TripContainer,
@@ -28,4 +30,6 @@ export {
     GearList,
     GearItem,
     GearInfo,
+    PriceChart,
+    HomeInfoSection,
 }

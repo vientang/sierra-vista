@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 
 const DownloadLink = ({ linkText, text, url }) => (
-    <span>
+    <p>
         {text}
         <Link href={url}>
-            <a className="print-gear-list">{linkText}</a>
+            <a className="print-gear-list" target="__blank">{linkText}</a>
         </Link>
-    </span>
+    </p>
 );
 
 export default DownloadLink;

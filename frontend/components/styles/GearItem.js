@@ -8,14 +8,18 @@ import PriceTag from './PriceTag';
 
 const StyledItemGroup = styled.div`    
     position: relative;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
     padding: 0.5rem 3rem;
     border: 1px solid ${props => props.theme.offWhite};
     img {
         width: 40px;
         height: 40px;
+        min-width: 100%;
         border: 1px solid ${props => props.theme.offWhite};
+    }
+    @media(max-width: 1300px) {
+        padding: 0.5rem 1rem;
     }
 `;
 
