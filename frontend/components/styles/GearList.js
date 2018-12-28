@@ -21,7 +21,7 @@ const GearList = (props) => {
     if (trek) {
         return (
             <React.Fragment>
-                <DownloadLink linkText="printable version" text="Download a" url="/gear-list" />
+                <DownloadLink linkText="printable version" text="Download a" url="/static/trekking_gear_check_list.pdf" />
                 <StyledGearList>
                     <ul>
                         <li>Trekking Poles</li>
@@ -82,7 +82,7 @@ const GearList = (props) => {
 
     return (
         <React.Fragment>
-            <DownloadLink linkText="printable version" text="Download a" url="/gear-list" />
+            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
             <StyledGearList>
                 <ul>
                     <li>Basic Ice Axe With Adze</li>

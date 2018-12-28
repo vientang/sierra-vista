@@ -33,7 +33,7 @@ const QuilValluna = () => {
                         <li><a href="#routes">Routes</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
-                        <li><RentButton>Book this trip</RentButton></li>
+                        <li><a href="static/trip_application.pdf" download="Book_Trip"><RentButton>Book this trip</RentButton></a></li>
                     </TripNav>                    
                 </TripHeader>
                 
@@ -190,7 +190,7 @@ const QuilValluna = () => {
                     <TripSidePanel>
                         <p>Dates: </p>
                         <p>Skill Level: 5</p>
-                        <DownloadLink linkText="gear list" text="Download a" url="/gear-list" />
+                        <DownloadLink linkText="gear list" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         <PriceChart trip="quilvaluna" />
                         <div>
                             <span>Included in the price:</span>
