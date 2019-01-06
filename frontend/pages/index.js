@@ -55,8 +55,7 @@ const Home = () => {
             <StyledHomePage>
                 <HomeInfoSection />
             </StyledHomePage>            
-        </div>
-        
+        </div>        
     )
 }
 

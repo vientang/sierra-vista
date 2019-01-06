@@ -17,9 +17,9 @@ const PackageColumn = ({ items }) => {
         <ul>
             {Object.values(items).map(item => {
                 if (Array.isArray(item)) {
-                    return <li>{item[0]}</li>;
+                    return <li key={item[0]}>{item[0]}</li>;
                 } 
-                return <li>Single room/tent add on</li>;
+                return <li key="add-on">Single room/tent add on</li>;
             })}
         </ul>
     )
@@ -30,9 +30,9 @@ const PriceColumn = ({ items }) => {
         <ul>
             {Object.values(items).map(item => {
                 if (Array.isArray(item)) {
-                    return <li>{item[1]}</li>;
+                    return <li key={item[1]}>{item[1]}</li>;
                 } 
-                return <li>{item}</li>;
+                return <li key={item}>{item}</li>;
             })}
         </ul>
     )
