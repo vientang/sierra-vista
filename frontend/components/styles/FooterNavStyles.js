@@ -7,14 +7,30 @@ const FooterNavStyles = styled.ul`
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    a,
-    span {
+    p {
+        font-family: 'radnika_next';
+        margin: 0 0 0 0.5rem;
+    }
+    .footer-logo {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .footer-trips-heading {
+        align-self: flex-end;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    .footer-trips {
+        align-self: flex-end;
+    }
+    a {
         position: relative;
         display: flex;
         padding: 0;
         font-family: ${props => props.theme.standardFont};
         font-weight: normal;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         color: white;
         white-space: nowrap;
         background: none;
@@ -29,12 +45,7 @@ const FooterNavStyles = styled.ul`
             color: ${props => props.theme.blue};
             outline: none;
         }
-    }
-    .ft-third-col,
-    span {
-        justify-content: flex-end;
-        align-self: flex-end;
-    }
+    }    
     @media (max-width: 1300px) {
         border-top: 1px solid ${props => props.theme.lightGrey};
         width: 100%;

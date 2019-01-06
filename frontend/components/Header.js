@@ -64,7 +64,7 @@ const Header = () => {
     return (
         <StyledHeader> 
             <LogoContainer>
-                <Link href="/"><a><Logo /></a></Link>
+                <Link href="/"><a><Logo size="50px" /></a></Link>
             </LogoContainer>
             <Link href="/"><a><h3>Sierra Vista Expeditions</h3></a></Link>
             <Nav />

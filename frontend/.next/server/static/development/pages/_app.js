@@ -109,7 +109,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/FooterNavStyles */ "./components/styles/FooterNavStyles.js");
+/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Logo */ "./components/Logo.js");
 var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/components/Footer.js";
+
 
 
 
@@ -123,7 +125,7 @@ var FooterImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.w
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.footer.withConfig({
   displayName: "Footer__StyledFooter",
   componentId: "sc-1lh932w-1"
-})(["position:relative;display:grid;grid-template-columns:20% 20% 1fr;justify-content:space-between;width:100%;max-width:100%;height:10rem;bottom:0;overflow:hidden;padding:", ";background-color:", ";border-top:1px solid ", ";box-sizing:border-box;@media(max-width:1300px){grid-template-columns:1fr 1fr 1fr;justify-content:flex-start;}"], function (props) {
+})(["position:relative;display:grid;grid-template-columns:70% 15% 15%;justify-content:space-between;width:100%;max-width:100%;height:15rem;bottom:0;overflow:hidden;padding:", ";background-color:", ";border-top:1px solid ", ";box-sizing:border-box;@media(max-width:1300px){grid-template-columns:1fr 1fr 1fr;justify-content:flex-start;}"], function (props) {
   return props.theme.padding;
 }, function (props) {
   return props.theme.offWhite;
@@ -135,7 +137,7 @@ var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterImage, {
@@ -143,154 +145,205 @@ var Footer = function Footer() {
     alt: "Photo by Blaise Vonlanthen on Unsplash",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/cordillera-huayhuash",
+    href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    size: "25px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Sierra Vista Expeditions LLC"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/gear-shop",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 47
+    },
+    __self: this
+  }, "Gear Shop")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/rental-agreement",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "Rental Agreement")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/terms",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, "Terms and Conditions")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about-us",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, "About Us"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "footer-trips-heading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, "Treks"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cordillera-huayhuash",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-trips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
     },
     __self: this
   }, "Cordillera Huayhuash")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/ollerostochavin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-trips",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 65
     },
     __self: this
-  }, "Olleros to Chavin")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Chavin de Huantar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/quiilcayhuanca",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, "Quiilcayhuanca")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ishinca13",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }, "Ishinca 13"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ishinca14",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, "Ishinca 14")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/pisco",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/quilvalluna",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, "Quil Trek and Valluna Climb"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/gear-shop",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "ft-third-col",
+    className: "footer-trips",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
     },
     __self: this
-  }, "Gear Shop")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about-us",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "ft-third-col",
+  }, "Quilcayhuanca Valley"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 71
     },
     __self: this
-  }, "About Us")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "ft-third-col",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "footer-trips-heading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "Climbs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/ishinca13",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
     },
     __self: this
-  }, "Sierra Vista Expeditions, LLC")));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-trips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, "Ishinca Valley")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/pisco",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-trips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/quilvalluna",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-trips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }, "Vallunaraju"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -377,6 +430,7 @@ var Header = function Header() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    size: "50px",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -434,7 +488,8 @@ var midSky = '#C3F9FF';
 var btmSky = '#00E8FF';
 var size = '50px';
 
-var Logo = function Logo() {
+var Logo = function Logo(_ref) {
+  var size = _ref.size;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     width: size,
     height: size,
@@ -472,9 +527,9 @@ var Logo = function Logo() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
     id: "Page-1",
     stroke: "none",
-    "stroke-width": "1",
+    strokeWidth: "1",
     fill: "none",
-    "fill-rule": "evenodd",
+    fillRule: "evenodd",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -581,7 +636,7 @@ var Logo = function Logo() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
     id: "Group",
-    "stroke-width": "1",
+    strokeWidth: "1",
     fill: "none",
     transform: "translate(50.000000, 7.000000)",
     __source: {
@@ -1000,7 +1055,7 @@ __webpack_require__.r(__webpack_exports__);
 var FooterNavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "FooterNavStyles",
   componentId: "sc-1xdykoq-0"
-})(["position:relative;display:flex;flex-direction:column;margin:0;padding:0;font-size:1rem;a,span{position:relative;display:flex;padding:0;font-family:", ";font-weight:normal;font-size:0.7rem;color:white;white-space:nowrap;background:none;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:hover,&:focus{color:", ";outline:none;}}.ft-third-col,span{justify-content:flex-end;align-self:flex-end;}@media (max-width:1300px){border-top:1px solid ", ";width:100%;justify-content:center;a{font-size:0.6rem;}}"], function (props) {
+})(["position:relative;display:flex;flex-direction:column;margin:0;padding:0;font-size:1rem;p{font-family:'radnika_next';margin:0 0 0 0.5rem;}.footer-logo{font-size:0.8rem;margin-bottom:1rem;}.footer-trips-heading{align-self:flex-end;font-size:0.8rem;text-transform:uppercase;color:white;}.footer-trips{align-self:flex-end;}a{position:relative;display:flex;padding:0;font-family:", ";font-weight:normal;font-size:0.8rem;color:white;white-space:nowrap;background:none;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:hover,&:focus{color:", ";outline:none;}}@media (max-width:1300px){border-top:1px solid ", ";width:100%;justify-content:center;a{font-size:0.6rem;}}"], function (props) {
   return props.theme.standardFont;
 }, function (props) {
   return props.theme.blue;

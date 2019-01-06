@@ -7,14 +7,14 @@ const midSky = '#C3F9FF';
 const btmSky = '#00E8FF';
 const size = '50px';
 
-const Logo = () => {
+const Logo = ({ size }) => {
     return (
         <svg width={size} height={size} viewBox="0 0 519 519" version="1.1" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
             <title>Sierra Vista Expeditions Logo</title>
             <defs>
                 <circle id="path-1" cx="258.5" cy="258.5" r="258.5" />
             </defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="mountain-logo" transform="translate(1.000000, 1.000000)">
                     <mask id="mask-2" fill={white}>
                         <use xlinkHref="#path-1" />
@@ -40,7 +40,7 @@ const Logo = () => {
                                 id="Path" 
                                 fill={black}
                             />
-                            <g id="Group" stroke-width="1" fill="none" transform="translate(50.000000, 7.000000)">
+                            <g id="Group" strokeWidth="1" fill="none" transform="translate(50.000000, 7.000000)">
                                 <polygon id="Path" fill={white} points="251.688 2.424 260.315 42.591 251.564 42.906 257.957 89.598 284.893 145.378 310.888 195.203 344.828 195.203 332.368 151.331 338.764 149.137 366 187 449.872 225.288 441.121 201.159 385.129 135.902 382.404 139.738 345.827 94.864 310.888 76.51 321.596 114.038 316.879 115.606 293.608 67.434 290.175 65.63 254.969 1.965 252.64 0.909" />
                                 <polygon id="Path" fill={white} points="209.84 63.77 230.688 139.423 223.952 141.616 186.924 72.407 188.037 71.077" />
                                 <polygon id="Path" fill={white} points="0.947 82.618 24.968 153.052531 39 141.616 67.053 187.053 73.448 190.188 104.655 155.657 66.561 119.302 48.499 117.039 16.483 79.417" />
