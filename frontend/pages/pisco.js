@@ -15,7 +15,7 @@ import {
 import DownloadLink from '../components/DownloadLink';
 
 /**
- * This page holds the content for Ishina 13 day trip.
+ * This page holds the content for Pisco trip.
  * Includes photo, quick itinerary, detailed itinerary, information, 
  * skill level, cost, gear, elevation, experience gained, routes,
  * not included in cost
@@ -23,10 +23,10 @@ import DownloadLink from '../components/DownloadLink';
 const Pisco = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/climber.jpg" />
+            <TripImage src="static/images/IMG_3676.JPG" alt="Pisco" />
             <TripContainer>
                 <TripHeader>
-                    <h2>Pisco 12 day 5,750m (18,870ft)</h2>
+                    <h2>Pisco 5,750m (18,870ft)</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -54,20 +54,21 @@ const Pisco = () => {
                             </p>                            
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="itinerary">Itinerary</h3>                    
-                            <p>Day 1: Arrive in Lima</p>
-                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
-                            <p>Day 3: Acclimatization day hike</p>
-                            <p>Day 4: Drive to Pisco base camp</p>
-                            <p>Day 5: Move to Pisco cave camp</p>
-                            <p>Day 6: Rest day in cave camp</p>
-                            <p>Day 7: Carry to moraine camp, return to cave camp</p>
-                            <p>Day 8: Move to moraine camp, review climbing skills on glacier</p>
-                            <p>Day 9: Summit day back to cave camp</p>
-                            <p>Day 10: Return to Huaraz</p>
-                            <p>Day 11: Luxury bus Huaraz to Lima</p>
-                            <p>Day 12: Depart Lima</p>
-
+                            <div className="basic-itinerary">
+                                <h3 id="itinerary">Itinerary</h3>                    
+                                <p>Day 1: Arrive in Lima</p>
+                                <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                                <p>Day 3: Acclimatization day hike</p>
+                                <p>Day 4: Drive to Pisco base camp</p>
+                                <p>Day 5: Move to Pisco cave camp</p>
+                                <p>Day 6: Rest day in cave camp</p>
+                                <p>Day 7: Carry to moraine camp, return to cave camp</p>
+                                <p>Day 8: Move to moraine camp, review climbing skills on glacier</p>
+                                <p>Day 9: Summit day back to cave camp</p>
+                                <p>Day 10: Return to Huaraz</p>
+                                <p>Day 11: Luxury bus Huaraz to Lima</p>
+                                <p>Day 12: Depart Lima</p>
+                            </div>
                             <h4>Detailed Itinerary</h4>
                             <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
                             Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
@@ -104,7 +105,7 @@ const Pisco = () => {
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
-                            <GearList />
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         </ContentSection> 
                         <ContentSection>
                             <h3 id="routes">Routes</h3>  
@@ -136,12 +137,12 @@ const Pisco = () => {
                     </ContentContainer>
                     
                     <TripSidePanel>
-                        <p>Dates: </p>
+                        <p>Dates: <span className="trip-dates">7/22/19 - 8/02/19 (12 days)</span></p>
                         <p>Skill Level: 5</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         <PriceChart trip="ishinca13" />
                         <div>
-                            <span>Included in the price:</span>
+                            <span className="inclusion-title">Included in the price:</span>
                             <ul>
                                 <li>All required transportation as stated in itinerary</li>
                                 <li>All meals as stated in itinerary</li>
@@ -157,7 +158,7 @@ const Pisco = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Not included in the price:</span>
+                            <span className="inclusion-title">Not included in the price:</span>
                             <ul>
                                 <li>International round-trip airfare to or from Lima</li>
                                 <li>Dinners in Huaraz/Lima unless stated in Itinerary</li>
@@ -172,7 +173,7 @@ const Pisco = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Elevations:</span>
+                            <p>Elevations:</p>
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>
@@ -183,7 +184,7 @@ const Pisco = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Experience gained:</span>
+                            <p>Experience gained:</p>
                             <ul>
                                 <li>Crampon and ice axe technique</li>
                                 <li>Snow and ice anchors</li>

@@ -27,7 +27,7 @@ const priceData = [
         }
     },
     {
-        trip: 'quiilcayhuanca',
+        trip: 'quilcayhuanca',
         prices: {
             pkg1: ['2-3 trekkers', '$2,875'],
             pkg2: ['4-5 trekkers', '$2,475'],

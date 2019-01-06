@@ -8,23 +8,20 @@ const Nav = () => {
             <Link href="/cordillera-huayhuash">
                 <a>Cordillera Huayhuash</a>
             </Link>
-            <Link href="/ollerostochavin">
-                <a>Olleros to Chavin</a>
+            <Link href="/chavin">
+                <a>Chavin de Huantar</a>
             </Link>
-            <Link href="/quiilcayhuanca">
-                <a>Quiilcayhuanca</a>
+            <Link href="/quilcayhuanca">
+                <a>Quilcayhuanca Valley</a>
             </Link>
-            <Link href="/ishinca13">
-                <a>Ishinca 13</a>
-            </Link>
-            <Link href="/ishinca14">
-                <a>Ishinca 14</a>
+            <Link href="/ishinca">
+                <a>Ishinca Valley</a>
             </Link>
             <Link href="/pisco">
                 <a>Pisco</a>
             </Link>
-            <Link href="/quilvalluna">
-                <a>Quil Trek and Valluna Climb</a>
+            <Link href="/vallunaraju">
+                <a>Vallunaraju</a>
             </Link>
             <Link href="/about-us">
                 <a>About Us</a>

@@ -20,7 +20,7 @@ const CordilleraHuayhuash = () => {
             <TripImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
             <TripContainer>
                 <TripHeader>
-                    <h2>Cordillera Huayhuash 8 Day Circuit</h2>
+                    <h2>Cordillera Huayhuash 10 Day Circuit</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -50,22 +50,24 @@ const CordilleraHuayhuash = () => {
                             </p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="itinerary">Itinerary</h3>                    
-                            <p>Day 1: Arrive in Lima</p>
-                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
-                            <p>Day 3: Acclimatization day hike</p>
-                            <p>Day 4: Acclimatization day hike</p>
-                            <p>Day 5: Drive Huaraz to Mantacancha camp at Cuartelhuain</p>
-                            <p>Day 6: Hike to laguna Mitucocha camp at laguna Carhuacocha</p>
-                            <p>Day 7: Rest day at laguna Carhuacocha</p>
-                            <p>Day 8: Hike Carnicero pass to Huayhuash camp</p>
-                            <p>Day 9: Hike Portachuelo pass to camp at laguna Viconga</p>
-                            <p>Day 10: Rest day at laguna Viconga</p>
-                            <p>Day 11: Hike Cuyoc pass camp at Rinconada</p>
-                            <p>Day 12: Hike to Huatiac camp</p>
-                            <p>Day 13: Hike Tapush pass and Yaucha pass camp at laguna Jahuacocha</p>
-                            <p>Day 14: Hike Pampa Llamac pass to Llamac, transport back to Huaraz</p>
-                            <p>Day 15: Luxury bus Huaraz to Lima, depart Lima</p>
+                            <div className="basic-itinerary">
+                                <h3 id="itinerary">Itinerary</h3>                    
+                                <p>Day 1: Arrive in Lima</p>
+                                <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                                <p>Day 3: Acclimatization day hike</p>
+                                <p>Day 4: Acclimatization day hike</p>
+                                <p>Day 5: Drive Huaraz to Mantacancha camp at Cuartelhuain</p>
+                                <p>Day 6: Hike to laguna Mitucocha camp at laguna Carhuacocha</p>
+                                <p>Day 7: Rest day at laguna Carhuacocha</p>
+                                <p>Day 8: Hike Carnicero pass to Huayhuash camp</p>
+                                <p>Day 9: Hike Portachuelo pass to camp at laguna Viconga</p>
+                                <p>Day 10: Rest day at laguna Viconga</p>
+                                <p>Day 11: Hike Cuyoc pass camp at Rinconada</p>
+                                <p>Day 12: Hike to Huatiac camp</p>
+                                <p>Day 13: Hike Tapush pass and Yaucha pass camp at laguna Jahuacocha</p>
+                                <p>Day 14: Hike Pampa Llamac pass to Llamac, transport back to Huaraz</p>
+                                <p>Day 15: Luxury bus Huaraz to Lima, depart Lima</p>
+                            </div>
                             <h4>Detailed Itinerary</h4>
                             <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
                             Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
@@ -126,7 +128,7 @@ const CordilleraHuayhuash = () => {
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
-                            <GearList trek />
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/trekking_gear_check_list.pdf" />
                         </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
@@ -151,12 +153,12 @@ const CordilleraHuayhuash = () => {
                     </ContentContainer>
                     
                     <TripSidePanel>
-                        <p>Date: </p>
+                        <p>Dates: <span className="trip-dates">5/29/19 - 6/12/19 (15 days)</span></p>
                         <p>Skill Level: 4</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/static/trekking_gear_check_list.pdf" />
                         <PriceChart trip="huayhash" />
                         <div>
-                            <span>Included in the price:</span>
+                            <span className="inclusion-title">Included in the price:</span>
                             <ul>
                                 <li>All required transportation as stated in itinerary</li>
                                 <li>All meals as stated in itinerary</li>
@@ -171,7 +173,7 @@ const CordilleraHuayhuash = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Not included in the price:</span>
+                            <span className="inclusion-title">Not included in the price:</span>
                             <ul>
                                 <li>International round-trip airfare to or from Lima</li>
                                 <li>Dinners in Huaraz/Lima unless stated in Itinerary</li>
@@ -186,7 +188,7 @@ const CordilleraHuayhuash = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Elevations:</span>
+                            <p>Elevations:</p>
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>

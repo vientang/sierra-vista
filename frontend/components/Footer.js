@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
     height: 15rem;
     bottom: 0;
     overflow: hidden;
-    padding: ${props => props.theme.padding};
+    padding: 2rem 5rem;
     background-color: ${props => props.theme.offWhite};
     border-top: 1px solid ${props => props.theme.lightGrey};
     box-sizing: border-box;
@@ -61,22 +61,22 @@ const Footer = () => {
                 <Link href="/cordillera-huayhuash">
                     <a className="footer-trips">Cordillera Huayhuash</a>
                 </Link>
-                <Link href="/ollerostochavin">
+                <Link href="/chavin">
                     <a className="footer-trips">Chavin de Huantar</a>
                 </Link>
-                <Link href="/quiilcayhuanca">
+                <Link href="/quilcayhuanca">
                     <a className="footer-trips">Quilcayhuanca Valley</a>
                 </Link>
             </FooterNavStyles>
             <FooterNavStyles>
                 <p className="footer-trips-heading">Climbs</p>
-                <Link href="/ishinca13">
+                <Link href="/ishinca">
                     <a className="footer-trips">Ishinca Valley</a>
                 </Link>
                 <Link href="/pisco">
                     <a className="footer-trips">Pisco</a>
                 </Link>
-                <Link href="/quilvalluna">
+                <Link href="/vallunaraju">
                     <a className="footer-trips">Vallunaraju</a>
                 </Link>           
             </FooterNavStyles>            

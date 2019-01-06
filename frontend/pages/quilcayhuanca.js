@@ -15,18 +15,18 @@ import {
 import DownloadLink from '../components/DownloadLink';
 
 /**
- * This page holds the content for Ishina 13 day trip.
+ * This page holds the content for Quilcayhuanca Valley trip.
  * Includes photo, quick itinerary, detailed itinerary, information, 
  * skill level, cost, gear, elevation, experience gained, routes,
  * not included in cost
  */
-const Quiilcayhuanca = () => {
+const QuilcayhuancaValley = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/mountain1.jpg" />
+            <TripImage src="static/images/mountain1.jpg" alt="Quilcayhuanca Valley" />
             <TripContainer>
                 <TripHeader>
-                    <h2>Quiilcayhuanca 4 Day Trek</h2>
+                    <h2>Quilcayhuanca Valley</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -39,7 +39,7 @@ const Quiilcayhuanca = () => {
                 <TripContent>
                     <ContentContainer>
                         <ContentSection>
-                            <h3 id="overview">Quiilcayhuanca Trek</h3>  
+                            <h3 id="overview">Quilcayhuanca Trek</h3>  
                             <p>
                                 This relatively relaxed three night four day trek is an ideal entry level trip to high altitude trekking. The
                                 first days trek to Maparaju base camp is absolutely stunning. We will be hiking on soft grass areas know
@@ -52,17 +52,19 @@ const Quiilcayhuanca = () => {
                             </p>                            
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="itinerary">Itinerary</h3>                    
-                            <p>Day 1: Arrive in Lima</p>
-                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
-                            <p>Day 3: Acclimatization day hike</p>
-                            <p>Day 4: Acclimatization day hike</p>
-                            <p>Day 5: Drive to the base of Quilcayhuanca, hike to first camp</p>
-                            <p>Day 6: Hike to Laguna Tullpacocha</p>
-                            <p>Day 7: Active rest day</p>
-                            <p>Day 8: Hike out, stay in Huaraz</p>
-                            <p>Day 9: Luxury bus Huaraz to Lima</p>
-                            <p>Day 10: Depart Lima</p>
+                            <div className="basic-itinerary">
+                                <h3 id="itinerary">Itinerary</h3>                    
+                                <p>Day 1: Arrive in Lima</p>
+                                <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                                <p>Day 3: Acclimatization day hike</p>
+                                <p>Day 4: Acclimatization day hike</p>
+                                <p>Day 5: Drive to the base of Quilcayhuanca, hike to first camp</p>
+                                <p>Day 6: Hike to Laguna Tullpacocha</p>
+                                <p>Day 7: Active rest day</p>
+                                <p>Day 8: Hike out, stay in Huaraz</p>
+                                <p>Day 9: Luxury bus Huaraz to Lima</p>
+                                <p>Day 10: Depart Lima</p>
+                            </div>
                             <h4>Detailed Itinerary</h4>
                             <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
                             Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
@@ -95,7 +97,7 @@ const Quiilcayhuanca = () => {
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
-                            <GearList trek />                      
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/trekking_gear_check_list.pdf" />
                         </ContentSection> 
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
@@ -120,12 +122,12 @@ const Quiilcayhuanca = () => {
                     </ContentContainer>
                     
                     <TripSidePanel>
-                        <p>Date: </p>
+                        <p>Dates: <span className="trip-dates">8/26/19 - 9/4/19 (10 days)</span></p>
                         <p>Skill Level: 2</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/static/trekking_gear_check_list.pdf" />
-                        <PriceChart trip="quiilcayhuanca" />
+                        <PriceChart trip="quilcayhuanca" />
                         <div>
-                            <span>Included in the price:</span>
+                            <span className="inclusion-title">Included in the price:</span>
                             <ul>
                                 <li>All required transportation as stated in itinerary</li>
                                 <li>All meals as stated in itinerary</li>
@@ -140,7 +142,7 @@ const Quiilcayhuanca = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Not included in the price:</span>
+                            <span className="inclusion-title">Not included in the price:</span>
                             <ul>
                                 <li>International round-trip airfare to or from Lima</li>
                                 <li>Dinners in Huaraz/Lima unless stated in Itinerary</li>
@@ -155,7 +157,7 @@ const Quiilcayhuanca = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Elevations:</span>
+                            <p>Elevations:</p>
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>
@@ -171,4 +173,4 @@ const Quiilcayhuanca = () => {
     )
 }
 
-export default Quiilcayhuanca;
+export default QuilcayhuancaValley;

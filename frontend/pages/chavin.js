@@ -8,14 +8,13 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
-    GearList,
     GearInfo,
     PriceChart,
 } from '../components/styles';
 import DownloadLink from '../components/DownloadLink';
 
 /**
- * This page holds the content for Ishina 13 day trip.
+ * This page holds the content for Olleros to Chavin trip.
  * Includes photo, quick itinerary, detailed itinerary, information, 
  * skill level, cost, gear, elevation, experience gained, routes,
  * not included in cost
@@ -23,7 +22,7 @@ import DownloadLink from '../components/DownloadLink';
 const Olleros = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/chinchey.jpg" />
+            <TripImage src="static/images/chinchey.jpg" alt="Olleros to Chavin" />
             <TripContainer>
                 <TripHeader>
                     <h2>Olleros to Chavin Cultural Trek 4 Days</h2>
@@ -60,17 +59,19 @@ const Olleros = () => {
                             </p>                    
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="itinerary">Itinerary</h3>                    
-                            <p>Day 1: Arrive in Lima</p>
-                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
-                            <p>Day 3: Acclimatization day hike</p>
-                            <p>Day 4: Acclimatization day hike</p>
-                            <p>Day 5: Drive to Olleros, Hike to Sacracancha camp</p>
-                            <p>Day 6: Hike Yanashallash pass to Shonkoruri camp</p>
-                            <p>Day 7: Hike to Chavin de Huantar, stay in lodge</p>
-                            <p>Day 8: Private transportation back to Huaraz</p>
-                            <p>Day 9: Luxury bus Huaraz to Lima</p>
-                            <p>Day 10: Depart Lima</p>
+                            <div className="basic-itinerary">
+                                <h3 id="itinerary">Itinerary</h3>                    
+                                <p>Day 1: Arrive in Lima</p>
+                                <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                                <p>Day 3: Acclimatization day hike</p>
+                                <p>Day 4: Acclimatization day hike</p>
+                                <p>Day 5: Drive to Olleros, Hike to Sacracancha camp</p>
+                                <p>Day 6: Hike Yanashallash pass to Shonkoruri camp</p>
+                                <p>Day 7: Hike to Chavin de Huantar, stay in lodge</p>
+                                <p>Day 8: Private transportation back to Huaraz</p>
+                                <p>Day 9: Luxury bus Huaraz to Lima</p>
+                                <p>Day 10: Depart Lima</p>
+                            </div>
                             <h4>Detailed Itinerary</h4>
                             <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
                             Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
@@ -105,7 +106,7 @@ const Olleros = () => {
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
-                            <GearList trek />                      
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/trekking_gear_check_list.pdf" />                     
                         </ContentSection>                        
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
@@ -130,12 +131,12 @@ const Olleros = () => {
                     </ContentContainer>
                     
                     <TripSidePanel>
-                        <p>Date: </p>
+                        <p>Dates: </p>
                         <p>Skill Level: 3</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/static/trekking_gear_check_list.pdf" />
                         <PriceChart trip="chavin" />
                         <div>
-                            <span>Included in the price:</span>
+                            <span className="inclusion-title">Included in the price:</span>
                             <ul>
                                 <li>All required transportation as stated in itinerary</li>
                                 <li>All meals as stated in itinerary</li>
@@ -151,7 +152,7 @@ const Olleros = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Not included in the price:</span>
+                            <span className="inclusion-title">Not included in the price:</span>
                             <ul>
                                 <li>International round-trip airfare to or from Lima</li>
                                 <li>Dinners in Huaraz/Lima unless stated in Itinerary</li>
@@ -166,7 +167,7 @@ const Olleros = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Elevations:</span>
+                            <p>Elevations:</p>
                             <ul>
                                 <li>Huaraz 3,050m (10,000ft)</li>
                                 <li>Laguna Wilcacocha 3,720m (12,200ft)</li>

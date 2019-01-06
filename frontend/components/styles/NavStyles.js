@@ -46,13 +46,13 @@ const NavStyles = styled.ul`
             left: 50%;
             transform: translateX(-50%);
             transition: width 0.4s;
-            transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+            transition-timing-function: cubic-bezier(1, -0.65, 0, 1.31);
         }
         &:hover,
         &:focus {
             outline: none;
             &:after {
-                width: calc(100% - 60px);
+                width: calc(100% - 40px);
             }
             @media (max-width: 700px) {
                 width: calc(100% - 10px);

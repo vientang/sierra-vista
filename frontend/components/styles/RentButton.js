@@ -12,7 +12,7 @@ const RentButton = styled.button`
     font-weight: 900;
     white-space: nowrap;        
     border: 0;
-    background: ${props => props.theme.blue};
+    background: linear-gradient(to right, ${props => props.theme.blue}, ${props => props.theme.lightBlue});
     box-sizing: border-box;
     cursor: pointer;
     @media (max-width: 700px) {

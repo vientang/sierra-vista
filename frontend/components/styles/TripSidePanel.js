@@ -10,7 +10,7 @@ const TripSidePanel = styled.div`
         margin: 0;
     }
     ul {
-        list-style-type: none;
+        list-style-type: circle;
     }
     p {
         font-weight: bold;
@@ -19,6 +19,13 @@ const TripSidePanel = styled.div`
     li {
         font-size: 0.8rem;
         line-height: normal;
+    }
+    .inclusion-title {
+        font-style: italic;
+    }
+    .trip-dates {
+        font-family: ${props => props.theme.standardFont};
+        font-weight: normal;
     }
     .print-gear-list {
         color: ${props => props.theme.blue};

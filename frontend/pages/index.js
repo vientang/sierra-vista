@@ -22,10 +22,10 @@ const StyledOverlay = styled.div`
     h2,
     span {
         margin: 0;
-        filter: drop-shadow(.05em .05em orange);
+        filter: drop-shadow(.05em .05em ${props => props.theme.grey});
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: uppercase;
         line-height: normal;
     }
@@ -46,8 +46,8 @@ const Home = () => {
             <HomePageImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
             <StyledOverlay>
                 <h2>Next Trip</h2>
-                <p>Cordillera Huayhash</p>
-                <span>TBD</span>
+                <p>Cordillera Huayhuash</p>
+                <span>May 29th, 2019 - June 12, 2019</span>
                 <Link href="/cordillera-huayhuash">
                     <a><RentButton>Reserve a spot</RentButton></a>
                 </Link>

@@ -6,6 +6,7 @@ const theme = {
     bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
     black: '#393939',
     blue: '#00BDFF',
+    lightBlue: '#00dcff',
     grey: '#3A3A3A',
     imgCrop: '-12% 0',
     lightGrey: '#E1E1E1',

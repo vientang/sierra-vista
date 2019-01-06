@@ -31,9 +31,7 @@ var FooterImage = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.
 var StyledFooter = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].footer.withConfig({
   displayName: "Footer__StyledFooter",
   componentId: "sc-1lh932w-1"
-})(["position:relative;display:grid;grid-template-columns:70% 15% 15%;justify-content:space-between;width:100%;max-width:100%;height:15rem;bottom:0;overflow:hidden;padding:", ";background-color:", ";border-top:1px solid ", ";box-sizing:border-box;@media(max-width:1300px){grid-template-columns:1fr 1fr 1fr;justify-content:flex-start;}"], function (props) {
-  return props.theme.padding;
-}, function (props) {
+})(["position:relative;display:grid;grid-template-columns:70% 15% 15%;justify-content:space-between;width:100%;max-width:100%;height:15rem;bottom:0;overflow:hidden;padding:2rem 5rem;background-color:", ";border-top:1px solid ", ";box-sizing:border-box;@media(max-width:1300px){grid-template-columns:1fr 1fr 1fr;justify-content:flex-start;}"], function (props) {
   return props.theme.offWhite;
 }, function (props) {
   return props.theme.lightGrey;
@@ -167,7 +165,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Cordillera Huayhuash")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ollerostochavin",
+    href: "/chavin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
@@ -181,7 +179,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Chavin de Huantar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/quiilcayhuanca",
+    href: "/quilcayhuanca",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -208,7 +206,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Climbs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ishinca13",
+    href: "/ishinca",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
@@ -236,7 +234,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/quilvalluna",
+    href: "/vallunaraju",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
@@ -341,26 +339,26 @@ var Header = function Header() {
       lineNumber: 67
     },
     __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
-  }, "Sierra Vista Expeditions"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Sierra Vista Expeditions")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70
@@ -714,7 +712,7 @@ var Nav = function Nav() {
     },
     __self: this
   }, "Cordillera Huayhuash")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ollerostochavin",
+    href: "/chavin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -726,8 +724,8 @@ var Nav = function Nav() {
       lineNumber: 12
     },
     __self: this
-  }, "Olleros to Chavin")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/quiilcayhuanca",
+  }, "Chavin de Huantar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/quilcayhuanca",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
@@ -739,8 +737,8 @@ var Nav = function Nav() {
       lineNumber: 15
     },
     __self: this
-  }, "Quiilcayhuanca")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ishinca13",
+  }, "Quilcayhuanca Valley")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/ishinca",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -752,8 +750,8 @@ var Nav = function Nav() {
       lineNumber: 18
     },
     __self: this
-  }, "Ishinca 13")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ishinca14",
+  }, "Ishinca Valley")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/pisco",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
@@ -765,8 +763,8 @@ var Nav = function Nav() {
       lineNumber: 21
     },
     __self: this
-  }, "Ishinca 14")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/pisco",
+  }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/vallunaraju",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -778,8 +776,8 @@ var Nav = function Nav() {
       lineNumber: 24
     },
     __self: this
-  }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/quilvalluna",
+  }, "Vallunaraju")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about-us",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -789,19 +787,6 @@ var Nav = function Nav() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
-    },
-    __self: this
-  }, "Quil Trek and Valluna Climb")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about-us",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
     },
     __self: this
   }, "About Us")));
@@ -983,7 +968,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-17wrysj-0"
-})(["position:relative;display:flex;justify-self:end;margin:0;padding:0;max-width:100%;font-size:1rem;a,button{display:flex;align-items:center;position:relative;padding:0.5rem 1rem;text-transform:uppercase;font-weight:900;font-size:0.7rem;background:none;white-space:nowrap;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';position:absolute;width:2px;height:100%;background:", ";left:0;top:0;bottom:0;transform:skew(-20deg);}&:after{content:'';position:absolute;height:2px;width:0;background:red;margin-top:2rem;left:50%;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);}&:hover,&:focus{outline:none;&:after{width:calc(100% - 60px);}@media (max-width:700px){width:calc(100% - 10px);}}}@media (max-width:1300px){justify-content:center;width:100%;border-top:1px solid ", ";a{font-size:0.6rem;}}"], function (props) {
+})(["position:relative;display:flex;justify-self:end;margin:0;padding:0;max-width:100%;font-size:1rem;a,button{display:flex;align-items:center;position:relative;padding:0.5rem 1rem;text-transform:uppercase;font-weight:900;font-size:0.7rem;background:none;white-space:nowrap;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';position:absolute;width:2px;height:100%;background:", ";left:0;top:0;bottom:0;transform:skew(-20deg);}&:after{content:'';position:absolute;height:2px;width:0;background:red;margin-top:2rem;left:50%;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,1.31);}&:hover,&:focus{outline:none;&:after{width:calc(100% - 40px);}@media (max-width:700px){width:calc(100% - 10px);}}}@media (max-width:1300px){justify-content:center;width:100%;border-top:1px solid ", ";a{font-size:0.6rem;}}"], function (props) {
   return props.theme.lightGrey;
 }, function (props) {
   return props.theme.lightGrey;
@@ -1009,6 +994,7 @@ var theme = {
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
   black: '#393939',
   blue: '#00BDFF',
+  lightBlue: '#00dcff',
   grey: '#3A3A3A',
   imgCrop: '-12% 0',
   lightGrey: '#E1E1E1',

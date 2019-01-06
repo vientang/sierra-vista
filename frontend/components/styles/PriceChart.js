@@ -4,7 +4,7 @@ import priceData from '../../static/price-data';
 const StyledPriceChart = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 10px;
     width: 100%;
     max-width: 100%;
     ul {
@@ -19,7 +19,7 @@ const PackageColumn = ({ items }) => {
                 if (Array.isArray(item)) {
                     return <li>{item[0]}</li>;
                 } 
-                return <li>Add on</li>;
+                return <li>Single room/tent add on</li>;
             })}
         </ul>
     )

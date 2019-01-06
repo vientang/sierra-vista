@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styled from 'styled-components';
 import { TripSidePanel } from '../components/styles';
 
@@ -16,13 +15,6 @@ const StyledInnerSidePanel = styled.div`
         margin: 1rem 0;
         line-height: normal;
     }
-    a {
-        font-family: ${props => props.theme.standardFont};
-        font-size: 0.8rem;
-        letter-spacing: 1.2px;
-        line-height: normal;
-        color: ${props => props.theme.blue};
-    }
     .staff-desc {
         font-family: ${props => props.theme.standardFont};
         font-weight: normal;
@@ -39,6 +31,21 @@ const StyledAboutUs = styled.div`
     font-size: 0.9rem;
 `;
 
+const StyledContactInfo = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        font-family: ${props => props.theme.standardFont};
+        font-size: 0.8rem;
+        letter-spacing: 1.2px;
+        line-height: normal;
+    }
+    a:hover {
+        color: ${props => props.theme.blue};
+    }
+`;
+
 const AboutUs = () => {
     return (
         <AboutUsContainer>
@@ -46,7 +53,7 @@ const AboutUs = () => {
                 <h2>Who are we?</h2>
                 <p>
                     Sierra Vista Expeditions started as a dream more than ten years ago by me, Josh Miller. Peru has
-                    always fascinated me since my first expedition in the country in 2012. Every year since I have returned ,
+                    always fascinated me since my first expedition in the country in 2012. Every year since I have returned,
                     sometimes spending up to 3 months climbing and trekking in the Cordillera Blanca. After working for
                     other guiding companies both in the United States and in Peru, I gained an array of knowledge of how to
                     provide an amazing trip into these lands, and to share my amazing experiences with others.
@@ -77,8 +84,10 @@ const AboutUs = () => {
             </StyledAboutUs>
             <TripSidePanel>
                 <StyledInnerSidePanel>
-                    <h3>Contact Us</h3>
-                    <a href="mailto:info@sierravistaexpeditions.com.com">info@sierravistaexpeditions.com</a>
+                    <StyledContactInfo>
+                        <h3>Contact Us</h3>
+                        <a href="mailto:info@sierravistaexpeditions.com.com">info@sierravistaexpeditions.com</a>
+                    </StyledContactInfo>
                     <h3>Staff</h3>
                     <p>Josh Miller</p>
                     <p>Expedition Leader</p>

@@ -8,19 +8,18 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
-    GearList,
     GearInfo,
     PriceChart,
 } from '../components/styles';
 import DownloadLink from '../components/DownloadLink';
 
 /**
- * This page holds the content for Ishina 13 day trip.
+ * This page holds the content for Vallunaraju.
  * Includes photo, quick itinerary, detailed itinerary, information, 
  * skill level, cost, gear, elevation, experience gained, routes,
  * not included in cost
  */
-const QuilValluna = () => {
+const Vallunaraju = () => {
     return (
         <React.Fragment>
             <TripImage src="static/images/mountain2.jpg" />
@@ -30,7 +29,6 @@ const QuilValluna = () => {
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
-                        <li><a href="#routes">Routes</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li><a href="static/trip_application.pdf" download="Book_Trip"><RentButton>Book this trip</RentButton></a></li>
@@ -73,20 +71,21 @@ const QuilValluna = () => {
                             </p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="itinerary">Itinerary</h3>
-                            <p>Day 1: Arrive in Lima</p>
-                            <p>Day 2: Luxury Bus Lima to Huaraz</p>
-                            <p>Day 3: Acclimatization day hike</p>
-                            <p>Day 4: Acclimatization day hike</p>
-                            <p>Day 5: Drive to the base of Quilcayhuanca, hike to first camp Tullpacocha</p>
-                            <p>Day 6: Active rest day</p>
-                            <p>Day 7: Hike to base of Quilcayhuanca, Drive back to Huaraz</p>
-                            <p>Day 8: Huaraz rest day, gear check</p>
-                            <p>Day 9: Drive to Vallunaraju base camp, carry to moraine camp</p>
-                            <p>Day 10: Climb Vallunaraju, back to Huaraz</p>
-                            <p>Day 11: Luxury bus Huaraz to Lima</p>
-                            <p>Day 12: Depart Lima</p>
-
+                            <div className="basic-itinerary">
+                                <h3 id="itinerary">Itinerary</h3>
+                                <p>Day 1: Arrive in Lima</p>
+                                <p>Day 2: Luxury Bus Lima to Huaraz</p>
+                                <p>Day 3: Acclimatization day hike</p>
+                                <p>Day 4: Acclimatization day hike</p>
+                                <p>Day 5: Drive to the base of Quilcayhuanca, hike to first camp Tullpacocha</p>
+                                <p>Day 6: Active rest day</p>
+                                <p>Day 7: Hike to base of Quilcayhuanca, Drive back to Huaraz</p>
+                                <p>Day 8: Huaraz rest day, gear check</p>
+                                <p>Day 9: Drive to Vallunaraju base camp, carry to moraine camp</p>
+                                <p>Day 10: Climb Vallunaraju, back to Huaraz</p>
+                                <p>Day 11: Luxury bus Huaraz to Lima</p>
+                                <p>Day 12: Depart Lima</p>
+                            </div>
                             <h4>Detailed Itinerary</h4>
                             <p>Day 1: Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you.
                             Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.</p>
@@ -130,39 +129,7 @@ const QuilValluna = () => {
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
-                            <GearList />
-                        </ContentSection> 
-                        <ContentSection>
-                            <h3 id="routes">Routes</h3>  
-                            <h4>Urus Este South East Face/East Ridge:</h4>  
-                            <p>
-                                We will begin on a trail immediately out of base camp on the north side of the valley. The trail is well
-                                marked and climbs 400 meters to the edge of the moraine ridge. Snow line is reached in 2-3 hours from
-                                base camp.
-                            </p>
-                            <p>
-                                Climbing begins with a 45 degree snow slope while crossing over rock slabs leading to the base of the
-                                south east face snow slopes. The slopes climb 45 degree snow and relaxing gradually to the base of the
-                                east ridge.
-                            </p>
-                            <p>
-                                The east ridge climbs at 45-50 degrees on snow, with some granite rock scrambling. The ridge leads to a
-                                30 degree snow slope to the summit. The summit takes on average 1-3 hours from the base of the snow
-                                line.
-                            </p>
-                            <h4>Ishinca North West ridge to South West ridge:</h4>  
-                            <p>
-                                Leading out of the south end of base camp lies a trail to take us to Laguna Ishinca. Once past the lake, the
-                                trail steepens and ends at the foot of the Ishinca glacier. 3-4 hours expected from base camp.
-                            </p>
-                            <p>
-                                Once on the glacier the route takes us gradually onto the north west ridge, gaining the summit with a short
-                                but steep 50 degree snow climb. 2-3 hours from the edge of the glacier to summit.
-                            </p>
-                            <p>
-                                Making a full traverse of the mountain, we will descend the south west ridge with gentle snow slopes
-                                leading off the glacier. Time to base camp can be anywhere from 3-5 hours total.
-                            </p>
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
@@ -188,12 +155,12 @@ const QuilValluna = () => {
                     </ContentContainer>
                     
                     <TripSidePanel>
-                        <p>Dates: </p>
+                        <p>Dates: <span className="trip-dates">6/17/19 - 6/28/19 (12 days)</span></p>
                         <p>Skill Level: 5</p>
                         <DownloadLink linkText="gear list" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         <PriceChart trip="quilvaluna" />
                         <div>
-                            <span>Included in the price:</span>
+                            <span className="inclusion-title">Included in the price:</span>
                             <ul>
                                 <li>All required transportation as stated in itinerary</li>
                                 <li>All meals as stated in itinerary</li>
@@ -209,7 +176,7 @@ const QuilValluna = () => {
                             </ul>
                         </div>
                         <div>
-                            <span>Not included in the price:</span>
+                            <span className="inclusion-title">Not included in the price:</span>
                             <ul>
                                 <li>International round-trip airfare to or from Lima</li>
                                 <li>Dinners in Huaraz/Lima unless stated in Itinerary</li>
@@ -255,4 +222,4 @@ const QuilValluna = () => {
     )
 }
 
-export default QuilValluna;
+export default Vallunaraju;
