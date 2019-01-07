@@ -1,5 +1,5 @@
 import { 
-    RentButton, 
+    Button, 
     TripHeader, 
     TripNav, 
     TripImage, 
@@ -8,7 +8,6 @@ import {
     TripSidePanel,
     ContentContainer,
     ContentSection,
-    GearList,
     GearInfo,
     PriceChart,
 } from '../components/styles';
@@ -33,7 +32,7 @@ const IshincaValley = () => {
                         <li><a href="#routes">Routes</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
-                        <li><a href="static/trip_application.pdf" download="Book_Trip"><RentButton>Book this trip</RentButton></a></li>
+                        <li><a href="static/trip_application.pdf" download="Book_Trip"><Button>Book this trip</Button></a></li>
                     </TripNav>                    
                 </TripHeader>
                 

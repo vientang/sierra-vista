@@ -1,5 +1,5 @@
 import { 
-    RentButton, 
+    Button, 
     TripHeader, 
     TripNav, 
     TripImage, 
@@ -41,7 +41,7 @@ const CordilleraHuayhuash = () => {
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li>
                             <a href={`static/${application}`} download="Book_Trip">
-                                <RentButton>Book this trip</RentButton>
+                                <Button>Book this trip</Button>
                             </a>
                         </li>
                     </TripNav>                    

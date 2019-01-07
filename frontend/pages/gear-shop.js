@@ -28,7 +28,6 @@ const GearShopPage = () => {
                     This list is based on our personal experience and to be used as a guide. 
                     <a href="mailto:info@sierravistaexpeditions.com.com">E-mail</a> for details.
                 </p>
-                <small>* Items are required.</small>
             </GearShop>
         </React.Fragment>
     );

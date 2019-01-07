@@ -1,40 +1,31 @@
 import React, { Component } from 'react';
-import { Query } from 'react-apollo';
 import styled from 'styled-components';
-import gql from 'graphql-tag';
 import GearItem from './GearItem';
+import TripSidePanel from './TripSidePanel';
+import Form from './Form';
+import Button from './Button';
+import Tabs from './Tabs';
+import RentalCartList from './RentalCartList';
+import RentalCartPanel from './RentalCartPanel';
+import DownloadLink from '../DownloadLink';
 import { trekkingGearData } from '../../static/gear-data';
-
-const ALL_GEAR_QUERY = gql`
-    query ALL_GEAR_QUERY {
-        items {
-            id
-            title
-            price
-            description
-            thumbnail
-            image
-        }
-    }
-`;
 
 const StyledGearShop = styled.div`
     position: relative;
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-gap: 10px;
     max-width: 100%;
-    padding: 1rem 5rem 6rem;
+    padding: 0rem 5rem 6rem 5rem;
     top: ${props => props.theme.top};
-    font-family: ${props => props.theme.standardFont};
-    font-size: 0.9rem;
+    p {
+        font-family: ${props => props.theme.standardFont};
+    }
     a {
         color: ${props => props.theme.blue};
     }
     a::before {
         content: ' ';
-    }
-    small {
-        margin: 1rem 0;
-        display: block;
-        font-style: italic;
     }
     @media(max-width: 1300px) {
         top: 120px;
@@ -42,23 +33,15 @@ const StyledGearShop = styled.div`
 `;
 
 const StyledGearSection = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
-    margin: 0 auto;
-    max-width: ${props => props.theme.maxWidth};
-`;
-
-const StyledGearList = styled.div`    
     position: relative;
-    display: flex;
-    flex-direction: column;
-    background: white;    
-    border: 1px solid ${props => props.theme.offWhite};
-    box-shadow: ${props => props.theme.bs};
-    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: ${props => props.theme.maxWidth};
+    padding: 2rem 5rem 6rem 0rem;
+    font-size: 0.9rem;
     h3 {
-        padding: 0 3rem;
+        margin: 0;
+        line-height: normal;
     }
     @media(max-width: 1300px) {
         h3 {
@@ -67,32 +50,103 @@ const StyledGearList = styled.div`
     }
 `;
 
+const StyledGearList = styled.div`    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 1rem 0;
+    border: 1px solid ${props => props.theme.offWhite};
+    box-shadow: ${props => props.theme.bs};
+    overflow: auto;
+    h3 {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+`;
+
 class GearShop extends Component {
+    state = {
+        active: 'trekking',
+        cartItems: [],
+    }
+
+    getTrekkingGearList = () => trekkingGearData.map((item, i) => (
+        <StyledGearList key={`${item.category}-${i}`}>
+            <h3>{item.category}</h3>
+            {item.items.map((gearItem, i) => (
+                <GearItem 
+                    key={`${gearItem.brand}-${i}`} 
+                    item={gearItem}
+                    addToCart={this.handleUpdateCartItems} />
+            ))}
+        </StyledGearList>
+    ));
+
+    handleUpdateCartItems = (title) => {
+        const { active } = this.state;
+        const gearList = active === 'trekking' ? trekkingGearData : climbingGearData;
+        let item = {};
+        gearList.some(category => {
+            const foundItem = category.items.find(item => item.title === title);
+            if (foundItem) {
+                item = foundItem;
+                return true;
+            }
+            return false;
+        });
+        
+        this.setState((prevState) => ({ cartItems: [ item, ...prevState.cartItems ] }))
+    }
+
+    handleTabSwitch = () => {
+        this.setState((prevState) => ({ 
+            active: prevState.active === 'trekking' ? 'climbing' : 'trekking' 
+        }));
+    }
+
     render() {
+        const { active, cartItems } = this.state;
         return (
             <StyledGearShop>
-                {this.props.children}
-                <Query query={ALL_GEAR_QUERY}>
-                    {({ loading }) => {                        
-                        if (loading) {
-                            return (
-                                <p>Loading ...</p>
-                            )
-                        }
-                        return (
-                            <StyledGearSection>
-                                {trekkingGearData.map(item => {
-                                    return (
-                                        <StyledGearList>
-                                            <h3>{item.category}</h3>
-                                            {item.items.map(gearItem => <GearItem item={gearItem} />)}
-                                        </StyledGearList>
-                                    )
-                                })}
-                            </StyledGearSection>
-                        )
-                    }}
-                </Query>
+                <StyledGearSection>
+                    {this.props.children}
+                    <Tabs>
+                        <span 
+                            className={active === 'trekking' ? 'active-tab' : ''}
+                            onClick={this.handleTabSwitch}
+                        >
+                            Trekking
+                        </span>
+                        <span 
+                            className={active === 'climbing' ? 'active-tab' : ''}
+                            onClick={this.handleTabSwitch}
+                        >
+                            Climbing
+                        </span>
+                    </Tabs>
+                    {this.getTrekkingGearList()}
+                </StyledGearSection>
+                <TripSidePanel>
+                    <RentalCartPanel>
+                        <h3>Rental items</h3>
+                        <RentalCartList>
+                            {cartItems.map(item => <span>{item.title}</span>)}
+                        </RentalCartList>
+                        <Form emptyCart={cartItems.length > 0}>
+                            <input type="text" placeholder="First name" />
+                            <input type="text" placeholder="Last name" />
+                            <input type="text" placeholder="Email" />
+                            <DownloadLink 
+                                className="rental-agreement-link"
+                                text="*Please read and sign the" 
+                                linkText="rental agreement." 
+                                url="/static/rental_terms_release_of_liability.pdf" 
+                            />
+                            <Button disabled={cartItems.length < 1}>Submit rental</Button>
+                        </Form>
+                    </RentalCartPanel>
+                </TripSidePanel>
             </StyledGearShop>
         );
     }

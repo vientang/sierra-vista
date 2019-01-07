@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { RentButton, HomePageImage, HomeInfoSection } from '../components/styles';
+import { Button, HomePageImage, HomeInfoSection } from '../components/styles';
 
 const StyledHomePage = styled.div`
     padding: 1rem 8rem;
@@ -49,7 +49,7 @@ const Home = () => {
                 <p>Cordillera Huayhuash</p>
                 <span>May 29th, 2019 - June 12, 2019</span>
                 <Link href="/cordillera-huayhuash">
-                    <a><RentButton>Reserve a spot</RentButton></a>
+                    <a><Button>Reserve a spot</Button></a>
                 </Link>
             </StyledOverlay>
             <StyledHomePage>

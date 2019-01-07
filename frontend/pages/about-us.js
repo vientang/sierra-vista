@@ -2,9 +2,12 @@ import styled from 'styled-components';
 import { TripSidePanel } from '../components/styles';
 
 const AboutUsContainer = styled.div`
+    position: relative;
     display: grid;
-    grid-template-columns: 60% 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 65% 1fr;
+    grid-gap: 10px;
+    padding: 1rem 5rem 6rem 0rem;
+    max-width: 100%;
 `;
 
 const StyledInnerSidePanel = styled.div`

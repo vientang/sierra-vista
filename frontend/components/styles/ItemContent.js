@@ -12,7 +12,7 @@ const ItemContent = styled.div`
         font-weight: 300;
         flex-grow: 1;
         padding: 0 1rem;
-        margin: 0.3rem 0;
+        margin: 0;
     }
     .buttonList {
         display: grid;

@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ItemContent from './ItemContent';
-import RentButton from './RentButton';
-import Title from './Title';
-import PriceTag from './PriceTag';
+import Button from './Button';
 
 const StyledItemGroup = styled.div`    
     position: relative;
     display: grid;
-    grid-template-columns: 10% 80% 10%;
-    padding: 0.5rem 3rem;
+    grid-template-columns: 6% 84% 10%;
+    padding: 0.8rem;
     border: 1px solid ${props => props.theme.offWhite};
+    .gear-brand {
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
     img {
         width: 40px;
         height: 40px;
@@ -24,18 +26,23 @@ const StyledItemGroup = styled.div`
 `;
 
 class GearItem extends Component {
+    handleRentGear = () => {
+        const { item: { title } } = this.props;
+        this.props.addToCart(title);
+    }
+
     render() {
-        const { item: { brand, title, desc, required } } = this.props;
-        const requiredTitle = required ? `*${title}` : title;
+        const { item: { brand, title, desc, img, required, rentable } } = this.props;
+
         return (
             <StyledItemGroup>
-                <img src="" />
+                <img src={`static/images/gear/${img}`} />
                 <ItemContent>
-                    <p>{requiredTitle}</p>
+                    <p>{title}</p>
                     <p>{desc}</p>
-                    <p>{brand}</p>
+                    <p className="gear-brand">{brand}</p>
                 </ItemContent>
-                <RentButton>Rent</RentButton>
+                {rentable && <Button onClick={this.handleRentGear}>Rent</Button>}
             </StyledItemGroup>
         );
     }

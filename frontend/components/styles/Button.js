@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const RentButton = styled.button`
+const Button = styled.button`
     position: relative;              
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ const RentButton = styled.button`
     border: 0;
     background: linear-gradient(to right, ${props => props.theme.blue}, ${props => props.theme.lightBlue});
     box-sizing: border-box;
-    cursor: pointer;
+    cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
     @media (max-width: 700px) {
         font-size: 0.8rem;      
         padding: 0 1rem;
@@ -27,7 +27,7 @@ const RentButton = styled.button`
         background: red;
         transform: translateX(-50%);
         transition: width 0.4s;
-        transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+        transition-timing-function: cubic-bezier(1, -0.65, 0, 1.31);
         left: 50%;
         margin-top: 1rem;
     }
@@ -43,4 +43,4 @@ const RentButton = styled.button`
     }
 `;
 
-export default RentButton;
+export default Button;
