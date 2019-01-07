@@ -1,31 +1,65 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_0a5735af42686c2a38b2.js"
-  ],
+  "devFiles": [],
   "pages": {
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
     ],
-    "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/gear-shop": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/about-us": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
     ],
     "/chavin": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/cordillera-huayhuash": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/gear-shop": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/ishinca": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/pisco": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/quilcayhuanca": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/vallunaraju": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
     ],
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.abf1a91786c715823a4e.js",
+      "static/runtime/main-58c0c41752325bdc43d8.js"
     ]
   }
 }
