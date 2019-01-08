@@ -5,7 +5,7 @@ import TripHeader from './TripHeader';
 import TripNav from './TripNav';
 import TripSidePanel from './TripSidePanel';
 import Button from './Button';
-import HomePageImage from './HomeImage';
+import HeroImage from './HeroImage';
 import ContentContainer from './ContentContainer';
 import ContentSection from './ContentSection';
 import GearShop from './GearShop';
@@ -26,7 +26,7 @@ export {
     TripNav,
     TripSidePanel,
     Button,
-    HomePageImage,
+    HeroImage,
     ContentContainer,
     ContentSection,
     GearShop,

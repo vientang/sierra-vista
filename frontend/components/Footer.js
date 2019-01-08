@@ -46,11 +46,14 @@ const Footer = () => {
                 <Link href="/gear-shop">
                     <a>Gear Shop</a>
                 </Link>
-                <Link href="/rental-agreement">
+                <Link href="/static/rental_terms_release_of_liability.pdf">
                     <a>Rental Agreement</a>
                 </Link>                
-                <Link href="/terms">
+                <Link href="/static/terms-and-conditions.pdf">
                     <a>Terms and Conditions</a>
+                </Link>
+                <Link href="/static/assumption-of-risk-release-of-liability.pdf">
+                    <a>Assumption of Risk and Liability</a>
                 </Link>
                 <Link href="/about-us">
                     <a>About Us</a>

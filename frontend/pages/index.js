@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { Button, HomePageImage, HomeInfoSection } from '../components/styles';
+import { Button, HeroImage, HomeInfoSection } from '../components/styles';
 
 const StyledHomePage = styled.div`
     padding: 1rem 8rem;
@@ -11,10 +11,11 @@ const StyledHomePage = styled.div`
 const StyledOverlay = styled.div`
     position: absolute;
     color: white;
-    top: 0;
+    bottom: 0;
     left: 0;
-    transform: translateY(525px);
+    margin-bottom: 5rem;
     padding: ${props => props.theme.padding};
+    background: radial-gradient(closest-corner, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
     a {
         display: inline-block;
     }
@@ -37,25 +38,31 @@ const StyledOverlay = styled.div`
     }
 `;
 
+const StyledHero = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
+`;
+
 /**
  * Link from next binds HTML5 push state to anchor tags
  */
 const Home = () => {
     return (
         <div>
-            <HomePageImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
-            <StyledOverlay>
-                <h2>Next Trip</h2>
-                <p>Cordillera Huayhuash</p>
-                <span>May 29th, 2019 - June 12, 2019</span>
-                <Link href="/cordillera-huayhuash">
-                    <a><Button>Reserve a spot</Button></a>
-                </Link>
-            </StyledOverlay>
-            <StyledHomePage>
-                <HomeInfoSection />
-            </StyledHomePage>            
-        </div>        
+            <StyledHero>
+                <HeroImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
+                <StyledOverlay>
+                    <h2>Next Trip</h2>
+                    <p>Cordillera Huayhuash</p>
+                    <span>May 29th, 2019 - June 12, 2019</span>
+                    <Link href="/cordillera-huayhuash">
+                        <a><Button>Reserve a spot</Button></a>
+                    </Link>
+                </StyledOverlay>
+            </StyledHero>
+            <HomeInfoSection />            
+        </div>
     )
 }
 

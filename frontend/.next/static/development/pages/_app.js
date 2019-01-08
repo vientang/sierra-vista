@@ -99,7 +99,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Gear Shop")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/rental-agreement",
+    href: "/static/rental_terms_release_of_liability.pdf",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
@@ -112,7 +112,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Rental Agreement")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/terms",
+    href: "/static/terms-and-conditions.pdf",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
@@ -125,7 +125,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "Terms and Conditions")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about-us",
+    href: "/static/assumption-of-risk-release-of-liability.pdf",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
@@ -137,35 +137,34 @@ var Footer = function Footer() {
       lineNumber: 56
     },
     __self: this
-  }, "About Us"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Assumption of Risk and Liability")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about-us",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
+    },
+    __self: this
+  }, "About Us"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "footer-trips-heading",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
   }, "Treks"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/cordillera-huayhuash",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "footer-trips",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "Cordillera Huayhuash")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/chavin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
@@ -178,8 +177,8 @@ var Footer = function Footer() {
       lineNumber: 65
     },
     __self: this
-  }, "Chavin de Huantar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/quilcayhuanca",
+  }, "Cordillera Huayhuash")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/chavin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -192,35 +191,35 @@ var Footer = function Footer() {
       lineNumber: 68
     },
     __self: this
-  }, "Quilcayhuanca Valley"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Chavin de Huantar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/quilcayhuanca",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "footer-trips-heading",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, "Climbs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/ishinca",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 70
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "footer-trips",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, "Quilcayhuanca Valley"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_FooterNavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 74
     },
     __self: this
-  }, "Ishinca Valley")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/pisco",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "footer-trips-heading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, "Climbs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/ishinca",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
@@ -233,8 +232,8 @@ var Footer = function Footer() {
       lineNumber: 77
     },
     __self: this
-  }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/vallunaraju",
+  }, "Ishinca Valley")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/pisco",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79
@@ -245,6 +244,20 @@ var Footer = function Footer() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 80
+    },
+    __self: this
+  }, "Pisco")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/vallunaraju",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "footer-trips",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
     },
     __self: this
   }, "Vallunaraju"))));
@@ -302,7 +315,7 @@ var LogoContainer = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].di
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-1i3qtuf-1"
-})(["position:fixed;display:grid;grid-template-columns:auto auto 1fr;justify-content:space-between;align-items:stretch;top:0;width:100%;max-width:100%;min-height:5rem;padding-left:5rem;background-color:white;border-bottom:10px solid ", ";box-sizing:border-box;z-index:2;h3{font-size:1rem;line-height:normal;padding:0 1rem;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;padding:0;h3{margin:0.4rem auto;}}"], function (props) {
+})(["position:fixed;display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;top:0;width:100%;max-width:100%;min-height:5rem;padding:0 5rem;background-color:white;border-bottom:10px solid ", ";box-sizing:border-box;z-index:2;h3{font-size:1rem;line-height:normal;padding:0 1rem;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;padding:0;h3{margin:0.4rem auto;}}"], function (props) {
   return props.theme.black;
 });
 

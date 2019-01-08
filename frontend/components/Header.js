@@ -33,14 +33,14 @@ const LogoContainer = styled.div`
 const StyledHeader = styled.header`
     position: fixed;
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr;
     justify-content: space-between;
     align-items: stretch;
     top: 0;
     width: 100%;
     max-width: 100%;
     min-height: 5rem;    
-    padding-left: 5rem;
+    padding: 0 5rem;
     background-color: white;
     border-bottom: 10px solid ${props => props.theme.black};
     box-sizing: border-box;
