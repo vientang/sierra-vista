@@ -7,6 +7,11 @@ const RentalCartPanel = styled.div`
         margin: 1rem 0;
         line-height: normal;
     }
+    p {
+        font-size: 0.8rem;
+        font-weight: normal;
+        color: ${props => props.theme.lightGrey};
+    }
     .rental-agreement-link {
         font-size: 0.65rem;
         font-weight: normal;

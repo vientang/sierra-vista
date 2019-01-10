@@ -26,11 +26,11 @@ const StyledInfoSection = styled.div`
 
 const StyledIntro = styled.div`
     display: block;
-    padding: 1rem 15rem;
+    padding: 1rem 18rem;
     text-align: center;
     p {
         font-family: ${props => props.theme.standardFont};
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         line-height: 1.5;
     }
 `;

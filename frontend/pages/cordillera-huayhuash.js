@@ -17,6 +17,7 @@ import trips from '../static/trip-data';
 const { 
     application, 
     dates, 
+    duration,
     elevations,
     gearList, 
     heroImg, 
@@ -98,7 +99,9 @@ const CordilleraHuayhuash = () => {
                     </ContentContainer>
                     
                     <TripSidePanel>
-                        <p>Dates: <span className="trip-dates">{dates}</span></p>
+                        <p>
+                            Dates: <span className="trip-dates">{dates[0]} <small>{duration}</small></span> <small>and</small> <span className="trip-dates">{dates[1]} <small>{duration}</small></span>
+                        </p>
                         <p>Skill Level: {skillLevel}</p>
                         <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
                         <PriceChart trip="huayhuash" />

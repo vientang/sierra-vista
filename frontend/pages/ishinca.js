@@ -119,11 +119,6 @@ const IshincaValley = () => {
                             <p>Day 13: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="gear">Gear List</h3>
-                            <GearInfo />
-                            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
-                        </ContentSection> 
-                        <ContentSection>
                             <h3 id="routes">Routes</h3>  
                             <h4>Urus Este South East Face/East Ridge:</h4>  
                             <p>
@@ -154,6 +149,11 @@ const IshincaValley = () => {
                                 Making a full traverse of the mountain, we will descend the south west ridge with gentle snow slopes
                                 leading off the glacier. Time to base camp can be anywhere from 3-5 hours total.
                             </p>
+                        </ContentSection>
+                        <ContentSection>
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>

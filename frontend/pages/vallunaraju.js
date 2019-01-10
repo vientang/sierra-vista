@@ -29,6 +29,7 @@ const Vallunaraju = () => {
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
+                        <li><a href="#routes">Routes</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li><a href="static/trip_application.pdf" download="Book_Trip"><Button>Book this trip</Button></a></li>
@@ -46,21 +47,6 @@ const Vallunaraju = () => {
                                 high alpine wild flowers galore. Our active rest day includes a chance to explore a second valley,
                                 Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included.
                                 Our final day, we descend gradually out of the valley to meet our transportation and head back to Huraz.
-                            </p>
-                            <h3>Vallunaraju Climb</h3>
-                            <p>
-                                Nevado Vallunaraju sits directly above the city of Huaraz with a striking twin summit. After our
-                                acclimatization day hikes and our 3 day trek we will be well acclimatized. Vallunaraju offers wonderful
-                                views of the city of Huaraz and the peaks that surround it. This is en entry level climb with relatively
-                                high altitude, and a great chance to practice cramponing, ice axe, and roped glacial travel techniques.
-                            </p>
-                            <h3>Vallunaraju Southwest Slopes</h3>
-                            <p>
-                                Departing moraine camp we will step onto the glacier after 20 minutes. Here we will gear up and begin
-                                our roped climb on the glacier. Walking on gradual glacial slopes while weaving around crevasses will
-                                take us to the col of the north and south summits. The north summit is higher and will be steeper, up to
-                                40 degree snow climbing. If time allows, we will climb the south summit as well before returning to
-                                moraine camp. 4-5 hours to north summit, 1-2 hours descent.
                             </p>
                             <p>
                                 Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques,
@@ -125,6 +111,24 @@ const Vallunaraju = () => {
                             time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima
                             one additional night to enjoy fresh seafood and nightlife. Dinner not included.</p>
                             <p>Day 12: Depart Lima for your next adventure.</p>
+                        </ContentSection>
+                        <ContentSection>
+                            <h3 id="routes">Routes</h3>  
+                            <h4>Vallunaraju Climb:</h4>  
+                            <p>
+                                Nevado Vallunaraju sits directly above the city of Huaraz with a striking twin summit. After our
+                                acclimatization day hikes and our 3 day trek we will be well acclimatized. Vallunaraju offers wonderful
+                                views of the city of Huaraz and the peaks that surround it. This is en entry level climb with relatively
+                                high altitude, and a great chance to practice cramponing, ice axe, and roped glacial travel techniques.
+                            </p>
+                            <h4>Vallunaraju Southwest Slopes</h4>
+                            <p>
+                                Departing moraine camp we will step onto the glacier after 20 minutes. Here we will gear up and begin
+                                our roped climb on the glacier. Walking on gradual glacial slopes while weaving around crevasses will
+                                take us to the col of the north and south summits. The north summit is higher and will be steeper, up to
+                                40 degree snow climbing. If time allows, we will climb the south summit as well before returning to
+                                moraine camp. 4-5 hours to north summit, 1-2 hours descent.
+                            </p>
                         </ContentSection>
                         <ContentSection>
                             <h3 id="gear">Gear List</h3>

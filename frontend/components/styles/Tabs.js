@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const Tabs = styled.div`
     display: flex;
-    border-top: 1px solid ${props => props.theme.lightGrey};
-    padding-top: 1rem;
+    border-bottom: 1px solid ${props => props.theme.lightGrey};
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     .active-tab {
         font-weight: bold;
         color: ${props => props.theme.blue};

@@ -8,7 +8,10 @@ import Tabs from './Tabs';
 import RentalCartList from './RentalCartList';
 import RentalCartPanel from './RentalCartPanel';
 import DownloadLink from '../DownloadLink';
-import { trekkingGearData } from '../../static/gear-data';
+import { trekkingGearData, climbingGearData } from '../../static/gear-data';
+
+const climbingTips = 'All of your sharp, metal items (crampons, ice axe, carabiners) and other heavy items will be packed into your larger expedition duffel and checked with your airline.  Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on duffle. It is recommended to put your climbing helmet in with your carry on, as it may break in a checked bag. Generally you will bring the large duffle to base camp, while leaving the other in the hotel. A light luggage travel scale is very helpful for last minute weight checks.';
+const trekkingTips = 'Have most of your trekking items and clothing needed for the trip in your duffle bag as checked luggage. Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on luggage. Your carry on may be a rolling type suitcase with wheels. This will also be left in the hotel while we are in the mountains. Make sure to bring TSA compliant travel locks for added security and peace of mind.';
 
 const StyledGearShop = styled.div`
     position: relative;
@@ -71,17 +74,20 @@ class GearShop extends Component {
         cartItems: [],
     }
 
-    getTrekkingGearList = () => trekkingGearData.map((item, i) => (
-        <StyledGearList key={`${item.category}-${i}`}>
-            <h3>{item.category}</h3>
-            {item.items.map((gearItem, i) => (
-                <GearItem 
-                    key={`${gearItem.brand}-${i}`} 
-                    item={gearItem}
-                    addToCart={this.handleUpdateCartItems} />
-            ))}
-        </StyledGearList>
-    ));
+    getGearList = (type) => {
+        const gearList = type === 'trekking' ? trekkingGearData : climbingGearData;
+        return gearList.map((item, i) => (
+            <StyledGearList key={`${item.category}-${i}`}>
+                <h3>{item.category}</h3>
+                {item.items.map((gearItem, i) => (
+                    <GearItem 
+                        key={`${gearItem.brand}-${i}`} 
+                        item={gearItem}
+                        addToCart={this.handleUpdateCartItems} />
+                ))}
+            </StyledGearList>
+        ));
+    }
 
     handleUpdateCartItems = (title) => {
         const { active } = this.state;
@@ -107,10 +113,12 @@ class GearShop extends Component {
 
     render() {
         const { active, cartItems } = this.state;
+        
+        const packingTips = active === 'trekking' ? trekkingTips : climbingTips;
         return (
             <StyledGearShop>
-                <StyledGearSection>
-                    {this.props.children}
+                <StyledGearSection>                    
+                <h2>Gear Shop</h2>
                     <Tabs>
                         <span 
                             className={active === 'trekking' ? 'active-tab' : ''}
@@ -125,13 +133,20 @@ class GearShop extends Component {
                             Climbing
                         </span>
                     </Tabs>
-                    {this.getTrekkingGearList()}
+                    <h3>Packing Tips</h3>
+                    <p>{packingTips}</p>
+                    <p>
+                        This list is based on our personal experience and to be used as a guide. 
+                        <a href="mailto:info@sierravistaexpeditions.com.com">E-mail</a> for details.
+                    </p>
+                    {this.getGearList(active)}                    
                 </StyledGearSection>
                 <TripSidePanel>
                     <RentalCartPanel>
                         <h3>Rental items</h3>
+                        <p>Select an item to rent and it will appear on this list.</p>
                         <RentalCartList>
-                            {cartItems.map(item => <span>{item.title}</span>)}
+                            {cartItems.map(item => <p key={item.title}>{item.title}</p>)}
                         </RentalCartList>
                         <Form emptyCart={cartItems.length > 0}>
                             <input type="text" placeholder="First name" />

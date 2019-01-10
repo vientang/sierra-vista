@@ -16,21 +16,7 @@ const GearImage = styled.img`
 const Image = <GearImage src="static/images/mountain-gear.jpg" alt="Photo by Blaise Vonlanthen on Unsplash" />;
 
 const GearShopPage = () => {
-    return (
-        <React.Fragment>            
-            <GearShop>
-                <h2>Gear Shop</h2>
-                <h3>Packing Tips</h3>
-                <p>
-                    Have most of your trekking items and clothing needed for the trip in your duffle bag as checked luggage. Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on luggage. Your carry on may be a rolling type suitcase with wheels. This will also be left in the hotel while we are in the mountains. Make sure to bring TSA compliant travel locks for added security and peace of mind.
-                </p>
-                <p>
-                    This list is based on our personal experience and to be used as a guide. 
-                    <a href="mailto:info@sierravistaexpeditions.com.com">E-mail</a> for details.
-                </p>
-            </GearShop>
-        </React.Fragment>
-    );
+    return <GearShop />
 }
 
 export default GearShopPage;

@@ -33,7 +33,7 @@ const Pisco = () => {
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                        
                         <li><a href="static/trip_application.pdf" download="Book_Trip"><Button>Book this trip</Button></a></li>
-                    </TripNav>                    
+                    </TripNav>
                 </TripHeader>
                 
                 <TripContent>
@@ -102,11 +102,6 @@ const Pisco = () => {
                             <p>Day 12: Depart Lima for your next adventure.</p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="gear">Gear List</h3>
-                            <GearInfo />
-                            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
-                        </ContentSection> 
-                        <ContentSection>
                             <h3 id="routes">Routes</h3>  
                             <h4>Pisco South West Ridge:</h4>  
                             <p>
@@ -116,6 +111,11 @@ const Pisco = () => {
                                 to the final summit wall. The wall is often steep, requiring 60 degree snow and ice climbing and 
                                 excellent crampon and ice axe placement.
                             </p>                            
+                        </ContentSection>
+                        <ContentSection>
+                            <h3 id="gear">Gear List</h3>
+                            <GearInfo />
+                            <DownloadLink linkText="printable version" text="Download a" url="/static/climbing_gear_check_list.pdf" />
                         </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
