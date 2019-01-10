@@ -15,8 +15,7 @@ const StyledInfoSection = styled.div`
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 80px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;    
     width: 100%;
     font-family: ${props => props.theme.standardFont};
     font-size: 1rem;
@@ -32,6 +31,7 @@ const StyledIntro = styled.div`
     p {
         font-family: ${props => props.theme.standardFont};
         font-size: 1.25rem;
+        line-height: 1.5;
     }
 `;
 
@@ -50,50 +50,42 @@ const HomeInfoSection = () => {
             </StyledIntro>
             <StyledInfoSection>                
                 <InfoCard 
-                    title="" 
+                    title="Assisted with animals" 
                     text="All of our trekking and climbing trips are assisted with animals, mainly burros (donkeys).
                         Everything we need for the trip including your personal gear and clothing will be transported by burros,
                         requiring you to carry only what you need for the day of hiking. This allows our guests to have lighter
                         backpacks, and more energy spent enjoying the lakes and beauty of the mountains." 
-                    imgSrc="climber.jpg"
+                    imgSrc="burro.jpg"
                     imagePosition="left"
                 />
                 <InfoCard 
-                    title="" 
+                    title="Local food" 
                     text="The food we provide is excellent, hands down. We will be eating the local cuisine while on our
                         trek or climb. Examples of meals are pastas, rice, potatoes, trout, chicken, beef, oatmeal, quinoa,
                         puddings, eggs and breads. All of the food is purchased fresh in the local markets of Huaraz, and cooked
                         with a high degree of sanitation by our certified cooks. We may be able to accommodate certain dietary
                         restrictions with an advanced notice." 
-                    imgSrc="climber.jpg"
+                    imgSrc="food.jpg"
                     imagePosition="right"
                 />
                 <InfoCard 
-                    title="" 
+                    title="Hospitality" 
                     text="We select excellent hotels in Lima and Huaraz with hot showers and continental breakfast
                     provided. They are located in the best affluent areas, close to restaurants and many attractions. All of the
                     transportation provided is with certified commercial drivers, and the vehicles are regularly inspected for
                     safety and maintenance." 
-                    imgSrc="climber.jpg"
+                    imgSrc="girl_on_street.jpg"
                     imagePosition="left"
                 />
                 <InfoCard 
-                    title="" 
+                    title="Equipment" 
                     text="The equipment we provide on our trips is of the highest quality. Popular brand names you may
                     recognize are selected for their durability and comfort. We provide a dining tent complete with tables and
                     chairs, plates and bowls, cups and cutlery. Also provided, is a complimentary 3 person tent with double
                     occupancy during our treks and climbs. All ropes are provided for trips requiring them." 
-                    imgSrc="climber.jpg"
-                    imagePosition="left"
-                />
-                <InfoCard 
-                    title="" 
-                    text="We look forward to not only working with you but for you. Please contact us directly for any
-                    and all inquiries. We look forward to providing you with one of the best all inclusive international travel
-                    adventures available!" 
-                    imagePosition="left"
-                    imgSrc="climber.jpg"
-                />
+                    imgSrc="man_w_gear.jpg"
+                    imagePosition="right"
+                /> 
                 <InfoCard 
                     title="Private trips" 
                     text="Private trips are a great way to make your trip as private and customized as possible and to limit team size
@@ -102,8 +94,16 @@ const HomeInfoSection = () => {
                     the perfect custom itinerary suited for your needs." 
                     imagePosition="left"
                     imgSrc="climber.jpg"
-                />
+                /> 
             </StyledInfoSection>
+            <StyledIntro>
+                <p>
+                We look forward to not only working with you but for you. Please contact us directly for any
+                and all inquiries. We look forward to providing you with one of the best all inclusive international travel
+                adventures available!
+                </p>
+            </StyledIntro>
+                           
         </React.Fragment>
     )
 }

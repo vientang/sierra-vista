@@ -14,6 +14,7 @@ const theme = {
     offWhite: '#EDEDED',
     padding: '1rem 5rem',
     red: '#FF0000',
+    headingFont: 'radnika_next',
     standardFont: 'Arial, Helvetica, sans-serif',
     top: '75px',
 };
