@@ -18,6 +18,16 @@ const StyledInnerSidePanel = styled.div`
         margin: 1rem 0;
         line-height: normal;
     }
+    .staff-name,
+    .staff-title {
+        line-height: normal;
+    }
+    .staff-name {
+        font-size: 1.1rem;
+    }
+    .staff-title {
+        color: ${props => props.theme.mdGrey};
+    }
     .staff-desc {
         font-family: ${props => props.theme.standardFont};
         font-weight: normal;
@@ -41,7 +51,7 @@ const StyledContactInfo = styled.div`
     a {
         font-family: ${props => props.theme.standardFont};
         font-size: 0.8rem;
-        letter-spacing: 1.2px;
+        letter-spacing: 0.5px;
         line-height: normal;
     }
     a:hover {
@@ -92,8 +102,8 @@ const AboutUs = () => {
                         <a href="mailto:info@sierravistaexpeditions.com.com">info@sierravistaexpeditions.com</a>
                     </StyledContactInfo>
                     <h3>Staff</h3>
-                    <p>Josh Miller</p>
-                    <p>Expedition Leader</p>
+                    <p className="staff-name">Josh Miller</p>
+                    <p className="staff-title">Expedition Leader</p>
                     <p className="staff-desc">
                         Josh was born in Columbus, Ohio and quickly realized this was not the place for him. He began
                         exploring and climbing in California in 2010. He has climbed extensively throughout California, Utah,
@@ -107,8 +117,8 @@ const AboutUs = () => {
                         Peru, and his winters in either Brazil or climbing frozen waterfalls in the San Juan Mountains of
                         Colorado.
                     </p>
-                    <p>Marisete Quadrado</p>
-                    <p>Logistics Coordinator</p>
+                    <p className="staff-name">Marisete Quadrado</p>
+                    <p className="staff-title">Logistics Coordinator</p>
                     <p className="staff-desc">
                         Marisete is a native of Brazil. Born in a farming community, she has a passion for plants and
                         nature. After having her own practice in physical therapy, she decided to travel to Colorado where she

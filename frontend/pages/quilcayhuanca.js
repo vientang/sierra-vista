@@ -22,7 +22,7 @@ import DownloadLink from '../components/DownloadLink';
 const QuilcayhuancaValley = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/mountain1.jpg" alt="Quilcayhuanca Valley" />
+            <TripImage src="static/images/llamas.jpg" alt="Quilcayhuanca Valley" />
             <TripContainer>
                 <TripHeader>
                     <h2>Quilcayhuanca Valley</h2>

@@ -22,7 +22,7 @@ import DownloadLink from '../components/DownloadLink';
 const Pisco = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/IMG_3676.JPG" alt="Pisco" />
+            <TripImage src="static/images/pisco.jpg" alt="Pisco" />
             <TripContainer>
                 <TripHeader>
                     <h2>Pisco 5,750m (18,870ft)</h2>

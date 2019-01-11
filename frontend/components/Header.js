@@ -46,7 +46,7 @@ const StyledHeader = styled.header`
     box-sizing: border-box;
     z-index: 2;
     h3 {
-        font-size: 1rem;
+        font-size: 1rem; 
         line-height: normal;
         padding: 0 1rem;
     }

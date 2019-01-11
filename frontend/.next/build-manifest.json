@@ -15,7 +15,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/cordillera-huayhuash": [
+    "/about-us": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/ishinca": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

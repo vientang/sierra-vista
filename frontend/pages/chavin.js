@@ -22,7 +22,7 @@ import DownloadLink from '../components/DownloadLink';
 const Olleros = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/chinchey.jpg" alt="Olleros to Chavin" />
+            <TripImage src="static/images/chinchey-1.jpg" alt="Olleros to Chavin" />
             <TripContainer>
                 <TripHeader>
                     <h2>Olleros to Chavin Cultural Trek 4 Days</h2>

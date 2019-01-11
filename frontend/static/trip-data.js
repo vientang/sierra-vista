@@ -3,7 +3,7 @@ import priceData from './price-data';
 const trips = {
     huayhuash: {
         application: 'trip_application.pdf',
-        heroImg: 'lake.jpg',
+        heroImg: 'camping2.jpg',
         gearList: 'trekking_gear_check_list.pdf',
         dates: ['5/29/19 - 6/12/19', '8/7/19 - 8/21/19'],
         duration: '(15 days)',

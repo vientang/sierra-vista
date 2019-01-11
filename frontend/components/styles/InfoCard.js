@@ -3,23 +3,12 @@ import styled from 'styled-components';
 const StyledInfoCard = styled.div`
     display: flex;
     align-items: center;
-    background-color: white;
     width: 100%;
     height: auto;
-    padding: 1rem;
     color: ${props => props.theme.black};    
     font-size: 1rem;
     line-height: 1.5;
     box-sizing: border-box;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        width: 50%;
-        left: 25%;
-        border-bottom: 2px solid ${props => props.theme.lightGrey};
-    }
 `;
 
 const ImageContainer = styled.div`
@@ -39,7 +28,8 @@ const InfoContent = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 0 2rem;
+    padding: 2rem ${props => props.imagePosition === 'right' ? '2rem' : 0} 2rem ${props => props.imagePosition === 'left' ? '2rem' : 0};
+    text-align: ${props => props.imagePosition};
     p {
         margin: 0;
     }
@@ -57,9 +47,9 @@ const getImage = (imgSrc, title) => {
     ) : null;
 }
 
-const getInfoSection = (text, title) => {
+const getInfoSection = (text, title, imagePosition) => {
     return (
-        <InfoContent>
+        <InfoContent imagePosition={imagePosition}>
             <p className="info-title">{title}</p>
             <p>{text}</p>
         </InfoContent>
@@ -69,9 +59,9 @@ const getInfoSection = (text, title) => {
 const InfoCard = ({ imagePosition, imgSrc, title, text }) => {
     return (
         <StyledInfoCard>
-            {imagePosition === 'right' && getInfoSection(text, title)}
+            {imagePosition === 'right' && getInfoSection(text, title, imagePosition)}
             {getImage(imgSrc, title)}
-            {imagePosition === 'left' && getInfoSection(text, title)}
+            {imagePosition === 'left' && getInfoSection(text, title, imagePosition)}
         </StyledInfoCard>
     )
 }

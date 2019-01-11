@@ -13,29 +13,29 @@ import GearList from './GearList';
 import GearItem from './GearItem';
 import GearInfo from './GearInfo';
 import PriceChart from './PriceChart';
-import HomeInfoSection from './HomeInfoSection';
 import Tabs from './Tabs';
 import RentalCartPanel from './RentalCartPanel';
 import RentalCartList from './RentalCartList';
+import InfoCard from './InfoCard';
 
 export {
+    Button,
+    ContentContainer,
+    ContentSection,
+    GearItem,
+    GearInfo,
+    GearList,
+    GearShop,
+    HeroImage,
+    InfoCard,
+    PriceChart,
+    RentalCartList,
+    RentalCartPanel,
+    Tabs,
     TripContainer,
     TripContent,
     TripImage,
     TripHeader,
     TripNav,
     TripSidePanel,
-    Button,
-    HeroImage,
-    ContentContainer,
-    ContentSection,
-    GearShop,
-    GearList,
-    GearItem,
-    GearInfo,
-    PriceChart,
-    HomeInfoSection,
-    Tabs,
-    RentalCartPanel,
-    RentalCartList,
 }

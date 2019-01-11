@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const TripSidePanel = styled.div`
     flex: 0 1 30%;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     font-size: 0.9rem;    
     background-color: rgba(225, 225, 225, 0.4);
     p,
@@ -18,7 +18,7 @@ const TripSidePanel = styled.div`
     span,
     li {
         font-size: 0.8rem;
-        line-height: normal;
+        line-height: 1.5;
     }
     .inclusion-title {
         font-style: italic;

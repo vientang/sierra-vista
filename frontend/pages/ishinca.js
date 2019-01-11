@@ -22,7 +22,7 @@ import DownloadLink from '../components/DownloadLink';
 const IshincaValley = () => {
     return (
         <React.Fragment>
-            <TripImage src="static/images/IMG_0010_4.JPG" alt="Ishinca Valley" />
+            <TripImage src="static/images/condor.JPG" alt="Ishinca Valley" />
             <TripContainer>
                 <TripHeader>
                     <h2>Ishinca Valley Expedition</h2>
