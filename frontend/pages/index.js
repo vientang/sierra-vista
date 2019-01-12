@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
-import { Button, HeroImage, HomeInfoSection, InfoCard } from '../components/styles';
+import { Button, HeroImage, InfoCard } from '../components/styles';
 
 const fadeIn = keyframes`
     from {
@@ -20,12 +20,13 @@ const StyledHero = styled.div`
 
 const StyledOverlay = styled.div`
     position: absolute;
-    color: white;
+    color: ${props => props.theme.offWhite};
     bottom: 0;
     left: 0;
     margin-bottom: 5rem;
     padding: ${props => props.theme.padding};
     background: radial-gradient(closest-corner, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+    h2,
     a {
         display: inline-block;
     }
@@ -36,6 +37,7 @@ const StyledOverlay = styled.div`
         filter: drop-shadow(.05em .05em ${props => props.theme.grey});
     }
     h2 {
+        border-bottom: 1px solid ${props => props.theme.offWhite};
         font-size: 1rem;
         text-transform: uppercase;
         line-height: normal;
@@ -67,11 +69,14 @@ const StyledInfoSection = styled.div`
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;    
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
     width: 100%;
+    height: 1425px;
     font-family: ${props => props.theme.standardFont};
     font-size: 1rem;
-    padding: 1rem 15rem;
+    padding: 3rem 15rem;
     background: rgb(244,251,249);
     background: ${props => props.theme.ltGrnGradient};
     animation: ${fadeIn} 0.5s ease-in;
@@ -126,8 +131,6 @@ const Home = () => {
                     imgSrc="food.jpg"
                     imagePosition="right"
                 />
-            </StyledInfoSection>
-            <StyledInfoSection>
                 <InfoCard 
                     title="Hospitality" 
                     text="We select excellent hotels in Lima and Huaraz with hot showers and continental breakfast
@@ -147,15 +150,17 @@ const Home = () => {
                     imagePosition="right"
                 /> 
             </StyledInfoSection>
-                <InfoCard 
-                    title="Private trips" 
-                    text="Private trips are a great way to make your trip as private and customized as possible and to limit team size
+            <StyledIntro>
+                <div>
+                    <h3>Private trips</h3>
+                    <p>
+                    Private trips are a great way to make your trip as private and customized as possible and to limit team size
                     to a pre-organized group. In a lot of cases we can add porters, acclimatization days, rest days, or even add
                     additional summits to your customized trip. Please inquire directly with us to talk about options, and plan
-                    the perfect custom itinerary suited for your needs." 
-                    imagePosition="left"
-                    imgSrc="climber.jpg"
-                />             
+                    the perfect custom itinerary suited for your needs.
+                    </p>
+                </div>
+            </StyledIntro>
             <StyledIntro>
                 <p>
                     We look forward to not only working with you but for you. Please contact us directly for any
@@ -163,6 +168,7 @@ const Home = () => {
                     adventures available!
                 </p>
             </StyledIntro>
+            
         </div>
     )
 }

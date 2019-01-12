@@ -13,17 +13,18 @@ const TripNav = styled.ul`
         position: relative;                
         white-space: nowrap;        
         border: 0;
+        transition: transform 200ms ease-in-out, filter 200ms ease-in-out, box-shadow 200ms ease-in-out;
         cursor: pointer; 
         &:after {
             content: '';
             position: absolute;
             height: 2px;
             width: 0;
+            background: ${props => props.theme.lightBlue};
+            margin-top: 1.40rem;
             left: 50%;
-            margin-top: 2rem;
-            background: ${props => props.theme.red};
             transform: translateX(-50%);
-            transition: width 0.4s;
+            transition: width 250ms ease-in-out;
             transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
         }
         &:hover,

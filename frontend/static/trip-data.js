@@ -2,6 +2,8 @@ import priceData from './price-data';
 
 const trips = {
     huayhuash: {
+        name: 'Cordillera Huayhuash',
+        url: '/cordillera-huayhuash',
         application: 'trip_application.pdf',
         heroImg: 'camping2.jpg',
         gearList: 'trekking_gear_check_list.pdf',

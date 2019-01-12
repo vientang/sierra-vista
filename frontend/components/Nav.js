@@ -6,25 +6,25 @@ const Nav = () => {
     return (
         <NavStyles>
             <Link href="/cordillera-huayhuash">
-                <a>Cordillera Huayhuash</a>
+                <a><span>Cordillera Huayhuash</span></a>
             </Link>
             <Link href="/chavin">
-                <a>Chavin de Huantar</a>
+                <a><span>Chavin de Huantar</span></a>
             </Link>
             <Link href="/quilcayhuanca">
-                <a>Quilcayhuanca Valley</a>
+                <a><span>Quilcayhuanca Valley</span></a>
             </Link>
             <Link href="/ishinca">
-                <a>Ishinca Valley</a>
+                <a><span>Ishinca Valley</span></a>
             </Link>
             <Link href="/pisco">
-                <a>Pisco</a>
+                <a><span>Pisco</span></a>
             </Link>
             <Link href="/vallunaraju">
-                <a>Vallunaraju</a>
+                <a><span>Vallunaraju</span></a>
             </Link>
             <Link href="/about-us">
-                <a>About Us</a>
+                <a><span>About Us</span></a>
             </Link>
         </NavStyles>
     );

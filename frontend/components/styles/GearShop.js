@@ -19,8 +19,7 @@ const StyledGearShop = styled.div`
     grid-template-columns: 65% 1fr;
     grid-gap: 10px;
     max-width: 100%;
-    padding: 0rem 5rem 6rem 5rem;
-    top: ${props => props.theme.top};
+    padding: 0rem 5rem;
     p {
         font-family: ${props => props.theme.standardFont};
     }

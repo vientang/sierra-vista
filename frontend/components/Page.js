@@ -42,7 +42,9 @@ const StyledPage = styled.div`
 `;
 
 const InnerPage = styled.div`
+    position: relative;
     max-width: 100%;
+    top: ${props => props.theme.top};
 `;
 
 class Page extends Component {

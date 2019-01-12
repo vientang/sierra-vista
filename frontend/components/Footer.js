@@ -22,7 +22,8 @@ const StyledFooter = styled.footer`
     justify-content: space-between;
     width: 100%;
     max-width: 100%;
-    height: 15rem;
+    height: 20rem;
+    top: ${props => props.theme.top};
     bottom: 0;
     overflow: hidden;
     padding: 2rem 5rem;

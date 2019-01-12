@@ -18,7 +18,6 @@ const StyledItemGroup = styled.div`
         width: 40px;
         height: 40px;
         min-width: 100%;
-        border: 1px solid ${props => props.theme.offWhite};
     }
     @media(max-width: 1300px) {
         padding: 0.5rem 1rem;

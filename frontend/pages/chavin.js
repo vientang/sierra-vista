@@ -107,7 +107,7 @@ const Olleros = () => {
                             <h3 id="gear">Gear List</h3>
                             <GearInfo />
                             <DownloadLink linkText="printable version" text="Download a" url="/static/trekking_gear_check_list.pdf" />                     
-                        </ContentSection>                        
+                        </ContentSection>
                         <ContentSection>
                             <h3 id="acclimatization">Acclimatization Process:</h3>
                             <p>
