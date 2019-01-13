@@ -32,7 +32,7 @@ const {
     title, 
  } = trips.huayhuash;
 
-const CordilleraHuayhuash = () => {
+const CordilleraHuayhuash = () => {    
     return (
         <React.Fragment>
             <HeroImage src={heroImg} alt={name} base64={base64} />
@@ -55,7 +55,10 @@ const CordilleraHuayhuash = () => {
                 <TripContent>
                     <ContentContainer>
                         <ContentSection>
-                            {overview.map((text, i) => <p key={i} className="overview-section" id={i === 0 ? 'overview' : null}>{text}</p>)}
+                            <h3 id="overview">Olleros to Chavin de Huantar</h3>
+                            <p className="overview-section">{overview[0]}</p>
+                            <h3>Chavin de Huantar</h3>
+                            <p className="overview-section">{overview[1]}</p>     
                         </ContentSection>
                         <ContentSection>
                             <div className="basic-itinerary">

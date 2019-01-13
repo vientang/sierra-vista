@@ -33,12 +33,6 @@ const {
     title, 
  } = trips.ishinca;
 
-/**
- * This page holds the content for Ishinca Valley trip.
- * Includes photo, quick itinerary, detailed itinerary, information, 
- * skill level, cost, gear, elevation, experience gained, routes,
- * not included in cost
- */
 const IshincaValley = () => {
     return (
         <React.Fragment>

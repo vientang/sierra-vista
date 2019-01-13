@@ -30,12 +30,6 @@ const {
     title, 
  } = trips.chavin;
 
-/**
- * This page holds the content for Olleros to Chavin trip.
- * Includes photo, quick itinerary, detailed itinerary, information, 
- * skill level, cost, gear, elevation, experience gained, routes,
- * not included in cost
- */
 const Olleros = () => {
     return (
         <React.Fragment>

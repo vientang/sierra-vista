@@ -8,6 +8,7 @@ import GroupIcon from './GroupIcon';
 import GuideIcon from './GuideIcon';
 import HospitalityIcon from './HospitalityIcon';
 import ItineraryIcon from './ItineraryIcon';
+import MountainBackdrop from './MountainBackdrop';
 import RoutesIcon from './RoutesIcon';
 
 export {
@@ -21,5 +22,6 @@ export {
     GuideIcon,
     HospitalityIcon,
     ItineraryIcon,
+    MountainBackdrop,
     RoutesIcon,
 }

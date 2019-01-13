@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
 import { Button, HeroImage, InfoCard } from '../components/styles';
-import { EmailIcon, GroupIcon } from '../components/icons';
+import { EmailIcon, GroupIcon, MountainBackdrop } from '../components/icons';
 
 const fadeIn = keyframes`
     from {
@@ -191,6 +191,7 @@ const PrivateTrips = () => (
 
 const Outro = () => (
     <StyledOutro>
+        <MountainBackdrop />
         <EmailIcon />
         <h3>Contact us</h3>
         <p>

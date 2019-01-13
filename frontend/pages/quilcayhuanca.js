@@ -54,7 +54,6 @@ const QuilcayhuancaValley = () => {
                 <TripContent>
                     <ContentContainer>
                         <ContentSection>
-                            <h3 id="overview">Quilcayhuanca Trek</h3>  
                             {overview.map((text, i) => <p key={i} className="overview-section" id={i === 0 ? 'overview' : null}>{text}</p>)}
                         </ContentSection>
                         <ContentSection>

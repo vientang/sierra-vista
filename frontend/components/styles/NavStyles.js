@@ -26,13 +26,13 @@ const NavStyles = styled.ul`
         &:before {
             content: '';
             position: absolute;
-            width: 2px;
-            height: 100%;
+            width: 1px;
+            height: 40%;
+            margin: auto 0;
             background: ${props => props.theme.lightGrey};
             left: 0;
             top: 0;
             bottom: 0;
-            transform: skew(-20deg);
         }
         span {
             position: relative;
@@ -70,9 +70,8 @@ const NavStyles = styled.ul`
     @media (max-width: 1300px) {
         justify-content: center;
         width: 100%;
-        border-top: 1px solid ${props => props.theme.lightGrey};
         a {
-            font-size: 0.6rem;
+            font-size: 0.7rem;
         }
     }
 `;

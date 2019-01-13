@@ -14,9 +14,7 @@ const trips = {
         priceInfo: priceData.find(tripPrice => tripPrice.trip === 'huayhuash'),
         title: 'Cordillera Huayhuash 10 Day Circuit',
         overview: [
-            'Olleros to Chavin de Huantar',
             'The Cordillera Huayhuash is an isolated and compact collection of mountains in the Peruvian Andes. Lying 100km south of Huaraz, this range hosts less trekkers and climbers, due to it\'s isolation. Ranked one of the top 10 treks in the world, trekking in the Huayhuash will never disappoint. Our Itinerary is a shortened version of the traditional 12-16 day trek. Due to recent improvements with access, this is made possible.',
-            'Chavin de Huantar',
             'The Cordillera Huayhuash was a completely unprotected area until 2002, when the Peruvian government declared it a reserved area. However, the actual owners of this land, the communities situated around the range, have designated their own respective holdings, which they themselves manage. April through October is considered the dry season, with low chances of wind and rain. Temperatures can be up to 70 degrees on a bright sunny day, while dropping at or just below freezing in the early morning.',
         ],
         itinerary: {
