@@ -3,12 +3,11 @@ import {
     ContentContainer,
     ContentSection,
     GearInfo,
+    HeroImage, 
     PriceChart,
     TripContainer, 
     TripContent, 
-    TripDates,
     TripHeader, 
-    TripImage, 
     TripNav, 
     TripSidePanel,
 } from '../components/styles';
@@ -18,8 +17,8 @@ import trips from '../static/trip-data';
 
 const { 
     application, 
+    base64,
     dates, 
-    duration,
     elevations,
     gearList, 
     heroImg, 
@@ -40,7 +39,7 @@ const {
 const Olleros = () => {
     return (
         <React.Fragment>
-            <TripImage src={`static/images/${heroImg}`} alt={name} />
+            <HeroImage src={heroImg} alt={name} base64={base64} />
             <TripContainer>
                 <TripHeader>
                     <h2>{title}</h2>

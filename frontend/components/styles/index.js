@@ -1,12 +1,11 @@
 import TripContainer from './TripContainer';
 import TripContent from './TripContent';
-import TripImage from './TripImage';
+import HeroImage from './HeroImage';
 import TripHeader from './TripHeader';
 import TripNav from './TripNav';
 import TripSidePanel from './TripSidePanel';
 import TripDates from './TripDates';
 import Button from './Button';
-import HeroImage from './HeroImage';
 import ContentContainer from './ContentContainer';
 import ContentSection from './ContentSection';
 import GearShop from './GearShop';
@@ -36,7 +35,6 @@ export {
     TripContainer,
     TripContent,
     TripDates,
-    TripImage,
     TripHeader,
     TripNav,
     TripSidePanel,
