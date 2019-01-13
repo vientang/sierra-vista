@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ItemContent from './ItemContent';
-import Button from './Button';
+import { AddIcon } from '../icons';
 
 const StyledItemGroup = styled.div`    
     position: relative;
@@ -13,6 +13,15 @@ const StyledItemGroup = styled.div`
     .gear-brand {
         font-weight: bold;
         margin-top: 0.5rem;
+    }
+    .add-icon {
+        margin-left: auto;
+        &:hover {
+            cursor: pointer;
+            path {
+                fill: ${props => props.theme.mdBlue};
+            }
+        }
     }
     img {
         width: 40px;
@@ -41,7 +50,7 @@ class GearItem extends Component {
                     <p>{desc}</p>
                     <p className="gear-brand">{brand}</p>
                 </ItemContent>
-                {rentable && <Button onClick={this.handleRentGear}>Rent</Button>}
+                {rentable && <AddIcon className="add-icon" onClick={this.handleRentGear} size={20} />}
             </StyledItemGroup>
         );
     }

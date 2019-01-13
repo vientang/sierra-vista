@@ -1,14 +1,18 @@
 import styled from 'styled-components';
+import { FoodIcon, GearIcon, GuideIcon, HospitalityIcon } from '../icons';
 
 const StyledInfoCard = styled.div`
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     height: auto;
     color: ${props => props.theme.black};    
     font-size: 1rem;
     line-height: 1.5;
     box-sizing: border-box;
+    .icon-right-align {
+        margin-left: auto;
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -28,14 +32,20 @@ const InfoContent = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 2rem ${props => props.imagePosition === 'right' ? '2rem' : 0} 2rem ${props => props.imagePosition === 'left' ? '2rem' : 0};
+    padding: 0 ${props => props.imagePosition === 'right' ? '2rem' : 0} 2rem ${props => props.imagePosition === 'left' ? '2rem' : 0};
     text-align: ${props => props.imagePosition};
     p {
-        margin: 0;
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
     }
     .info-title {
+        display: flex;
+        align-items: center;
         font-family: ${props => props.theme.headingFont};
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        svg {
+            margin-right: 1rem;
+        }
     }
 `;
 
@@ -47,21 +57,40 @@ const getImage = (imgSrc, title) => {
     ) : null;
 }
 
-const getInfoSection = (text, title, imagePosition) => {
+const getInfoSection = (text, title, imagePosition, sectionIcon) => {
     return (
-        <InfoContent imagePosition={imagePosition}>
-            <p className="info-title">{title}</p>
+        <InfoContent imagePosition={imagePosition}>            
+            <p className="info-title">{sectionIcon}{title}</p>
             <p>{text}</p>
         </InfoContent>
     )
 };
 
-const InfoCard = ({ imagePosition, imgSrc, title, text }) => {
+const getIcon = (name) => {
+    switch(name) {
+        case 'food': {
+            return <FoodIcon size={28} className="icon-right-align" />;
+        }            
+        case 'gear': {
+            return <GearIcon size={28} className="icon-right-align" />;
+        }
+        case 'guide': {
+            return <GuideIcon size={28} />;
+        }
+        case 'hospitality': {
+            return <HospitalityIcon size={28} />;
+        }
+        default: 
+            return null;
+    }
+}
+const InfoCard = ({ imagePosition, icon, imgSrc, title, text }) => {
+    const sectionIcon = getIcon(icon);
     return (
         <StyledInfoCard>
-            {imagePosition === 'right' && getInfoSection(text, title, imagePosition)}
+            {imagePosition === 'right' && getInfoSection(text, title, imagePosition, sectionIcon)}
             {getImage(imgSrc, title)}
-            {imagePosition === 'left' && getInfoSection(text, title, imagePosition)}
+            {imagePosition === 'left' && getInfoSection(text, title, imagePosition, sectionIcon)}
         </StyledInfoCard>
     )
 }

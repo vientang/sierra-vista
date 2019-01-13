@@ -8,6 +8,11 @@ const FooterNavStyles = styled.ul`
     padding: 0;
     font-size: 1rem;
     p {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.5;
+    }
+    .footer-site-name {
         font-family: 'radnika_next';
         margin: 0 0 0 0.5rem;
     }
@@ -18,6 +23,7 @@ const FooterNavStyles = styled.ul`
     .footer-trips-heading {
         align-self: flex-end;
         font-size: 0.8rem;
+        line-height: 2;
         text-transform: uppercase;
         color: white;
     }
@@ -39,13 +45,19 @@ const FooterNavStyles = styled.ul`
         @media (max-width: 700px) {
             font-size: 0.8rem;      
             padding: 0 15px;
-        }    
+        }
         &:hover,
         &:focus {
             color: ${props => props.theme.blue};
             outline: none;
         }
-    }    
+        span {
+            display: inline-block;
+        }
+    }
+    .footer-links {
+        display: inline-block;
+    }
     @media (max-width: 1300px) {
         border-top: 1px solid ${props => props.theme.lightGrey};
         width: 100%;

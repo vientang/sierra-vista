@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const TripSidePanel = styled.div`
     flex: 0 1 30%;
-    padding: 1rem 1.5rem;
+    padding: ${props => props.paddingTop ? props.paddingTop : '1rem'} 1.5rem;
     font-size: 0.9rem;    
     background-color: rgba(225, 225, 225, 0.4);
     p,
-    ul {        
+    ul {
         margin: 0;
     }
     ul {
@@ -43,12 +43,8 @@ const TripSidePanel = styled.div`
         color: ${props => props.theme.blue};
     }
     .staff-heading,
-    .staff-name,
     .staff-title {
         line-height: normal;
-    }
-    .staff-name {
-        font-size: 1.1rem;
     }
     .staff-desc {
         margin: 1rem 0;

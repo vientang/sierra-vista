@@ -42,23 +42,33 @@ const Footer = () => {
             <FooterImage src="static/images/mountain-gear.jpg" alt="Photo by Blaise Vonlanthen on Unsplash" />
             <FooterNavStyles>
                 <Link href="/">
-                    <a className="footer-logo"><Logo size="25px" /><p>Sierra Vista Expeditions LLC</p></a>
+                    <a className="footer-logo"><Logo size="25px" /><p className="footer-site-name">Sierra Vista Expeditions LLC</p></a>
                 </Link>
-                <Link href="/gear-shop">
-                    <a>Gear Shop</a>
-                </Link>
-                <Link href="/static/rental_terms_release_of_liability.pdf">
-                    <a>Rental Agreement</a>
-                </Link>                
-                <Link href="/static/terms-and-conditions.pdf">
-                    <a>Terms and Conditions</a>
-                </Link>
-                <Link href="/static/assumption-of-risk-release-of-liability.pdf">
-                    <a>Assumption of Risk and Liability</a>
-                </Link>
-                <Link href="/about-us">
-                    <a>About Us</a>
-                </Link>
+                <p>
+                    <Link href="/gear-shop">
+                        <a className="footer-links">Gear Shop</a>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="/static/rental_terms_release_of_liability.pdf">
+                        <a className="footer-links">Rental Agreement</a>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="/static/terms-and-conditions.pdf">
+                        <a className="footer-links">Terms and Conditions</a>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="/static/assumption-of-risk-release-of-liability.pdf">
+                        <a className="footer-links">Assumption of Risk and Liability</a>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="/about-us">
+                        <a className="footer-links">About Us</a>
+                    </Link>
+                </p>
             </FooterNavStyles>
             <FooterNavStyles>
                 <p className="footer-trips-heading">Treks</p>

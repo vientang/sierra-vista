@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
 import { Button, HeroImage, InfoCard } from '../components/styles';
+import { EmailIcon, GroupIcon } from '../components/icons';
 
 const fadeIn = keyframes`
     from {
@@ -10,6 +11,12 @@ const fadeIn = keyframes`
     to {
         opacity: 1;
     }
+`;
+
+const StyledHome = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100%;
 `;
 
 const StyledHero = styled.div`
@@ -65,6 +72,30 @@ const StyledIntro = styled.div`
     }
 `;
 
+const StyledOutro = styled.div`
+    display: block;
+    padding: 5rem 20rem;
+    text-align: center;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 30%;
+        background: ${props => props.theme.lightGrey};
+        margin-top: -5.45rem;
+        left: 35%;
+    }
+    p {
+        font-family: ${props => props.theme.standardFont};
+        font-size: 1.15rem;
+        color: #555555;
+        line-height: 1.5;
+    }
+    h3 {
+        margin: 0;
+    }
+`;
+
 const StyledInfoSection = styled.div`
     position: relative;
     display: grid;
@@ -77,10 +108,11 @@ const StyledInfoSection = styled.div`
     font-family: ${props => props.theme.standardFont};
     font-size: 1rem;
     padding: 3rem 15rem;
-    background: rgb(244,251,249);
-    background: ${props => props.theme.ltGrnGradient};
+    background: linear-gradient(to right bottom, rgba(208,243,251,0.25) 0%, rgba(187,224,240,0.5) 50%, rgba(176,222,237,0.25) 75%);
+    background-size: 100%;
+	background-repeat: no-repeat;
     animation: ${fadeIn} 0.5s ease-in;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 `;
 
 /**
@@ -88,7 +120,7 @@ const StyledInfoSection = styled.div`
  */
 const Home = () => {
     return (
-        <div>
+        <StyledHome>
             <StyledHero>
                 <HeroImage src="static/images/lake.jpg" alt="Cordillera Huayhuash" />
                 <StyledOverlay>
@@ -120,6 +152,7 @@ const Home = () => {
                         backpacks, and more energy spent enjoying the lakes and beauty of the mountains." 
                     imgSrc="burro.jpg"
                     imagePosition="left"
+                    icon="guide"
                 />
                 <InfoCard 
                     title="Local food" 
@@ -130,6 +163,7 @@ const Home = () => {
                         restrictions with an advanced notice." 
                     imgSrc="food.jpg"
                     imagePosition="right"
+                    icon="food"
                 />
                 <InfoCard 
                     title="Hospitality" 
@@ -139,6 +173,7 @@ const Home = () => {
                     safety and maintenance." 
                     imgSrc="girl_on_street.jpg"
                     imagePosition="left"
+                    icon="hospitality"
                 />
                 <InfoCard 
                     title="Equipment" 
@@ -148,10 +183,12 @@ const Home = () => {
                     occupancy during our treks and climbs. All ropes are provided for trips requiring them." 
                     imgSrc="man_w_gear.jpg"
                     imagePosition="right"
+                    icon="gear"
                 /> 
             </StyledInfoSection>
             <StyledIntro>
                 <div>
+                    <GroupIcon />
                     <h3>Private trips</h3>
                     <p>
                     Private trips are a great way to make your trip as private and customized as possible and to limit team size
@@ -161,15 +198,16 @@ const Home = () => {
                     </p>
                 </div>
             </StyledIntro>
-            <StyledIntro>
+            <StyledOutro>
+                <EmailIcon />
+                <h3>Contact us</h3>
                 <p>
                     We look forward to not only working with you but for you. Please contact us directly for any
                     and all inquiries. We look forward to providing you with one of the best all inclusive international travel
                     adventures available!
                 </p>
-            </StyledIntro>
-            
-        </div>
+            </StyledOutro>
+        </StyledHome>
     )
 }
 

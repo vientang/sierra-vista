@@ -5,7 +5,6 @@ const white = '#FFFFFF';
 const topSky = '#E1FCFF';
 const midSky = '#C3F9FF';
 const btmSky = '#00E8FF';
-const size = '50px';
 
 const Logo = ({ size }) => {
     return (

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { TripContainer, TripContent, ContentContainer, TripSidePanel } from '../components/styles';
+import { AvatarIcon, EmailIcon } from '../components/icons';
 
 const StyledContactInfo = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
     a {
+        margin-left: 1rem;
         font-family: ${props => props.theme.standardFont};
         font-size: 0.8rem;
         letter-spacing: 0.5px;
@@ -20,11 +21,21 @@ const StyledContactInfo = styled.div`
     }
 `;
 
+const StyledContact = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    .staff-name {
+        font-size: 1.1rem;
+        line-height: 1.5;        
+    }
+`;
+
 const AboutUs = () => {
     return (
         <TripContainer>
             <TripContent>
-                <ContentContainer>
+                <ContentContainer paddingTop="2rem">
                     <h2>Who are we?</h2>
                     <p>
                         Sierra Vista Expeditions started as a dream more than ten years ago by me, Josh Miller. Peru has
@@ -57,14 +68,20 @@ const AboutUs = () => {
                         the perfect custom itinerary suited for your needs.
                     </p>
                 </ContentContainer>
-                <TripSidePanel>
+                <TripSidePanel paddingTop="3rem">
                     <StyledContactInfo>
-                        <h3>Contact Us</h3>
-                        <a href="mailto:info@sierravistaexpeditions.com.com">info@sierravistaexpeditions.com</a>
+                        <EmailIcon size={24} />
+                        <a href="mailto:info@sierravistaexpeditions.com">info@sierravistaexpeditions.com</a>
                     </StyledContactInfo>
                     <h3 className="staff-heading">Staff</h3>
-                    <p className="staff-name">Josh Miller</p>
-                    <p className="staff-title">Expedition Leader</p>
+                    <StyledContactInfo>
+                        <AvatarIcon size={60} />
+                        <StyledContact>
+                            <p className="staff-name">Josh Miller</p>
+                            <p className="staff-title">Expedition Leader</p>
+                        </StyledContact>
+                    </StyledContactInfo>
+                    
                     <p className="staff-desc">
                         Josh was born in Columbus, Ohio and quickly realized this was not the place for him. He began
                         exploring and climbing in California in 2010. He has climbed extensively throughout California, Utah,
@@ -78,8 +95,14 @@ const AboutUs = () => {
                         Peru, and his winters in either Brazil or climbing frozen waterfalls in the San Juan Mountains of
                         Colorado.
                     </p>
-                    <p className="staff-name">Marisete Quadrado</p>
-                    <p className="staff-title">Logistics Coordinator</p>
+                    <StyledContactInfo>
+                        <AvatarIcon size={60} />
+                        <StyledContact>
+                            <p className="staff-name">Marisete Quadrado</p>
+                            <p className="staff-title">Logistics Coordinator</p>
+                        </StyledContact>
+                    </StyledContactInfo>
+                    
                     <p className="staff-desc">
                         Marisete is a native of Brazil. Born in a farming community, she has a passion for plants and
                         nature. After having her own practice in physical therapy, she decided to travel to Colorado where she

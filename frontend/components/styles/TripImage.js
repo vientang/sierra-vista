@@ -7,7 +7,7 @@ const TripImage = styled.img`
     height: auto;
     margin: ${props => props.theme.imgCrop};
     box-shadow: ${props => props.theme.bs};
-    filter: contrast(1.1) brightness(90%);
+    filter: contrast(1.1);
 `;
 
 export default TripImage;

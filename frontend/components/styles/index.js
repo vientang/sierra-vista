@@ -4,6 +4,7 @@ import TripImage from './TripImage';
 import TripHeader from './TripHeader';
 import TripNav from './TripNav';
 import TripSidePanel from './TripSidePanel';
+import TripDates from './TripDates';
 import Button from './Button';
 import HeroImage from './HeroImage';
 import ContentContainer from './ContentContainer';
@@ -34,6 +35,7 @@ export {
     Tabs,
     TripContainer,
     TripContent,
+    TripDates,
     TripImage,
     TripHeader,
     TripNav,
