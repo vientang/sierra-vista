@@ -44,6 +44,7 @@ const StyledOverlay = styled.div`
         filter: drop-shadow(.05em .05em ${props => props.theme.grey});
     }
     h2 {
+        color: ${props => props.theme.offWhite};
         border-bottom: 1px solid ${props => props.theme.offWhite};
         font-size: 1rem;
         text-transform: uppercase;
