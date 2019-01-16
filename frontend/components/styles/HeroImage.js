@@ -5,15 +5,13 @@ import { safeCall } from '../../utils';
 
 const fadeIn = keyframes`
     0% {
-        opacity: 0.75;
-    }
-
-    50% {
-        opacity: 0.95;
+        opacity: 0.45;
+        transform: scale(0.9999);
     }
 
     100% {
         opacity: 1;
+        transform: scale(1);
     }
 `;
 
@@ -34,7 +32,7 @@ const StyledImage = styled.img`
     height: auto;
     margin: ${props => props.page === 'home' ? 0 : props.theme.imgCrop};
     box-shadow: ${props => props.theme.bs};
-    animation: ${fadeIn} 0.5s ease-in-out;
+    animation: ${fadeIn} 1s ease-in-out;
     filter: contrast(1.1);
 `;
 

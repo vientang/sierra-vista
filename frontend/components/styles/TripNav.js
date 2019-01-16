@@ -7,7 +7,7 @@ const TripNav = styled.ul`
     width: 50%;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     list-style-type: none;
     a {
         position: relative;                

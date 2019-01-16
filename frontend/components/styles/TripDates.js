@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledTripDates = styled.div`
     display: grid;
-    grid-template-columns: 60%;
+    grid-template-columns: 1fr;
     width: 100%;
     max-width: 100%;
     ul {

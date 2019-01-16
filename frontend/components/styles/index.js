@@ -8,10 +8,12 @@ import TripDates from './TripDates';
 import Button from './Button';
 import ContentContainer from './ContentContainer';
 import ContentSection from './ContentSection';
-import GearShop from './GearShop';
+import Form from './Form';
 import GearList from './GearList';
 import GearItem from './GearItem';
 import GearInfo from './GearInfo';
+import NavMenu from './NavMenu';
+import NavStyles from './NavStyles';
 import PriceChart from './PriceChart';
 import Tabs from './Tabs';
 import RentalCartPanel from './RentalCartPanel';
@@ -22,12 +24,14 @@ export {
     Button,
     ContentContainer,
     ContentSection,
+    Form,
     GearItem,
     GearInfo,
     GearList,
-    GearShop,
     HeroImage,
     InfoCard,
+    NavMenu,
+    NavStyles,
     PriceChart,
     RentalCartList,
     RentalCartPanel,

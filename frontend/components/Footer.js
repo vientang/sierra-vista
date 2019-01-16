@@ -10,7 +10,7 @@ const FooterImage = styled.img`
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin: -55% 0;
+    margin: -50% 0;
     box-shadow: ${props => props.theme.bs};
     filter: contrast(1.1) brightness(15%);
 `;

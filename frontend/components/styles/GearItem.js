@@ -10,9 +10,17 @@ const StyledItemGroup = styled.div`
     grid-template-columns: 6% 84% 10%;
     padding: 0.8rem;
     border: 1px solid ${props => props.theme.offWhite};
-    .gear-brand {
+    .gear-title {
         font-weight: bold;
-        margin-top: 0.5rem;
+    }
+    .gear-desc {
+        font-weight: 450;
+        margin: 0.5rem 0;
+    }
+    .gear-brand {
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: ${props => props.theme.mdGrey};
     }
     .add-icon {
         margin-left: auto;
@@ -46,8 +54,8 @@ class GearItem extends Component {
             <StyledItemGroup>
                 <img src={`static/images/gear/${img}`} />
                 <ItemContent>
-                    <p>{title}</p>
-                    <p>{desc}</p>
+                    <p className="gear-title">{title}</p>
+                    <p className="gear-desc">{desc}</p>
                     <p className="gear-brand">{brand}</p>
                 </ItemContent>
                 {rentable && <AddIcon className="add-icon" onClick={this.handleRentGear} size={20} />}

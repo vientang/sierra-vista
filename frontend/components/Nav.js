@@ -1,6 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
-import NavStyles from './styles/NavStyles';
+import { Popover } from 'antd';
+import { NavMenu, NavStyles } from './styles';
+
+const menu = (
+    <NavMenu>
+        <Link href="/apply">
+            <a><span>Trip application</span></a>
+        </Link>
+        <Link href="/gear-shop">
+            <a><span>Gear shop</span></a>
+        </Link>
+    </NavMenu>
+);
 
 const Nav = () => {
     return (
@@ -24,7 +36,11 @@ const Nav = () => {
                 <a><span>Vallunaraju</span></a>
             </Link>
             <Link href="/about-us">
-                <a><span>About Us</span></a>
+                <a className="nav-about-us">
+                    <Popover content={menu} placement="bottomRight" trigger="hover" mouseEnterDelay={0}>
+                        <span>About Us</span>
+                    </Popover>
+                </a>
             </Link>
         </NavStyles>
     );

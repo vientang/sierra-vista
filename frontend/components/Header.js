@@ -49,6 +49,7 @@ const StyledHeader = styled.header`
         font-size: 1rem; 
         line-height: normal;
         padding: 0 1rem;
+        margin: 0;
     }
     @media(max-width: 1300px) {
         grid-template-columns: 1fr;

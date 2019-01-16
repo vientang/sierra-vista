@@ -35,7 +35,7 @@ const AboutUs = () => {
     return (
         <TripContainer>
             <TripContent>
-                <ContentContainer paddingTop="2rem">
+                <ContentContainer paddingTop="3rem">
                     <h2>Who are we?</h2>
                     <p>
                         Sierra Vista Expeditions started as a dream more than ten years ago by me, Josh Miller. Peru has

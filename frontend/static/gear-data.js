@@ -96,7 +96,7 @@ const trekkingGearData = [
             },
             {
                 brand: 'Feathered Friends Down Bootie',
-                title: 'Light trekking boots/Trekking shoes',
+                title: 'Down Booties',
                 desc: 'A completely optional yet highly recommended piece. It is really nice to change into these after a hard day of trekking/climbing.',
                 required: false,
                 rentable: false,
@@ -568,7 +568,7 @@ const climbingGearData = [
             },
             {
                 brand: 'Feathered Friends Down Bootie',
-                title: 'Light trekking boots/Trekking shoes',
+                title: 'Down Booties',
                 desc: 'A completely optional yet highly recommended piece. It is really nice to change into these after a hard day of trekking/climbing.',
                 required: false,
                 rentable: false,

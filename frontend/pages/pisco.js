@@ -11,7 +11,7 @@ import {
     TripNav, 
     TripSidePanel,
 } from '../components/styles';
-import { AcclimatizeIcon, GearIcon, ItineraryIcon, RoutesIcon } from '../components/icons';
+import { AcclimatizeIcon, GearIcon, ItineraryIcon, RoutesIcon, PriceIcon } from '../components/icons';
 import DownloadLink from '../components/DownloadLink';
 import trips from '../static/trip-data';
 
@@ -27,7 +27,6 @@ const {
     itinerary, 
     name,
     overview, 
-    priceInfo, 
     routes,
     skillLevel, 
     title, 
@@ -45,7 +44,8 @@ const Pisco = () => {
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#routes">Routes</a></li>
                         <li><a href="#gear">Gear List</a></li>
-                        <li><a href="#acclimatization">Acclimatization</a></li>                        
+                        <li><a href="#acclimatization">Acclimatization</a></li>
+                        <li><a href="#prices">Prices</a></li>
                         <li>
                             <a href={`static/${application}`} download="Book_Trip">
                                 <Button>Book this trip</Button>
@@ -103,21 +103,16 @@ const Pisco = () => {
                                 20,000ft. Lunch and transportation will be included in this day hike.
                             </p>
                         </ContentSection>
+                        <ContentSection>
+                            <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
+                            <PriceChart trip="pisco" />
+                        </ContentSection>
                     </ContentContainer>
                     
                     <TripSidePanel>
                         <p>Dates: <span className="trip-dates">{dates[0]} {duration}</span></p>
                         <p>Skill Level: {skillLevel}</p>
                         <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
-                        <PriceChart trip="pisco" />
-                        <div>
-                            <span className="inclusion-title">Included in the price:</span>
-                            <ul>{priceInfo.included.map((item, i) => <li key={i}>{item}</li>)}</ul>
-                        </div>
-                        <div>
-                            <span className="inclusion-title">Not included in the price:</span>
-                            <ul>{priceInfo.notIncluded.map((item, i) => <li key={i}>{item}</li>)}</ul>
-                        </div>
                         <div>
                             <p>Elevations:</p>
                             <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>

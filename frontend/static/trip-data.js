@@ -1,5 +1,3 @@
-import priceData from './price-data';
-
 const trips = {
     huayhuash: {
         name: 'Cordillera Huayhuash',
@@ -11,7 +9,6 @@ const trips = {
         dates: ['5/29/19 - 6/12/19', '8/7/19 - 8/21/19'],
         duration: '(15 days)',
         skillLevel: 4,
-        priceInfo: priceData.find(tripPrice => tripPrice.trip === 'huayhuash'),
         title: 'Cordillera Huayhuash 10 Day Circuit',
         overview: [
             'The Cordillera Huayhuash is an isolated and compact collection of mountains in the Peruvian Andes. Lying 100km south of Huaraz, this range hosts less trekkers and climbers, due to it\'s isolation. Ranked one of the top 10 treks in the world, trekking in the Huayhuash will never disappoint. Our Itinerary is a shortened version of the traditional 12-16 day trek. Due to recent improvements with access, this is made possible.',
@@ -88,7 +85,6 @@ const trips = {
         dates: ['8/26/19 - 9/4/19'],
         duration: '(10 days)',
         skillLevel: 2,
-        priceInfo: priceData.find(tripPrice => tripPrice.trip === 'quilcayhuanca'),
         title: 'Quilcayhuanca Trek',
         overview: [
             'This relatively relaxed three night four day trek is an ideal entry level trip to high altitude trekking. The first days trek to Maparaju base camp is absolutely stunning. We will be hiking on soft grass areas know as pampas, all the while next to stunning alpine creeks, surrounded by incredible high valley walls, with high alpine wild flowers galore. Our second day will be spent hiking further into the valley to make our camp at the beautiful lake of Tullpacochca. Our active rest day includes a chance to explore a second valley, Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included. Our final day, we descend gradually out of the valley to meet our transportation. For those that do not wish to add on a climb, you will be heading back to Lima for your flights home.',
@@ -136,7 +132,6 @@ const trips = {
         dates: ['Please inquire about trip dates'],
         duration: '',
         skillLevel: 3,
-        priceInfo: priceData.find(tripPrice => tripPrice.trip === 'chavin'),
         title: 'Olleros to Chavin Cultural Trek 4 Days',
         overview: [
             'This 3 night 4 day trek is one of our easiest and entry level treks. The trekking route takes us from the west side of the Cordillera Blanca, over the Yanashallah pass, and down to the east side ending at Chavin de Huantar. Following an ancient Chavin civilization path, this trek is sacred. Chavin culture is considered the mother culture to all Peruvian people, including the Incas. We use Llamas on this trek, as was tradition, in ancient Chavin transportation methods.',
@@ -187,7 +182,6 @@ const trips = {
         dates: ['7/03/19 - 7/15/19'],
         duration: '(13 days)',
         skillLevel: 1,
-        priceInfo: priceData.find(tripPrice => tripPrice.trip === 'ishinca'),
         title: 'Ishinca Valley Expedition',
         overview: [
             'The Cordillera Blanca is the perfect destination for novice and advanced climbers alike. Also, for those looking to develop glacier experience, high altitude snow and ice climbing, climbers looking for partners or just to broaden your alpine climbing resume.',
@@ -263,7 +257,6 @@ const trips = {
         dates: ['7/22/19 - 8/02/19'],
         duration: '(12 days)',
         skillLevel: 5,
-        priceInfo: priceData.find(tripPrice => tripPrice.trip === 'pisco'),
         title: 'Pisco 5,750m (18,870ft)',
         overview: [
             'Pisco is a classic mountain in the Cordillera Blanca. With relatively high altitude, This makes a great choice for those new to the Cordillera Blanca, and also for those who are short on time. Once on the summit, we will have one of the best 360 degree views in the Cordillera Blanca.',
@@ -330,7 +323,6 @@ const trips = {
         dates: ['6/17/19 - 6/28/19'],
         duration: '(12 days)',
         skillLevel: 5,
-        priceInfo: priceData.find(tripPrice => tripPrice.trip === 'vallunaraju'),
         title: 'Quilcayhuanca 3 Day Trek Vallunaraju 2 Day Climb',
         overview: [
             'This relatively relaxed two night three day trek is an ideal entry level trip to high altitude trekking. The first days trek to Tullpacocha is absolutely stunning. We will be hiking on soft grass areas know as pampas, all the while next to stunning alpine creeks, surrounded by incredible high valley walls, with high alpine wild flowers galore. Our active rest day includes a chance to explore a second valley, Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included. Our final day, we descend gradually out of the valley to meet our transportation and head back to Huraz.',

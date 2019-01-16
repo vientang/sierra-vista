@@ -20,7 +20,7 @@ const theme = {
     top: '75px',
     maxWidth: '1300px',
     padding: '1rem 5rem',
-    imgCrop: '-14% 0',
+    imgCrop: '0 0 -14%',
 };
 
 export default theme;

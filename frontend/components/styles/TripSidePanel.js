@@ -30,10 +30,7 @@ const TripSidePanel = styled.div`
     .staff-title,
     .staff-desc {
         color: ${props => props.theme.mdGrey};
-    }
-    .inclusion-title {
-        font-style: italic;
-    }
+    }    
     .trip-dates,
     .staff-desc {
         font-family: ${props => props.theme.standardFont};
@@ -44,7 +41,7 @@ const TripSidePanel = styled.div`
     }
     .staff-heading,
     .staff-title {
-        line-height: normal;
+        margin-top: 0.5rem;
     }
     .staff-desc {
         margin: 1rem 0;

@@ -180,10 +180,7 @@ const PrivateTrips = () => (
             <GroupIcon />
             <h3>Private trips</h3>
             <p>
-            Private trips are a great way to make your trip as private and customized as possible and to limit team size
-            to a pre-organized group. In a lot of cases we can add porters, acclimatization days, rest days, or even add
-            additional summits to your customized trip. Please inquire directly with us to talk about options, and plan
-            the perfect custom itinerary suited for your needs.
+            Private trips are a great way to make your trip as private and customized as possible and to limit team size to a pre-organized group. In a lot of cases we can add porters, acclimatization days, rest days, or even add additional summits to your customized trip. Please inquire directly with us to talk about options, and plan the perfect custom itinerary suited for your needs.
             </p>
         </div>
     </StyledIntro>
@@ -195,9 +192,7 @@ const Outro = () => (
         <EmailIcon />
         <h3>Contact us</h3>
         <p>
-            We look forward to not only working with you but for you. Please contact us directly for any
-            and all inquiries. We look forward to providing you with one of the best all inclusive international travel
-            adventures available!
+            We look forward to not only working with you but for you. Please contact us directly for any and all inquiries. We look forward to providing you with one of the best all inclusive international travel adventures available!
         </p>
     </StyledOutro>
 );

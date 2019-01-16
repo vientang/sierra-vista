@@ -6,9 +6,13 @@ const ContentSection = styled.div`
     .trip-section-sub-title {
         padding: 0 2rem;
     }
+    h3, h4 {
+        font-family: ${props => props.theme.headingFont};
+    }
     .trip-section-title {
         display: flex;
         align-items: center;
+        margin-top: 0.5rem;
         svg {
             margin-right: 0.5rem;
         }

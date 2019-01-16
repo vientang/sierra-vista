@@ -13,6 +13,7 @@ const NavStyles = styled.ul`
         align-items: center;
         position: relative;
         padding: 0.5rem 1rem;
+        color: ${props => props.theme.black};
         letter-spacing: 0.5px;
         font-size: 0.75rem;
         white-space: nowrap;        
@@ -65,6 +66,19 @@ const NavStyles = styled.ul`
                     width: calc(100% - 10px);
                 }
             }
+        }
+    }
+    .nav-about-us {
+        &:before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 40%;
+            margin: auto 0;
+            background: ${props => props.theme.blue};
+            left: 0;
+            top: 0;
+            bottom: 0;
         }
     }
     @media (max-width: 1300px) {

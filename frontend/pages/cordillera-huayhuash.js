@@ -12,7 +12,7 @@ import {
     TripNav, 
     TripSidePanel,
 } from '../components/styles';
-import { AcclimatizeIcon, GearIcon, ItineraryIcon } from '../components/icons';
+import { AcclimatizeIcon, GearIcon, ItineraryIcon, PriceIcon } from '../components/icons';
 import DownloadLink from '../components/DownloadLink';
 import trips from '../static/trip-data';
 
@@ -27,7 +27,6 @@ const {
     itinerary, 
     name,
     overview, 
-    priceInfo, 
     skillLevel, 
     title, 
  } = trips.huayhuash;
@@ -44,6 +43,7 @@ const CordilleraHuayhuash = () => {
                         <li><a href="#itinerary">Itinerary</a></li>
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>
+                        <li><a href="#prices">Prices</a></li>
                         <li>
                             <a href={`static/${application}`} download="Book_Trip">
                                 <Button>Book this trip</Button>
@@ -103,21 +103,16 @@ const CordilleraHuayhuash = () => {
                                 in this day hike.
                             </p>
                         </ContentSection>
+                        <ContentSection>
+                            <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
+                            <PriceChart trip="huayhuash" />
+                        </ContentSection>
                     </ContentContainer>
                     
                     <TripSidePanel>
                         <TripDates dates={dates} duration={duration} />
                         <p>Skill Level: {skillLevel}</p>
-                        <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
-                        <PriceChart trip="huayhuash" />
-                        <div>
-                            <span className="inclusion-title">Included in the price:</span>
-                            <ul>{priceInfo.included.map((item, i) => <li key={i}>{item}</li>)}</ul>
-                        </div>
-                        <div>
-                            <span className="inclusion-title">Not included in the price:</span>
-                            <ul>{priceInfo.notIncluded.map((item, i) => <li key={i}>{item}</li>)}</ul>
-                        </div>
+                        <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />                        
                         <div>
                             <p>Elevations:</p>
                             <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>                            
