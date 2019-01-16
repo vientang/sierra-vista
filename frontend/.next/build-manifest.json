@@ -1,35 +1,107 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_0a5735af42686c2a38b2.js"
-  ],
+  "devFiles": [],
   "pages": {
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
     ],
-    "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/about-us": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
     ],
-    "/vallunaraju": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+    "/apply": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/chavin": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/cordillera-huayhuash": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/gear-shop": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/ishinca": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/pisco": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/quilcayhuanca": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/vallunaraju": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
     ],
     "/": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-89179faa512dd01fbb62.js",
+      "static/css/commons.dedf172c.chunk.css",
+      "static/chunks/commons.c2c4916dcdb4c372eb42.js",
+      "static/css/styles.e29dbaf2.chunk.css",
+      "static/chunks/styles.01d8e432604e9f9a0d00.js",
+      "static/runtime/main-a7e85e138eb636bedf3d.js"
     ]
   }
 }
