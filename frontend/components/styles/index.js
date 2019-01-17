@@ -12,6 +12,7 @@ import Form from './Form';
 import GearList from './GearList';
 import GearItem from './GearItem';
 import GearInfo from './GearInfo';
+import InclusionChart from './InclusionChart';
 import NavMenu from './NavMenu';
 import NavStyles from './NavStyles';
 import PriceChart from './PriceChart';
@@ -29,6 +30,7 @@ export {
     GearInfo,
     GearList,
     HeroImage,
+    InclusionChart,
     InfoCard,
     NavMenu,
     NavStyles,

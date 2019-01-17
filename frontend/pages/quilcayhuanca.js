@@ -4,6 +4,7 @@ import {
     ContentSection,
     GearInfo,
     HeroImage, 
+    InclusionChart,
     PriceChart,
     TripContainer, 
     TripContent, 
@@ -101,7 +102,7 @@ const QuilcayhuancaValley = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="quilcayhuanca" />
+                            <InclusionChart trip="quilcayhuanca" />
                         </ContentSection>
                     </ContentContainer>
                     
@@ -109,6 +110,8 @@ const QuilcayhuancaValley = () => {
                         <p>Dates: <span className="trip-dates">{dates} {duration}</span></p>
                         <p>Skill Level: {skillLevel}</p>
                         <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
+                        <p>Prices:</p>
+                        <PriceChart trip="quilcayhuanca" />
                         <div>
                             <p>Elevations:</p>
                             <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>                            

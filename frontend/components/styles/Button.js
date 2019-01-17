@@ -7,6 +7,7 @@ const Button = styled.button`
     align-items: center;
     height: 2rem;
     min-width: 3.2rem;
+    color: ${props => props.theme.black};
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 900;

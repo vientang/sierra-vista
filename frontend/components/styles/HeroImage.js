@@ -30,6 +30,7 @@ const StyledImage = styled.img`
     width: 100%;
     max-width: 100%;
     height: auto;
+    max-height: 1072px;
     margin: ${props => props.page === 'home' ? 0 : props.theme.imgCrop};
     box-shadow: ${props => props.theme.bs};
     animation: ${fadeIn} 1s ease-in-out;

@@ -4,6 +4,7 @@ import {
     ContentSection,
     GearInfo,
     HeroImage, 
+    InclusionChart,
     PriceChart,
     TripContainer, 
     TripContent, 
@@ -57,8 +58,12 @@ const Vallunaraju = () => {
                 <TripContent>
                     <ContentContainer>
                         <ContentSection>
-                            <h3>Quilcayhuanca to Cojup Trek</h3>
-                            {overview.map((text, i) => <p key={i} className="overview-section" id={i === 0 ? 'overview' : null}>{text}</p>)}
+                            <div className="overview-section">
+                                <h3 id="overview">Quilcayhuanca to Cojup Trek</h3>
+                                <p className="overview-content">{overview[0]}</p>
+                                <h3>Vallunaraju Climb</h3>
+                                <p className="overview-content">{overview[1]}</p>
+                            </div>
                         </ContentSection>
                         <ContentSection>
                             <div className="basic-itinerary">
@@ -113,7 +118,7 @@ const Vallunaraju = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="vallunaraju" />
+                            <InclusionChart trip="vallunaraju" />
                         </ContentSection>
                     </ContentContainer>
                     
@@ -121,6 +126,8 @@ const Vallunaraju = () => {
                         <p>Dates: <span className="trip-dates">{dates[0]} {duration}</span></p>
                         <p>Skill Level: {skillLevel}</p>
                         <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
+                        <p>Prices:</p>
+                        <PriceChart trip="vallunaraju" />
                         <div>
                             <p>Elevations:</p>
                             <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>

@@ -20,7 +20,7 @@ const StyledGearShop = styled.div`
     position: relative;
     display: grid;
     grid-template-columns: 65% 1fr;
-    grid-gap: 10px;
+    grid-gap: 140px;
     max-width: 100%;
     padding: 0 8rem 0;
     p {
@@ -143,7 +143,7 @@ class GearShopPage extends React.Component {
                     </p>
                     {this.getGearList(active)}
                 </StyledGearSection>
-                <TripSidePanel>
+                <TripSidePanel paddingTop="2rem" fixed>
                     <RentalCartPanel>
                         <h3>Rental items</h3>
                         <p>Select an item to rent and it will appear on this list.</p>

@@ -105,7 +105,7 @@ const StyledInfoSection = styled.div`
     grid-gap: 3rem;
     align-items: center;
     width: 100%;
-    height: 1425px;
+    height: auto;
     font-family: ${props => props.theme.standardFont};
     font-size: 1rem;
     padding: 3rem 15rem;

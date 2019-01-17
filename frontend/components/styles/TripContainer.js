@@ -16,7 +16,7 @@ const TripContainer = styled.div`
     font-family: ${props => props.theme.standardFont};
     font-size: 1rem;
     background-color: white;
-    animation: ${fadeIn} 2s ease-in-out;
+    animation: ${fadeIn} 1s ease-in-out;
 `;
 
 export default TripContainer;

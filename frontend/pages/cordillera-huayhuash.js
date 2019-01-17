@@ -4,6 +4,7 @@ import {
     ContentSection,
     GearInfo,
     HeroImage, 
+    InclusionChart,
     PriceChart,
     TripContainer, 
     TripContent, 
@@ -55,9 +56,7 @@ const CordilleraHuayhuash = () => {
                 <TripContent>
                     <ContentContainer>
                         <ContentSection>
-                            <h3 id="overview">Olleros to Chavin de Huantar</h3>
                             <p className="overview-section">{overview[0]}</p>
-                            <h3>Chavin de Huantar</h3>
                             <p className="overview-section">{overview[1]}</p>     
                         </ContentSection>
                         <ContentSection>
@@ -104,15 +103,19 @@ const CordilleraHuayhuash = () => {
                             </p>
                         </ContentSection>
                         <ContentSection>
-                            <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="huayhuash" />
+                            <h3 id="prices" className="trip-section-title">
+                                <PriceIcon size={24} />Prices:
+                            </h3>
+                            <InclusionChart trip="huayhuash" />
                         </ContentSection>
                     </ContentContainer>
                     
                     <TripSidePanel>
                         <TripDates dates={dates} duration={duration} />
                         <p>Skill Level: {skillLevel}</p>
-                        <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />                        
+                        <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
+                        <p>Prices:</p>
+                        <PriceChart trip="huayhuash" />
                         <div>
                             <p>Elevations:</p>
                             <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>                            

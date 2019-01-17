@@ -35,16 +35,19 @@ const NavStyles = styled.ul`
             top: 0;
             bottom: 0;
         }
+        &:focus {
+            text-decoration: none;
+        }
         span {
             position: relative;
-            transition: transform 200ms ease-in-out, filter 200ms ease-in-out, box-shadow 200ms ease-in-out;
+            transition: transform 100ms ease-in-out;
             &:after {
                 content: '';
                 position: absolute;
                 height: 4px;
                 width: 0;
                 background: ${props => props.theme.lightBlue};
-                margin-top: 0.85rem;
+                margin-top: 1rem;
                 left: 50%;
                 opacity: 0;
                 transform: translateX(-50%);
@@ -54,8 +57,7 @@ const NavStyles = styled.ul`
             }
             &:hover,
             &:focus {
-                transform: scale(1.035);
-                filter:  drop-shadow(.05em .05em ${props => props.theme.grey});
+                transform: scale(1.15);
                 outline: none;
                 &:after {
                     opacity: 1;
@@ -75,7 +77,7 @@ const NavStyles = styled.ul`
             width: 2px;
             height: 40%;
             margin: auto 0;
-            background: ${props => props.theme.blue};
+            background: ${props => props.theme.dkBlue};
             left: 0;
             top: 0;
             bottom: 0;

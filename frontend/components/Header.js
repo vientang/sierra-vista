@@ -51,6 +51,11 @@ const StyledHeader = styled.header`
         padding: 0 1rem;
         margin: 0;
     }
+    a {
+        &:focus {
+            text-decoration: none;
+        }
+    }
     @media(max-width: 1300px) {
         grid-template-columns: 1fr;
         justify-content: center;

@@ -4,6 +4,7 @@ import {
     ContentSection,
     GearInfo,
     HeroImage, 
+    InclusionChart,
     PriceChart,
     TripContainer, 
     TripContent, 
@@ -105,7 +106,7 @@ const Pisco = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="pisco" />
+                            <InclusionChart trip="pisco" />
                         </ContentSection>
                     </ContentContainer>
                     
@@ -113,6 +114,8 @@ const Pisco = () => {
                         <p>Dates: <span className="trip-dates">{dates[0]} {duration}</span></p>
                         <p>Skill Level: {skillLevel}</p>
                         <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
+                        <p>Prices:</p>
+                        <PriceChart trip="pisco" />
                         <div>
                             <p>Elevations:</p>
                             <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>
