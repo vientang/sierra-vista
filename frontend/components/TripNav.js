@@ -4,7 +4,7 @@ const TripNav = styled.ul`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 55%;
     margin: 0;
     padding: 0;
     font-size: 0.9rem;

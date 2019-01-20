@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { Popover } from 'antd';
-import { NavMenu, NavStyles } from './styles';
+import NavMenu from './NavMenu';
+import NavStyles from './NavStyles';
 
 const menu = (
     <NavMenu>

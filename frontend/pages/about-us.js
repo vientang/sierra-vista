@@ -1,23 +1,27 @@
 import styled from 'styled-components';
-import { TripContainer, TripContent, ContentContainer, TripSidePanel } from '../components/styles';
+import InnerPageContainer from '../components/InnerPageContainer';
+import InnerPageContent from '../components/InnerPageContent';
+import ContentContainer from '../components/ContentContainer';
+import SidePanel from '../components/SidePanel';
+import Title from '../components/Title';
 import { AvatarIcon, EmailIcon } from '../components/icons';
 
 const StyledContactInfo = styled.div`
     display: flex;
     align-items: center;
+    line-height: normal;
+    margin: 0.5rem 0;
     a {
         margin-left: 1rem;
         font-family: ${props => props.theme.standardFont};
         font-size: 0.8rem;
         letter-spacing: 0.5px;
-        line-height: normal;
     }
     a:hover {
         color: ${props => props.theme.blue};
     }
     h3 {
-        margin: 1rem 0;
-        line-height: normal;
+        font-family: ${props => props.theme.headingFont};
     }
 `;
 
@@ -25,16 +29,32 @@ const StyledContact = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 0.5rem;
+    line-height: 1.5;
     .staff-name {
-        font-size: 1.1rem;
-        line-height: 1.5;        
+        font-size: 1.1rem;        
+    }
+    .staff-title {
+        color: ${props => props.theme.mdGrey};
+    }
+`;
+
+const StyledContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    p {
+        font-size: 0.8rem;
+        font-family: ${props => props.theme.standardFont};
+        font-weight: normal;
+        line-height: 1.5;
+        color: ${props => props.theme.mdGrey};
     }
 `;
 
 const AboutUs = () => {
     return (
-        <TripContainer>
-            <TripContent>
+        <InnerPageContainer>
+            <InnerPageContent>
                 <ContentContainer paddingTop="3rem">
                     <h2>Who are we?</h2>
                     <p>
@@ -68,12 +88,14 @@ const AboutUs = () => {
                         the perfect custom itinerary suited for your needs.
                     </p>
                 </ContentContainer>
-                <TripSidePanel paddingTop="3rem">
+                <SidePanel paddingTop="3rem" fixed>
                     <StyledContactInfo>
                         <EmailIcon size={24} />
-                        <a href="mailto:info@sierravistaexpeditions.com">info@sierravistaexpeditions.com</a>
+                        <a      href="mailto:info@sierravistaexpeditions.com">info@sierravistaexpeditions.com</a>
                     </StyledContactInfo>
-                    <h3 className="staff-heading">Staff</h3>
+                    <StyledContactInfo>
+                        <Title padding="1rem 0" width="100%">Staff</Title>
+                    </StyledContactInfo>
                     <StyledContactInfo>
                         <AvatarIcon size={60} />
                         <StyledContact>
@@ -81,20 +103,16 @@ const AboutUs = () => {
                             <p className="staff-title">Expedition Leader</p>
                         </StyledContact>
                     </StyledContactInfo>
-                    
-                    <p className="staff-desc">
-                        Josh was born in Columbus, Ohio and quickly realized this was not the place for him. He began
-                        exploring and climbing in California in 2010. He has climbed extensively throughout California, Utah,
-                        Nevada, Arizona and Colorado. Specializing in ice and alpine climbing, he has guided Denali in Alaska
-                        and guided ice climbing in Ouray Colorado.
-                    </p>
-                    <p className="staff-desc">
-                        Josh has trekked and climbed extensively in Peru throughout the Cordillera Blanca on 8 self
-                        funded expeditions. He has a passion for traveling and guiding people to places they may not be able to
-                        do themselves. He spends his spring and fall guiding in the Grand Canyon, his summers climbing in
-                        Peru, and his winters in either Brazil or climbing frozen waterfalls in the San Juan Mountains of
-                        Colorado.
-                    </p>
+                    <StyledContent>
+                        <p>
+                            Josh was born in Columbus, Ohio and quickly realized this was not the place for him. He began exploring and climbing in California in 2010. He has climbed extensively throughout California, Utah, Nevada, Arizona and Colorado. Specializing in ice and alpine climbing, he has guided Denali in Alaska and guided ice climbing in Ouray Colorado.
+                        </p>
+                    </StyledContent>
+                    <StyledContent>
+                        <p>
+                            Josh has trekked and climbed extensively in Peru throughout the Cordillera Blanca on 8 self funded expeditions. He has a passion for traveling and guiding people to places they may not be able to do themselves. He spends his spring and fall guiding in the Grand Canyon, his summers climbing in Peru, and his winters in either Brazil or climbing frozen waterfalls in the San Juan Mountains of Colorado.
+                        </p>
+                    </StyledContent>
                     <StyledContactInfo>
                         <AvatarIcon size={60} />
                         <StyledContact>
@@ -102,22 +120,17 @@ const AboutUs = () => {
                             <p className="staff-title">Logistics Coordinator</p>
                         </StyledContact>
                     </StyledContactInfo>
-                    
-                    <p className="staff-desc">
-                        Marisete is a native of Brazil. Born in a farming community, she has a passion for plants and
-                        nature. After having her own practice in physical therapy, she decided to travel to Colorado where she
-                        fell in love with hiking in alpine environments. She has hiked in the Grand Canyon on multiple overnight
-                        backpacking trips and has 3 expeditions to Peru.
-                    </p>
-                    <p className="staff-desc">
-                        She assists our cooking staff in the packing and logistical efforts required for all of our trips in
-                        Peru. Marisete joins on the trips as well, becoming a basecamp manager and assistant cook when
-                        needed. She is fluent in Spanish, English and Portuguese.
-                    </p>
-            </TripSidePanel>
-            </TripContent>
-            
-        </TripContainer>
+                    <StyledContent>
+                        <p>
+                            Marisete is a native of Brazil. Born in a farming community, she has a passion for plants and nature. After having her own practice in physical therapy, she decided to travel to Colorado where she fell in love with hiking in alpine environments. She has hiked in the Grand Canyon on multiple overnight backpacking trips and has 3 expeditions to Peru.
+                        </p>
+                        <p>
+                            She assists our cooking staff in the packing and logistical efforts required for all of our trips in Peru. Marisete joins on the trips as well, becoming a basecamp manager and assistant cook when needed. She is fluent in Spanish, English and Portuguese.
+                        </p>
+                    </StyledContent>
+                </SidePanel>
+            </InnerPageContent>
+        </InnerPageContainer>
     );
 }
 

@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ItemContent from './ItemContent';
-import { AddIcon } from '../icons';
+import { AddIcon } from './icons';
 
 const StyledItemGroup = styled.div`    
     position: relative;
     display: grid;
-    grid-template-columns: 6% 84% 10%;
+    grid-template-columns: 7% 83% 10%;
     padding: 0.8rem;
     border: 1px solid ${props => props.theme.offWhite};
     .gear-title {
@@ -48,17 +48,19 @@ class GearItem extends Component {
     }
 
     render() {
-        const { item: { brand, title, desc, img, required, rentable } } = this.props;
-
+        const { item: { brand, title, desc, img, rentable } } = this.props;
+        const imagePath = img ? `static/images/gear/${img}` : '';
         return (
             <StyledItemGroup>
-                <img src={`static/images/gear/${img}`} />
+                <img src={imagePath} />
                 <ItemContent>
                     <p className="gear-title">{title}</p>
                     <p className="gear-desc">{desc}</p>
                     <p className="gear-brand">{brand}</p>
                 </ItemContent>
-                {rentable && <AddIcon className="add-icon" onClick={this.handleRentGear} size={20} />}
+                {rentable && (
+                    <AddIcon className="add-icon" onClick={this.handleRentGear} size={20} />
+                )}
             </StyledItemGroup>
         );
     }

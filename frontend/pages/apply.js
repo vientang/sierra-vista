@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { TripContainer, TripContent, TripSidePanel } from '../components/styles';
+import InnerPageContainer from '../components/InnerPageContainer';
+import InnerPageContent from '../components/InnerPageContent';
+import SidePanel from '../components/SidePanel';
 import { DownloadIcon, EmailIcon } from '../components/icons';
 
 const StyledContactInfo = styled.div`
@@ -47,16 +49,18 @@ const ApplicationSection = styled.div`
         }
     }
     .legal-important {
-        font-size: 0.8rem;
-        font-weight: bold;
+        padding: 0.5rem;
+        background: ${props => props.theme.lightGrey};
+        font-size: 0.7rem;
         font-style: italic; 
+        line-height: 1.5;
     }
 `;
 
 const Application = () => {
     return (
-        <TripContainer>
-            <TripContent>
+        <InnerPageContainer>
+            <InnerPageContent>
                 <ApplicationSection paddingTop="2rem">
                     <h2>Trip Application</h2>
                     <p>
@@ -98,7 +102,7 @@ const Application = () => {
                         </Link>
                     </p>
                 </ApplicationSection>
-                <TripSidePanel paddingTop="3rem">
+                <SidePanel paddingTop="3rem" fixed>
                     <StyledContactInfo>
                         <h3 className="staff-heading">Other forms</h3>
                         <p>
@@ -117,9 +121,9 @@ const Application = () => {
                             </Link>
                         </p>
                     </StyledContactInfo>
-                </TripSidePanel>
-            </TripContent>
-        </TripContainer>
+                </SidePanel>
+            </InnerPageContent>
+        </InnerPageContainer>
     );
 }
 

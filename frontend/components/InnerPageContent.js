@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const TripContent = styled.div`
+const InnerPageContent = styled.div`
     display: flex;
     justify-content: space-between;
 `;
 
-export default TripContent;
+export default InnerPageContent;

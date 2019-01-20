@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
-import { Button, HeroImage, InfoCard } from '../components/styles';
+import InfoCard from '../components/InfoCard';
+import Button from '../components/Button';
+import HeroImage from '../components/HeroImage';
 import { EmailIcon, GroupIcon, MountainBackdrop } from '../components/icons';
 
 const fadeIn = keyframes`

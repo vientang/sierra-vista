@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import priceData from '../../static/price-data';
+import priceData from '../static/price-data';
 
 const StyledInclusionChart = styled.div`
     display: grid;

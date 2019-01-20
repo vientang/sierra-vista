@@ -10,7 +10,7 @@ const fadeIn = keyframes`
     }
 `;
 
-const TripContainer = styled.div`
+const InnerPageContainer = styled.div`
     position: relative;
     padding: 0 8rem;
     font-family: ${props => props.theme.standardFont};
@@ -19,4 +19,4 @@ const TripContainer = styled.div`
     animation: ${fadeIn} 1s ease-in-out;
 `;
 
-export default TripContainer;
+export default InnerPageContainer;

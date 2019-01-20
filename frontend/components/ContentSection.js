@@ -34,7 +34,7 @@ const ContentSection = styled.div`
     }
     .trip-section-sub-title {
         line-height: normal;
-        margin: 2rem 0 0;
+        margin: 1.5rem 0 0.5rem;
     }
     .print-gear-list {
         color: ${props => props.theme.dkBlue};

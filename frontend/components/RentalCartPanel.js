@@ -13,9 +13,9 @@ const RentalCartPanel = styled.div`
         color: ${props => props.theme.lightGrey};
     }
     .rental-agreement-link {
-        font-size: 0.65rem;
+        color: ${props => props.theme.black};
+        font-size: 0.8rem;
         font-weight: normal;
-        letter-spacing: 0.5px;
         line-height: normal;
         margin: 1rem 0;
         padding: 0;

@@ -34,7 +34,8 @@ const Form = styled.form`
         width: 100%;
         padding: 0.5rem;
         margin-bottom: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        font-family: ${props => props.theme.standardFont};
         border: none;
         border-radius: 3px;
         &:focus {

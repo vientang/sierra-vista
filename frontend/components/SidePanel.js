@@ -2,22 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TripSidePanel = styled.div`
-    position: ${props => props.fixed || props.scrollY > 880 ? 'fixed' : 'relative'};
-    top: ${props => props.scrollY > 880 || props.fixed ? '75px' : null};
-    right: ${props => props.scrollY > 880 || props.fixed ? '128px' : null};
+    position: ${props => props.fixed || props.scrollY > 790 ? 'fixed' : 'relative'};
+    top: ${props => props.scrollY > 790 || props.fixed ? '75px' : null};
+    right: ${props => props.scrollY > 790 || props.fixed ? '128px' : null};
     flex: 0 1 30%;
-    max-width: 372px;
+    width: 400px;
+    max-width: 400px;
+    min-height: 500px;
     padding: 2rem;
     padding-top: ${props => props.paddingTop ? props.paddingTop : '1rem'};
-    font-size: 0.9rem;    
-    background-color: rgba(225, 225, 225, 0.4);
+    font-size: 0.8rem;
+    background: linear-gradient(to right bottom, rgba(208,243,251,0.25) 0%, rgba(187,224,240,0.5) 50%, rgba(176,222,237,0.25) 75%);
     box-sizing: border-box;
+    .side-panel-title {
+        display: ${props => props.scrollY > 790 ? 'block' : 'none'};
+        opacity: ${props => props.scrollY > 790 ? '1' : '0'};
+        margin: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
     p,
     ul {
         margin: 0;
-    }
-    ul {
-        list-style-type: disc;
     }
     p {
         font-weight: bold;
@@ -26,32 +32,21 @@ const TripSidePanel = styled.div`
         content: ' ';
     }
     span,
-    li,
-    .staff-desc {
+    li {
         font-size: 0.8rem;
         line-height: 1.5;
     }
     span,
     small,
-    li,
-    .staff-title,
-    .staff-desc {
+    li {
         color: ${props => props.theme.mdGrey};
-    }    
-    .trip-dates,
-    .staff-desc {
+    }
+    .trip-dates {
         font-family: ${props => props.theme.standardFont};
         font-weight: normal;
     }
     .print-gear-list {
         color: ${props => props.theme.dkBlue};
-    }
-    .staff-heading,
-    .staff-title {
-        margin-top: 0.5rem;
-    }
-    .staff-desc {
-        margin: 1rem 0;
     }
 `;
 
@@ -79,7 +74,7 @@ class SidePanel extends React.Component {
     render() {
         const { fixed, paddingTop } = this.props;
         const { scrollY } = this.state;
-
+        
         return (
             <div ref={this.panelRef}>
                 <TripSidePanel scrollY={scrollY} fixed={fixed} paddingTop={paddingTop}>

@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { FoodIcon, GearIcon, GuideIcon, HospitalityIcon } from '../icons';
+import { FoodIcon, GearIcon, GuideIcon, HospitalityIcon } from './icons';
 
 const StyledInfoCard = styled.div`
     display: flex;
-    /* align-items: center; */
     width: 100%;
     height: auto;
     color: ${props => props.theme.black};    
@@ -32,7 +31,7 @@ const InfoContent = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 0 ${props => props.imagePosition === 'right' ? '2rem' : 0} 2rem ${props => props.imagePosition === 'left' ? '2rem' : 0};
+    padding: 0 3rem;
     text-align: ${props => props.imagePosition};
     p {
         margin: 0 0 0.5rem;

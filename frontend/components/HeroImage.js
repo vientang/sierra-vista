@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
-import { safeCall } from '../../utils';
+import { safeCall } from '../utils';
 
 const fadeIn = keyframes`
     0% {
@@ -25,12 +25,20 @@ const preloadImgWithPromise = (src) => {
     });    
 };
 
+const StyledImageContainer = styled.div`
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    max-height: 800px;
+`;
+
 const StyledImage = styled.img`
+    position: relative;
     background-size: cover;
     width: 100%;
     max-width: 100%;
-    height: auto;
-    max-height: 1072px;
+    height: 100%;
+    max-height: 100%;
     margin: ${props => props.page === 'home' ? 0 : props.theme.imgCrop};
     box-shadow: ${props => props.theme.bs};
     animation: ${fadeIn} 1s ease-in-out;
@@ -71,7 +79,9 @@ class HeroImage extends React.PureComponent {
         const currentSrc = loaded ? src : base64;
 
         return (
+            <StyledImageContainer>
             <StyledImage {...this.props} src={currentSrc} alt={alt} />
+            </StyledImageContainer>
         )
     }
 };

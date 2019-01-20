@@ -5,12 +5,15 @@ const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2rem;
+    height: auto;
+    width: ${props => props.width ? props.width : 'auto'};
     min-width: 3.2rem;
+    padding: 0.5rem;
+    line-height: normal;
     color: ${props => props.theme.black};
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: 900;
+    font-weight: bold;
     white-space: nowrap;
     border: 0;
     background: linear-gradient(to right, ${props => props.theme.blue}, ${props => props.theme.lightBlue});
@@ -23,7 +26,7 @@ const Button = styled.button`
     }
     &:hover,
     &:focus {
-        transform: scale(1.035);
+        transform: ${props => props.disabled ? 'scale(1)' : 'scale(1.035)'};
         filter: brightness(1.05);
         box-shadow: ${props => props.theme.bs};
         outline: none;

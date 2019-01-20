@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { 
-    GearItem,
-    Form,
-    Button,
-    TripSidePanel,
-    Tabs,
-    RentalCartList,
-    RentalCartPanel,
-} from '../components/styles';
+import Form from '../components/Form';
+import Tabs from '../components/Tabs';
+import GearItem from '../components/GearItem';
+import RentalCartList from '../components/RentalCartList';
+import RentalCartPanel from '../components/RentalCartPanel';
+import Button from '../components/Button';
+import SidePanel from '../components/SidePanel';
 import DownloadLink from '../components/DownloadLink';
 import { trekkingGearData, climbingGearData } from '../static/gear-data';
 
@@ -44,10 +42,6 @@ const StyledGearSection = styled.div`
     max-width: ${props => props.theme.maxWidth};
     padding: 3rem 5rem 6rem 0rem;
     font-size: 0.9rem;
-    h3 {
-        margin: 0;
-        line-height: normal;
-    }
     @media(max-width: 1300px) {
         h3 {
             padding: 0 1rem;
@@ -143,9 +137,15 @@ class GearShopPage extends React.Component {
                     </p>
                     {this.getGearList(active)}
                 </StyledGearSection>
-                <TripSidePanel paddingTop="2rem" fixed>
+                <SidePanel paddingTop="2rem" fixed>
                     <RentalCartPanel>
                         <h3>Rental items</h3>
+                        <DownloadLink
+                            className="rental-agreement-link"
+                            text="Please read and sign the"
+                            linkText="rental agreement."
+                            url="/static/rental_terms_release_of_liability.pdf"
+                        />
                         <p>Select an item to rent and it will appear on this list.</p>
                         <RentalCartList>
                             {cartItems.map(item => <p key={item.title}>{item.title}</p>)}
@@ -154,16 +154,15 @@ class GearShopPage extends React.Component {
                             <input type="text" placeholder="First name" />
                             <input type="text" placeholder="Last name" />
                             <input type="text" placeholder="Email" />
-                            <DownloadLink
-                                className="rental-agreement-link"
-                                text="*Please read and sign the"
-                                linkText="rental agreement."
-                                url="/static/rental_terms_release_of_liability.pdf"
-                            />
-                            <Button disabled={cartItems.length < 1}>Submit rental</Button>
+                            <Button 
+                                width="5rem" 
+                                disabled={cartItems.length < 1}
+                            >
+                                Submit
+                            </Button>
                         </Form>
                     </RentalCartPanel>
-                </TripSidePanel>
+                </SidePanel>
             </StyledGearShop>
         );
     }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-import FooterNavStyles from './styles/FooterNavStyles';
+import FooterNavStyles from './FooterNavStyles';
 import Logo from './Logo';
 
 const FooterImage = styled.img`

@@ -1,6 +1,11 @@
 import styled from 'styled-components';
+import get from 'lodash/get';
 import { Tooltip } from 'antd';
-import priceData from '../../static/price-data';
+import priceData from '../static/price-data';
+
+const StylePriceContainer = styled.div`
+    margin: 0.5rem 0;
+`;
 
 const StyledPriceChart = styled.div`
     display: grid;
@@ -8,9 +13,15 @@ const StyledPriceChart = styled.div`
     grid-gap: 10px;
     width: 100%;
     max-width: 100%;
+    padding: ${props => props.padding};
+    box-sizing: border-box;
     ul {
-        margin-top: 0;
+        margin: 0;
+        padding: 0;
         list-style-type: none;
+    }
+    ul:nth-child(2) {
+        text-align: right;
     }
 `;
 
@@ -61,15 +72,19 @@ const PriceColumn = ({ items }) => {
     )
 }
 
-const PriceChart = ({ trip }) => {
+const PriceChart = ({ trip, style, renderTitle = false }) => {
     const data = priceData.find(tripData => tripData.trip === trip);
     const packages = data.prices;
-
+    const padding = get(style, 'padding', null) ? get(style, 'padding', null) : '0 0.4rem';
+    
     return (
-        <StyledPriceChart>
-            <PackageColumn items={packages} />
-            <PriceColumn items={packages} />
-        </StyledPriceChart>
+        <StylePriceContainer>
+            {renderTitle && <p>Prices:</p>}
+            <StyledPriceChart padding={padding}>
+                <PackageColumn items={packages} />
+                <PriceColumn items={packages} />
+            </StyledPriceChart>
+        </StylePriceContainer>
     )
 }
 

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const TripHeader = styled.header`
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
     transform: translateY(-50px);
     background: white;
     border-bottom: 1px solid ${props => props.theme.lightGrey};

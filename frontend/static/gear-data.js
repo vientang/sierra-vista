@@ -32,6 +32,7 @@ const trekkingGearData = [
                 desc: 'If the sun is shining it may be hot at lower altitudes and on day hikes from town. Highly recommended. A synthetic fast drying trekking short. Also can double as a swim suit if you feel like plunging into a high alpine lake!',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Outdoor Research Ferrosi Pant',
@@ -227,6 +228,7 @@ const trekkingGearData = [
                 desc: '1 liter.',
                 required: false,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Nalgene',
@@ -250,6 +252,7 @@ const trekkingGearData = [
                 desc: 'Optional. A common brand is the freshette.',
                 required: false,
                 rentable: false,
+                img: '',
             }
         ],
     },
@@ -262,6 +265,7 @@ const trekkingGearData = [
                 desc: 'Great for traveling, while in town or out to dinner.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -269,6 +273,7 @@ const trekkingGearData = [
                 desc: 'For travel in and out of the country, while on buses, and for casual nights out on the town.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -276,6 +281,7 @@ const trekkingGearData = [
                 desc: 'with visa if necessary.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Exoficio',
@@ -307,6 +313,7 @@ const trekkingGearData = [
                 desc: 'Heavy trash bags to be used as pack liners during in-climate weather. Zip Lock Bags For organizing and waterproofing items.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -354,6 +361,7 @@ const trekkingGearData = [
                 desc: 'Hand sanitizer is key while traveling. Tooth brush, tooth paste, floss, deodorant, travel size shampoo and soap. Also include WET WIPES. A quick dry towel is super handy.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -377,6 +385,7 @@ const trekkingGearData = [
                 desc: 'Trail mix, GU energy gel, Clif Shot Blocks, Honey Stinger Waffles, powdered drink mixes whatever your favorite trail food is while training. Don\'t bring a whole suitcase but enough for the duration of your trip. 2-3 pounds should be sufficient, unless you eat a lot. REMEMBER- YOU ARE RESPONSIBLE FOR YOUR OWN SNACK FOOD WHILE ON THIS TRIP.',
                 required: true,
                 rentable: false,
+                img: '',
             }
         ],
     }
@@ -392,6 +401,7 @@ const climbingGearData = [
                 desc: 'Non-technical general mountaineering axe. Should be 55-65cm in length and have a leash.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Pro pick: Black Diamond Sabretooth or Petzl Vasak',
@@ -399,6 +409,7 @@ const climbingGearData = [
                 desc: 'Step in bindings with anti balling plates to keep snow from balling up under the crampon.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Recommended: Black Diamond Vapor or Half Dome',
@@ -414,6 +425,7 @@ const climbingGearData = [
                 desc: 'Required to have a belay loop and adjustable leg loops to fit over all climbing layers. As lightweight and comfortable as possible.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Recommended: Black Diamond ATC or Petzl Reverso',
@@ -421,6 +433,7 @@ const climbingGearData = [
                 desc: 'The lighter the better. Should have groves with teeth for skinny ropes.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Recommended: Black Diamond Magnetron',
@@ -436,6 +449,7 @@ const climbingGearData = [
                 desc: 'Simple and lightweight is best.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Recommended: Sterling ropes or Blue Water ropes',
@@ -443,6 +457,7 @@ const climbingGearData = [
                 desc: 'This will be used to make into prussiks/slings. NON KEVLAR.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Recommended: Black Diamond Alpine Carbon Cork',
@@ -747,6 +762,7 @@ const climbingGearData = [
                 desc: '1 liter.',
                 required: false,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Nalgene',
@@ -770,6 +786,7 @@ const climbingGearData = [
                 desc: 'Optional. A common brand is the freshette.',
                 required: false,
                 rentable: false,
+                img: '',
             }
         ],
     },
@@ -782,6 +799,7 @@ const climbingGearData = [
                 desc: 'For travel in and out of the country, while on buses, and for casual nights out on the town.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -789,6 +807,7 @@ const climbingGearData = [
                 desc: 'with visa if necessary.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: 'Exoficio',
@@ -820,6 +839,7 @@ const climbingGearData = [
                 desc: 'Heavy trash bags to be used as pack liners during in-climate weather.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -867,6 +887,7 @@ const climbingGearData = [
                 desc: 'Hand sanitizer is key while traveling. Tooth brush, tooth paste, floss, deodorant, travel size shampoo and soap. Also include WET WIPES. A quick dry towel is super handy.',
                 required: true,
                 rentable: false,
+                img: '',
             },
             {
                 brand: '',
@@ -890,6 +911,7 @@ const climbingGearData = [
                 desc: 'Trail mix, GU energy gel, Clif Shot Blocks, Honey Stinger Waffles, powdered drink mixes whatever your favorite trail food is while training. Don\'t bring a whole suitcase but enough for the duration of your trip. 2-3 pounds should be sufficient, unless you eat a lot. REMEMBER- YOU ARE RESPONSIBLE FOR YOUR OWN SNACK FOOD WHILE ON THIS TRIP.',
                 required: true,
                 rentable: false,
+                img: '',
             }
         ],
     }

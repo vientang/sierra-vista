@@ -1,20 +1,21 @@
-import { 
-    Button, 
-    ContentContainer,
-    ContentSection,
-    GearInfo,
-    HeroImage, 
-    InclusionChart,
-    PriceChart,
-    TripContainer, 
-    TripContent, 
-    TripDates,
-    TripHeader, 
-    TripNav, 
-    TripSidePanel,
-} from '../components/styles';
-import { AcclimatizeIcon, GearIcon, ItineraryIcon, PriceIcon } from '../components/icons';
+import InnerPageContainer from '../components/InnerPageContainer';
+import InnerPageContent from '../components/InnerPageContent';
+import ContentContainer from '../components/ContentContainer';
+import ContentSection from '../components/ContentSection';
+import GearInfo from '../components/GearInfo';
+import TripNav from '../components/TripNav';
+import Button from '../components/Button';
+import HeroImage from '../components/HeroImage';
+import SidePanel from '../components/SidePanel';
+import TripHeader from '../components/TripHeader';
+import TripDates from '../components/TripDates';
+import ElevationsChart from '../components/ElevationsChart';
+import PriceChart from '../components/PriceChart';
+import InclusionChart from '../components/InclusionChart';
+import Skills from '../components/Skills';
+import Title from '../components/Title';
 import DownloadLink from '../components/DownloadLink';
+import { AcclimatizeIcon, GearIcon, ItineraryIcon, PriceIcon } from '../components/icons';
 import trips from '../static/trip-data';
 
 const { 
@@ -35,8 +36,8 @@ const {
 const CordilleraHuayhuash = () => {    
     return (
         <React.Fragment>
-            <HeroImage src={heroImg} alt={name} base64={base64} />
-            <TripContainer>
+            <HeroImage src={heroImg} alt={name} base64={base64} />            
+            <InnerPageContainer>
                 <TripHeader>
                     <h2>{title}</h2>
                     <TripNav>
@@ -52,8 +53,7 @@ const CordilleraHuayhuash = () => {
                         </li>
                     </TripNav>
                 </TripHeader>
-                
-                <TripContent>
+                <InnerPageContent>
                     <ContentContainer>
                         <ContentSection>
                             <p className="overview-section">{overview[0]}</p>
@@ -106,23 +106,21 @@ const CordilleraHuayhuash = () => {
                             <h3 id="prices" className="trip-section-title">
                                 <PriceIcon size={24} />Prices:
                             </h3>
+                            <PriceChart trip="huayhuash" style={{ padding: '0 3rem' }} />
                             <InclusionChart trip="huayhuash" />
                         </ContentSection>
                     </ContentContainer>
                     
-                    <TripSidePanel>
+                    <SidePanel>
+                        <Title className="side-panel-title">{title}</Title>
                         <TripDates dates={dates} duration={duration} />
-                        <p>Skill Level: {skillLevel}</p>
+                        <PriceChart trip="huayhuash" renderTitle />
+                        <Skills skillLevel={skillLevel} />
                         <DownloadLink linkText="gear list" text="Download a" url={`/static/${gearList}`} />
-                        <p>Prices:</p>
-                        <PriceChart trip="huayhuash" />
-                        <div>
-                            <p>Elevations:</p>
-                            <ul>{elevations.map((elevation, i) => <li key={i}>{elevation}</li>)}</ul>                            
-                        </div>                       
-                    </TripSidePanel>
-                </TripContent>
-            </TripContainer>
+                        <ElevationsChart elevations={elevations} />           
+                    </SidePanel>
+                </InnerPageContent>
+            </InnerPageContainer>
         </React.Fragment>        
     )
 }
