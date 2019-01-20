@@ -71,7 +71,7 @@
       "publicPath": "static/chunks/commons.5b3d34d8dad9cccf136a.js"
     }
   ],
-  "../modules/_core": [
+  "../../modules/_core": [
     {
       "id": 10,
       "name": "./node_modules/core-js/library/modules/_core.js",
@@ -311,7 +311,7 @@
       "publicPath": "static/chunks/commons.5b3d34d8dad9cccf136a.js"
     }
   ],
-  "./defineProperty": [
+  "@babel/runtime-corejs2/helpers/defineProperty": [
     {
       "id": 41,
       "name": "./node_modules/@babel/runtime-corejs2/helpers/defineProperty.js",
@@ -1115,7 +1115,7 @@
       "publicPath": "static/chunks/commons.5b3d34d8dad9cccf136a.js"
     }
   ],
-  "../core-js/object/keys": [
+  "@babel/runtime-corejs2/core-js/object/keys": [
     {
       "id": 173,
       "name": "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js",
