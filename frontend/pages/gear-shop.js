@@ -65,11 +65,20 @@ const StyledGearList = styled.div`
 `;
 
 class GearShopPage extends React.Component {
-    state = {
-        active: 'trekking',
-        cartItems: [],
+    constructor() {
+        super();
+        this.state = {
+            active: 'trekking',
+            cartItems: [],
+            feedback: 'This is a test email',
+            firstName: '',
+            formEmailSent: false,
+            formSubmitted: false,
+            lastName: '',
+            recipientEmail: '',
+        }
     }
-
+    
     getGearList = (type) => {
         const gearList = type === 'trekking' ? trekkingGearData : climbingGearData;
         return gearList.map((item, i) => (
@@ -85,6 +94,52 @@ class GearShopPage extends React.Component {
         ));
     }
 
+    handleSubmit = (e) => {
+        event.preventDefault()
+        
+        // this.sendFeedback(
+        //     this.state.feedback,
+        //     emailJsConfig.EMAILJS_RECEIVER,
+        //     this.state.recipientEmail,
+        //     this.state.feedback,
+        // )
+
+        this.setState(() => ({
+            formSubmitted: true
+        }));
+    }
+
+    sendFeedback(templateId, senderEmail, receiverEmail, feedback) {
+        window.emailjs.send(
+            'mailgun',
+            templateId,
+            {
+                senderEmail,
+                receiverEmail,
+                feedback
+            })
+            .then(res => {
+                this.setState(() => ({ formEmailSent: true }));
+            })
+            // Handle errors here however you like, or use a React error boundary
+            .catch(err => console.error('Failed to send feedback. Error: ', err))
+    }
+    
+    handleFirstName = (e) => {
+        const firstName = e.target.value;
+        this.setState(() => ({ firstName }));
+    }
+
+    handleLastName = (e) => {
+        const lastName = e.target.value;
+        this.setState(() => ({ lastName }));
+    }
+
+    handleEmailAddress = (e) => {
+        const recipientEmail = e.target.value;
+        this.setState(() => ({ recipientEmail }));
+    }
+
     handleUpdateCartItems = (title) => {
         const { active } = this.state;
         const gearList = active === 'trekking' ? trekkingGearData : climbingGearData;
@@ -97,7 +152,7 @@ class GearShopPage extends React.Component {
             }
             return false;
         });
-
+        
         this.setState((prevState) => ({ cartItems: [item, ...prevState.cartItems] }))
     }
 
@@ -146,14 +201,13 @@ class GearShopPage extends React.Component {
                             linkText="rental agreement."
                             url="/static/rental_terms_release_of_liability.pdf"
                         />
-                        <p>Select an item to rent and it will appear on this list.</p>
                         <RentalCartList>
                             {cartItems.map(item => <p key={item.title}>{item.title}</p>)}
                         </RentalCartList>
-                        <Form emptyCart={cartItems.length > 0}>
-                            <input type="text" placeholder="First name" />
-                            <input type="text" placeholder="Last name" />
-                            <input type="text" placeholder="Email" />
+                        <Form emptyCart={cartItems.length < 1} onSubmit={this.handleSubmit}>
+                            <input type="text" placeholder="First name" onChange={this.handleFirstName} />
+                            <input type="text" placeholder="Last name" onChange={this.handleLastName}/>
+                            <input type="text" placeholder="Email" onChange={this.handleEmailAddress} />
                             <Button 
                                 width="5rem" 
                                 disabled={cartItems.length < 1}

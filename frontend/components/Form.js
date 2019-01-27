@@ -20,9 +20,9 @@ const Form = styled.form`
     padding: 1rem;
     line-height: 1.5;
     font-weight: 600;
-    opacity: ${props => props.emptyCart ? 1 : 0.3};
+    opacity: ${props => props.emptyCart ? 0.3 : 1};
     pointer-events: ${props => props.emptyCart ? 'none' : 'auto'};
-    transition: 1s opacity ease-in;
+    transition: 0.25s opacity ease-in-out;
     box-sizing: border-box;
     label {
         display: block;

@@ -127,7 +127,7 @@ const Vallunaraju = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="huayhuash" style={{ padding: '0 3rem' }} />
+                            <PriceChart trip="vallunaraju" style={{ padding: '0 3rem' }} />
                             <InclusionChart trip="vallunaraju" />
                         </ContentSection>
                     </ContentContainer>
@@ -135,7 +135,7 @@ const Vallunaraju = () => {
                     <SidePanel>
                         <Title className="side-panel-title">{title}</Title>
                         <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="vallunaraju" />
+                        <PriceChart trip="vallunaraju" renderTitle />
                         <Skills skillLevel={skillLevel} />
                         <DownloadLink 
                             linkText="gear list" 

@@ -103,7 +103,7 @@ const Olleros = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="huayhuash" style={{ padding: '0 3rem' }} />
+                            <PriceChart trip="chavin" style={{ padding: '0 3rem' }} />
                             <InclusionChart trip="chavin" />
                         </ContentSection>
                     </ContentContainer>
@@ -111,7 +111,7 @@ const Olleros = () => {
                     <SidePanel>
                         <Title className="side-panel-title">{title}</Title>
                         <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="chavin" />
+                        <PriceChart trip="chavin" renderTitle />
                         <Skills skillLevel={skillLevel} />
                         <DownloadLink 
                             linkText="gear list" 

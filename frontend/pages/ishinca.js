@@ -119,7 +119,7 @@ const IshincaValley = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="huayhuash" style={{ padding: '0 3rem' }} />
+                            <PriceChart trip="ishinca" style={{ padding: '0 3rem' }} />
                             <InclusionChart trip="ishinca" />
                         </ContentSection>
                     </ContentContainer>
@@ -127,7 +127,7 @@ const IshincaValley = () => {
                     <SidePanel>
                         <Title className="side-panel-title">{title}</Title>
                         <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="ishinca" />
+                        <PriceChart trip="ishinca" renderTitle />
                         <Skills skillLevel={skillLevel} />
                         <DownloadLink 
                             linkText="gear list" 

@@ -1,7 +1,7 @@
 import App, { Container } from 'next/app';
-import Page from '../components/Page';
 import { ApolloProvider } from 'react-apollo';
 import withData from '../lib/withData';
+import Page from '../components/Page';
 class Application extends App {
     /**
      * Next.js custom lifecycle method to crawl through all pages
@@ -23,7 +23,7 @@ class Application extends App {
 
     render() {
         const { Component, apollo, pageProps } = this.props;
-
+        
         return (
             <Container>
                 <ApolloProvider client={apollo}>

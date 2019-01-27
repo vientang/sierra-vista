@@ -115,7 +115,7 @@ const Pisco = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="prices" className="trip-section-title"><PriceIcon size={24} />Prices:</h3>
-                            <PriceChart trip="huayhuash" style={{ padding: '0 3rem' }} />
+                            <PriceChart trip="pisco" style={{ padding: '0 3rem' }} />
                             <InclusionChart trip="pisco" />
                         </ContentSection>
                     </ContentContainer>
@@ -123,7 +123,7 @@ const Pisco = () => {
                     <SidePanel>
                         <Title className="side-panel-title">{title}</Title>
                         <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="pisco" />
+                        <PriceChart trip="pisco" renderTitle />
                         <Skills skillLevel={skillLevel} />
                         <DownloadLink 
                             linkText="gear list" 

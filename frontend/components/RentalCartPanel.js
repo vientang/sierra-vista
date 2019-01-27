@@ -10,10 +10,10 @@ const RentalCartPanel = styled.div`
     p {
         font-size: 0.8rem;
         font-weight: normal;
-        color: ${props => props.theme.lightGrey};
+        color: ${props => props.theme.black};
     }
     .rental-agreement-link {
-        color: ${props => props.theme.black};
+        color: ${props => props.theme.grey};
         font-size: 0.8rem;
         font-weight: normal;
         line-height: normal;

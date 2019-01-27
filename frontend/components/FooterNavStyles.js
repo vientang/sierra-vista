@@ -36,7 +36,7 @@ const FooterNavStyles = styled.ul`
         padding: 0;
         font-family: ${props => props.theme.standardFont};
         font-weight: normal;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: white;
         white-space: nowrap;
         background: none;
@@ -57,6 +57,7 @@ const FooterNavStyles = styled.ul`
     }
     .footer-links {
         display: inline-block;
+        line-height: 2;
     }
     @media (max-width: 1300px) {
         border-top: 1px solid ${props => props.theme.lightGrey};
