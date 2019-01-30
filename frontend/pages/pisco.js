@@ -18,6 +18,7 @@ import Title from '../components/Title';
 import DownloadLink from '../components/DownloadLink';
 import {
     AcclimatizeIcon,
+    EmailIcon,
     GearIcon,
     ItineraryIcon,
     PriceIcon,
@@ -48,7 +49,7 @@ const Pisco = () => {
             <HeroImage src={heroImg} alt={name} base64={base64} />
             <InnerPageContainer>
                 <TripHeader>
-                    <h2>{title}</h2>
+                    <h2 className="overview-title">{title}</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -58,7 +59,12 @@ const Pisco = () => {
                         <li><a href="#prices">Prices</a></li>
                         <li>
                             <a href={`static/${application}`} download="Book_Trip">
-                                <Button>Book this trip</Button>
+                                <Button>Book trip</Button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href={`static/${application}`} download="Book_Trip">
+                                <EmailIcon size={30} />
                             </a>
                         </li>
                     </TripNav>
@@ -121,17 +127,26 @@ const Pisco = () => {
                     </ContentContainer>
                     
                     <SidePanel>
-                        <Title className="side-panel-title">{title}</Title>
-                        <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="pisco" renderTitle />
-                        <Skills skillLevel={skillLevel} />
-                        <DownloadLink 
-                            linkText="gear list" 
-                            text="Download a" 
-                            url={`/static/${gearList}`} 
-                        />
-                        <ElevationsChart elevations={elevations} />
-                        <ExperienceGainedChart experience={experience} />
+                        {({ scrollY }) => {
+                            return (
+                                <>
+                                    <Title className="side-panel-title">{title}</Title>
+                                    <TripDates dates={dates} duration={duration} />
+                                    <PriceChart trip="pisco" renderTitle />
+                                    <Skills skillLevel={skillLevel} />
+                                    <DownloadLink
+                                        linkText="gear list"
+                                        text="Download a"
+                                        url={`/static/${gearList}`}
+                                    />
+                                    <ElevationsChart elevations={elevations} scrollY={scrollY} />
+                                    <ExperienceGainedChart 
+                                        experience={experience}
+                                        scrollY={scrollY}
+                                    />
+                                </>
+                            )
+                        }}
                     </SidePanel>
                 </InnerPageContent>
             </InnerPageContainer>

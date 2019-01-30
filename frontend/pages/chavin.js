@@ -39,7 +39,7 @@ const Olleros = () => {
             <HeroImage src={heroImg} alt={name} base64={base64} />
             <InnerPageContainer>
                 <TripHeader>
-                    <h2>{title}</h2>
+                    <h2 className="overview-title">{title}</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -109,16 +109,22 @@ const Olleros = () => {
                     </ContentContainer>
                     
                     <SidePanel>
-                        <Title className="side-panel-title">{title}</Title>
-                        <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="chavin" renderTitle />
-                        <Skills skillLevel={skillLevel} />
-                        <DownloadLink 
-                            linkText="gear list" 
-                            text="Download a" 
-                            url="/static/trekking_gear_check_list.pdf" 
-                        />
-                        <ElevationsChart elevations={elevations} />
+                        {({ scrollY }) => {
+                            return (
+                                <>
+                                    <Title className="side-panel-title">{title}</Title>
+                                    <TripDates dates={dates} duration={duration} />
+                                    <PriceChart trip="chavin" renderTitle />
+                                    <Skills skillLevel={skillLevel} />
+                                    <DownloadLink
+                                        linkText="gear list"
+                                        text="Download a"
+                                        url="/static/trekking_gear_check_list.pdf"
+                                    />
+                                    <ElevationsChart elevations={elevations} scrollY={scrollY} />
+                                </>
+                            )
+                        }}
                     </SidePanel>
                 </InnerPageContent>
             </InnerPageContainer>

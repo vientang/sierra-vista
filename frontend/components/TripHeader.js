@@ -8,12 +8,13 @@ const TripHeader = styled.header`
     transform: translateY(-50px);
     background: white;
     border-bottom: 1px solid ${props => props.theme.lightGrey};
-    h2 {
+    .overview-title {
         width: 50%;
         max-width: 50%;
         margin: 0;
         font-family: ${props => props.theme.headingFont};
-        font-size: calc(0.5rem + 0.75vw);
+        font-size: calc(0.4rem + 0.55vw);
+        text-transform: uppercase;
         color: ${props => props.theme.black};
     }
 `;

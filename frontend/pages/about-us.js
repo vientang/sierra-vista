@@ -88,7 +88,7 @@ const AboutUs = () => {
                         the perfect custom itinerary suited for your needs.
                     </p>
                 </ContentContainer>
-                <SidePanel paddingTop="3rem" fixed>
+                <SidePanel paddingTop="3rem">
                     <StyledContactInfo>
                         <EmailIcon size={24} />
                         <a      href="mailto:info@sierravistaexpeditions.com">info@sierravistaexpeditions.com</a>

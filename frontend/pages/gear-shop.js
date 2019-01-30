@@ -7,12 +7,9 @@ import RentalCartList from '../components/RentalCartList';
 import RentalCartPanel from '../components/RentalCartPanel';
 import Button from '../components/Button';
 import SidePanel from '../components/SidePanel';
+import Title from '../components/Title';
 import DownloadLink from '../components/DownloadLink';
 import { trekkingGearData, climbingGearData } from '../static/gear-data';
-
-const climbingTips = 'All of your sharp, metal items (crampons, ice axe, carabiners) and other heavy items will be packed into your larger expedition duffel and checked with your airline.  Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on duffle. It is recommended to put your climbing helmet in with your carry on, as it may break in a checked bag. Generally you will bring the large duffle to base camp, while leaving the other in the hotel. A light luggage travel scale is very helpful for last minute weight checks.';
-const trekkingTips = 'Have most of your trekking items and clothing needed for the trip in your duffle bag as checked luggage. Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on luggage. Your carry on may be a rolling type suitcase with wheels. This will also be left in the hotel while we are in the mountains. Make sure to bring TSA compliant travel locks for added security and peace of mind.';
-
 
 const StyledGearShop = styled.div`
     position: relative;
@@ -165,7 +162,10 @@ class GearShopPage extends React.Component {
     render() {
         const { active, cartItems } = this.state;
 
-        const packingTips = active === 'trekking' ? trekkingTips : climbingTips;
+        const packingTips = active === 'trekking' 
+            ? trekkingGearData[0].tips 
+            : climbingGearData[0].tips;
+            
         return (
             <StyledGearShop>
                 <StyledGearSection>
@@ -194,7 +194,7 @@ class GearShopPage extends React.Component {
                 </StyledGearSection>
                 <SidePanel paddingTop="2rem" fixed>
                     <RentalCartPanel>
-                        <h3>Rental items</h3>
+                        <Title padding="0 0 1rem 0" width="100%">Rental items</Title>
                         <DownloadLink
                             className="rental-agreement-link"
                             text="Please read and sign the"

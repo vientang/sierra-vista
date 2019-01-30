@@ -1,5 +1,6 @@
 const trekkingGearData = [
     {
+        tips: 'Have most of your trekking items and clothing needed for the trip in your duffle bag as checked luggage. Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on luggage. Your carry on may be a rolling type suitcase with wheels. This will also be left in the hotel while we are in the mountains. Make sure to bring TSA compliant travel locks for added security and peace of mind.',
         category: 'Technical Clothing',
         items: [
             {
@@ -8,7 +9,7 @@ const trekkingGearData = [
                 desc: 'Non-cotton only. Must be merino wool or a synthetic fiber such as polyester.',
                 required: true,
                 rentable: false,
-                img: 'base-layer-bottom-lightweight.jpg',
+                img: 'base-layer-top-lightweight.jpg',
             },
             {
                 brand: 'Patagonia Thermal Weight',
@@ -24,7 +25,7 @@ const trekkingGearData = [
                 desc: 'Non-cotton only. Must be merino wool or a synthetic fiber such as polyester.',
                 required: true,
                 rentable: false,
-                img: 'base-layer-top-lightweight.jpg',
+                img: 'or-echo-tee.jpg',
             },
             {
                 brand: 'Outdoor Researh Ferrosi Short',
@@ -32,7 +33,7 @@ const trekkingGearData = [
                 desc: 'If the sun is shining it may be hot at lower altitudes and on day hikes from town. Highly recommended. A synthetic fast drying trekking short. Also can double as a swim suit if you feel like plunging into a high alpine lake!',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'trekking-shorts.png',
             },
             {
                 brand: 'Outdoor Research Ferrosi Pant',
@@ -228,7 +229,7 @@ const trekkingGearData = [
                 desc: '1 liter.',
                 required: false,
                 rentable: false,
-                img: '',
+                img: 'thermos.jpg',
             },
             {
                 brand: 'Nalgene',
@@ -252,7 +253,7 @@ const trekkingGearData = [
                 desc: 'Optional. A common brand is the freshette.',
                 required: false,
                 rentable: false,
-                img: '',
+                img: 'freshette.jpg',
             }
         ],
     },
@@ -265,7 +266,7 @@ const trekkingGearData = [
                 desc: 'Great for traveling, while in town or out to dinner.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'tennis-shoes.jpg',
             },
             {
                 brand: '',
@@ -273,7 +274,7 @@ const trekkingGearData = [
                 desc: 'For travel in and out of the country, while on buses, and for casual nights out on the town.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'travel-clothes.jpg',
             },
             {
                 brand: '',
@@ -281,7 +282,7 @@ const trekkingGearData = [
                 desc: 'with visa if necessary.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'passport.jpg',
             },
             {
                 brand: 'Exoficio',
@@ -313,7 +314,7 @@ const trekkingGearData = [
                 desc: 'Heavy trash bags to be used as pack liners during in-climate weather. Zip Lock Bags For organizing and waterproofing items.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'contractor-bags.jpg',
             },
             {
                 brand: '',
@@ -361,7 +362,7 @@ const trekkingGearData = [
                 desc: 'Hand sanitizer is key while traveling. Tooth brush, tooth paste, floss, deodorant, travel size shampoo and soap. Also include WET WIPES. A quick dry towel is super handy.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'toiletry-kit.jpg',
             },
             {
                 brand: '',
@@ -385,7 +386,7 @@ const trekkingGearData = [
                 desc: 'Trail mix, GU energy gel, Clif Shot Blocks, Honey Stinger Waffles, powdered drink mixes whatever your favorite trail food is while training. Don\'t bring a whole suitcase but enough for the duration of your trip. 2-3 pounds should be sufficient, unless you eat a lot. REMEMBER- YOU ARE RESPONSIBLE FOR YOUR OWN SNACK FOOD WHILE ON THIS TRIP.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'gu-snack.jpg',
             }
         ],
     }
@@ -393,6 +394,7 @@ const trekkingGearData = [
 
 const climbingGearData = [
     {
+        tips: 'All of your sharp, metal items (crampons, ice axe, carabiners) and other heavy items will be packed into your larger expedition duffel and checked with your airline.  Lighter travel clothes, things needed for your first night in Lima, and during our first few nights in Huaraz can go in your carry on duffle. It is recommended to put your climbing helmet in with your carry on, as it may break in a checked bag. Generally you will bring the large duffle to base camp, while leaving the other in the hotel. A light luggage travel scale is very helpful for last minute weight checks.',
         category: 'Climbing gear',
         items: [
             {
@@ -401,7 +403,7 @@ const climbingGearData = [
                 desc: 'Non-technical general mountaineering axe. Should be 55-65cm in length and have a leash.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'petzl-summit-general-ice-axe.jpg',
             },
             {
                 brand: 'Pro pick: Black Diamond Sabretooth or Petzl Vasak',
@@ -409,7 +411,7 @@ const climbingGearData = [
                 desc: 'Step in bindings with anti balling plates to keep snow from balling up under the crampon.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'bd-sabretooth.jpg',
             },
             {
                 brand: 'Recommended: Black Diamond Vapor or Half Dome',
@@ -425,7 +427,7 @@ const climbingGearData = [
                 desc: 'Required to have a belay loop and adjustable leg loops to fit over all climbing layers. As lightweight and comfortable as possible.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'couloir-harness.jpg',
             },
             {
                 brand: 'Recommended: Black Diamond ATC or Petzl Reverso',
@@ -433,7 +435,7 @@ const climbingGearData = [
                 desc: 'The lighter the better. Should have groves with teeth for skinny ropes.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'belay-device.jpg',
             },
             {
                 brand: 'Recommended: Black Diamond Magnetron',
@@ -449,7 +451,7 @@ const climbingGearData = [
                 desc: 'Simple and lightweight is best.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'hotwire-non-locking.jpg',
             },
             {
                 brand: 'Recommended: Sterling ropes or Blue Water ropes',
@@ -457,7 +459,7 @@ const climbingGearData = [
                 desc: 'This will be used to make into prussiks/slings. NON KEVLAR.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'prussik-cord.jpg',
             },
             {
                 brand: 'Recommended: Black Diamond Alpine Carbon Cork',
@@ -494,7 +496,7 @@ const climbingGearData = [
                 desc: 'Non-cotton only. Must be merino wool or a synthetic fiber such as polyester.',
                 required: true,
                 rentable: false,
-                img: 'base-layer-top-lightweight.jpg',
+                img: 'or-echo-tee.jpg',
             },
             {
                 brand: 'Outdoor Research Ferrosi Pant',
@@ -595,7 +597,7 @@ const climbingGearData = [
                 desc: 'Defined as a boot with a removable liner, like a ski boot. Must be crampon compatible and have a full shank rigid sole. Plastic boots will work but modern boots are more comfortable. SINGLE BOOTS ARE NOT SUFFICIENT',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'double-boot.png',
             },
             {
                 brand: 'Outdoor Research Crocodile',
@@ -672,7 +674,7 @@ const climbingGearData = [
                 desc: 'These are worn on windy cold days. Snug fitting and lenses for bright sun are required. Ventilation and anti fog features are ideal.',
                 required: true,
                 rentable: false,
-                img: 'googles.jpg',
+                img: 'goggles.jpg',
             }
         ],
     },
@@ -762,7 +764,7 @@ const climbingGearData = [
                 desc: '1 liter.',
                 required: false,
                 rentable: false,
-                img: '',
+                img: 'thermos.jpg',
             },
             {
                 brand: 'Nalgene',
@@ -786,7 +788,7 @@ const climbingGearData = [
                 desc: 'Optional. A common brand is the freshette.',
                 required: false,
                 rentable: false,
-                img: '',
+                img: 'freshette.jpg',
             }
         ],
     },
@@ -799,7 +801,7 @@ const climbingGearData = [
                 desc: 'For travel in and out of the country, while on buses, and for casual nights out on the town.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'travel-clothes.jpg',
             },
             {
                 brand: '',
@@ -807,7 +809,7 @@ const climbingGearData = [
                 desc: 'with visa if necessary.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'passport.jpg',
             },
             {
                 brand: 'Exoficio',
@@ -839,7 +841,7 @@ const climbingGearData = [
                 desc: 'Heavy trash bags to be used as pack liners during in-climate weather.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'contractor-bags.jpg',
             },
             {
                 brand: '',
@@ -887,7 +889,7 @@ const climbingGearData = [
                 desc: 'Hand sanitizer is key while traveling. Tooth brush, tooth paste, floss, deodorant, travel size shampoo and soap. Also include WET WIPES. A quick dry towel is super handy.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'toiletry-kit.jpg',
             },
             {
                 brand: '',
@@ -911,7 +913,7 @@ const climbingGearData = [
                 desc: 'Trail mix, GU energy gel, Clif Shot Blocks, Honey Stinger Waffles, powdered drink mixes whatever your favorite trail food is while training. Don\'t bring a whole suitcase but enough for the duration of your trip. 2-3 pounds should be sufficient, unless you eat a lot. REMEMBER- YOU ARE RESPONSIBLE FOR YOUR OWN SNACK FOOD WHILE ON THIS TRIP.',
                 required: true,
                 rentable: false,
-                img: '',
+                img: 'gu-snack.jpg',
             }
         ],
     }

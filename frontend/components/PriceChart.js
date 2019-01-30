@@ -5,6 +5,11 @@ import priceData from '../static/price-data';
 
 const StylePriceContainer = styled.div`
     margin: 0.5rem 0;
+    .more-info-tooltip {
+        color: ${props => props.theme.dkBlue};
+        font-style: italic;
+        cursor: pointer;
+    }
 `;
 
 const StyledPriceChart = styled.div`
@@ -72,6 +77,22 @@ const PriceColumn = ({ items }) => {
     )
 }
 
+const overlayStyle = {
+    fontSize: '0.7rem',
+    fontFamily: 'Arial, sans-serif',
+    minWidth: 300,
+};
+
+const MoreInfo = () => (
+    <Tooltip 
+        placement="right"
+        title="Prices are reflected for one person and will be less with more people."
+        overlayStyle={overlayStyle}
+    >
+        <small className="more-info-tooltip">(more info)</small>
+    </Tooltip>
+)
+
 const PriceChart = ({ trip, style, renderTitle = false }) => {
     const data = priceData.find(tripData => tripData.trip === trip);
     const packages = data.prices;
@@ -79,7 +100,7 @@ const PriceChart = ({ trip, style, renderTitle = false }) => {
     
     return (
         <StylePriceContainer>
-            {renderTitle && <p>Prices:</p>}
+            {renderTitle && <p>Prices <MoreInfo />:</p>}
             <StyledPriceChart padding={padding}>
                 <PackageColumn items={packages} />
                 <PriceColumn items={packages} />

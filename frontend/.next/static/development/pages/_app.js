@@ -991,7 +991,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavMenu = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NavMenu",
   componentId: "sc-18mu66q-0"
-})(["display:flex;flex-direction:column;font-family:", ";"], function (props) {
+})(["display:flex;flex-direction:column;font-family:", ";line-height:1.75;"], function (props) {
   return props.theme.standardFont;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavMenu);
@@ -1202,7 +1202,7 @@ var theme = {
 /*!*******************!*\
   !*** ./config.js ***!
   \*******************/
-/*! exports provided: endpoint, prodEndpoint, perPage, emailJsConfig */
+/*! exports provided: endpoint, prodEndpoint, perPage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1210,16 +1210,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "endpoint", function() { return endpoint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prodEndpoint", function() { return prodEndpoint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "perPage", function() { return perPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emailJsConfig", function() { return emailJsConfig; });
 // This is client side config only - don't put anything in here that shouldn't be public!
 var endpoint = "http://localhost:4444";
 var prodEndpoint = 'https://sierra-vista-yoga-prod.herokuapp.com/';
 var perPage = 4;
-var emailJsConfig = {
-  EMAILJS_USERID: "user_5F0gIYOfpVKdI0kCjQoRq",
-  EMAILJS_TEMPLATEID: "rental_gear",
-  EMAILJS_RECEIVER: "vientang@gmail.com"
-};
 
 /***/ }),
 

@@ -1,7 +1,15 @@
 import styled from 'styled-components';
+import { Tooltip } from 'antd';
 
 const StyleElevationsContainer = styled.div`
     margin: 0.5rem 0;
+    p {
+        display: inline-block;
+    }
+    .elevation-tooltip {
+        color: ${props => props.theme.dkBlue};
+        cursor: pointer;
+    }
 `;
 
 const StyledElevationsCharts = styled.div`
@@ -32,16 +40,38 @@ const ElevationColumn = ({ elevations, mountain }) => {
     )
 }
 
-const ElevationsChart = ({ elevations }) => {    
+const ElevationContent = ({ elevations }) => {
+    return (
+        <StyledElevationsCharts>
+            <ElevationColumn elevations={elevations} mountain />
+            <ElevationColumn elevations={elevations} />
+        </StyledElevationsCharts>
+    )
+}
+
+const overlayStyle = { 
+    fontSize: '0.7rem', 
+    fontFamily: 'Arial, sans-serif', 
+    minWidth: 350,
+};
+
+const ElevationsChart = ({ elevations, scrollY }) => {
+    const elevationDisplay = scrollY > 790 
+        ? <Tooltip
+            autoAdjustOverflow={false}
+            placement="right"
+            title={<ElevationContent elevations={elevations} />}
+            overlayStyle={overlayStyle}
+        >
+            <p className="elevation-tooltip">Elevations</p>
+        </Tooltip>
+        : <><p>Elevations:</p><ElevationContent elevations={elevations} /></>;
+
     return (
         <StyleElevationsContainer>
-            <p>Elevations:</p>
-            <StyledElevationsCharts>
-                <ElevationColumn elevations={elevations} mountain />
-                <ElevationColumn elevations={elevations} />
-            </StyledElevationsCharts>
+            {elevationDisplay}
         </StyleElevationsContainer>
     )
 }
 
-export default ElevationsChart;
+export default React.memo(ElevationsChart);

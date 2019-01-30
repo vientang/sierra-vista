@@ -48,7 +48,7 @@ const IshincaValley = () => {
             <HeroImage src={heroImg} alt={name} base64={base64} />
             <InnerPageContainer>
                 <TripHeader>
-                    <h2>{title}</h2>
+                    <h2 className="overview-title">{title}</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -125,17 +125,26 @@ const IshincaValley = () => {
                     </ContentContainer>
                     
                     <SidePanel>
-                        <Title className="side-panel-title">{title}</Title>
-                        <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="ishinca" renderTitle />
-                        <Skills skillLevel={skillLevel} />
-                        <DownloadLink 
-                            linkText="gear list" 
-                            text="Download a" 
-                            url={`/static/${gearList}`} 
-                        />
-                        <ElevationsChart elevations={elevations} />
-                        <ExperienceGainedChart experience={experience} />                        
+                        {({ scrollY }) => {
+                            return (
+                                <>
+                                    <Title className="side-panel-title">{title}</Title>
+                                    <TripDates dates={dates} duration={duration} />
+                                    <PriceChart trip="ishinca" renderTitle />
+                                    <Skills skillLevel={skillLevel} />
+                                    <DownloadLink
+                                        linkText="gear list"
+                                        text="Download a"
+                                        url={`/static/${gearList}`}
+                                    />
+                                    <ElevationsChart elevations={elevations} scrollY={scrollY} />
+                                    <ExperienceGainedChart 
+                                        experience={experience} 
+                                        scrollY={scrollY} 
+                                    />
+                                </>
+                            )
+                        }}
                     </SidePanel>
                 </InnerPageContent>
             </InnerPageContainer>

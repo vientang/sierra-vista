@@ -3,23 +3,24 @@ import Link from 'next/link';
 import InnerPageContainer from '../components/InnerPageContainer';
 import InnerPageContent from '../components/InnerPageContent';
 import SidePanel from '../components/SidePanel';
-import { DownloadIcon, EmailIcon } from '../components/icons';
+import Title from '../components/Title';
+import { DownloadIcon } from '../components/icons';
 
 const StyledContactInfo = styled.div`
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
+    padding: 1rem;
     a {
-        margin-left: 1rem;
         font-family: ${props => props.theme.standardFont};
         font-size: 0.8rem;
-        line-height: normal;
+        line-height: 2;
     }
     a:hover {
         color: ${props => props.theme.blue};
     }
-    h3 {
-        margin: 1rem 0;
-        line-height: normal;
+    .staff-heading {
+        font-family: ${props => props.theme.headingFont};
     }
 `;
 
@@ -104,7 +105,7 @@ const Application = () => {
                 </ApplicationSection>
                 <SidePanel paddingTop="3rem" fixed>
                     <StyledContactInfo>
-                        <h3 className="staff-heading">Other forms</h3>
+                        <Title padding="0 0 1rem 0" width="100%">Other forms</Title>
                         <p>
                             <Link href="/static/rental_terms_release_of_liability.pdf">
                                 <a>Rental Agreement</a>

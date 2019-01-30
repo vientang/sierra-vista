@@ -1,7 +1,15 @@
 import styled from 'styled-components';
+import { Tooltip } from 'antd';
 
 const StyleExperienceContainer = styled.div`
     margin: 0.5rem 0;
+    p {
+        display: inline-block;
+    }
+    .experience-tooltip {
+        color: ${props => props.theme.dkBlue};
+        cursor: pointer;
+    }
 `;
 
 const StyledExperienceCharts = styled.div`
@@ -30,13 +38,35 @@ const ExperienceColumn = ({ experience }) => {
     )
 }
 
-const ExperienceGainedChart = ({ experience }) => {    
+const ExperienceContent = ({ experience }) => {
+    return (
+        <StyledExperienceCharts>
+            <ExperienceColumn experience={experience} />
+        </StyledExperienceCharts>
+    )
+}
+
+const overlayStyle = {
+    fontSize: '0.7rem',
+    fontFamily: 'Arial, sans-serif',
+    minWidth: 300,
+};
+
+const ExperienceGainedChart = ({ experience, scrollY }) => {
+    const experienceDisplay = scrollY > 790
+        ? <Tooltip
+            autoAdjustOverflow={false}
+            placement="right"
+            title={<ExperienceContent experience={experience} />}
+            overlayStyle={overlayStyle}
+        >
+            <p className="experience-tooltip">Experience gained</p>
+        </Tooltip>
+        : <><p>Experience gained:</p><ExperienceContent experience={experience} /></>;
+
     return (
         <StyleExperienceContainer>
-            <p>Experience gained:</p>
-            <StyledExperienceCharts>
-                <ExperienceColumn experience={experience} />
-            </StyledExperienceCharts>
+            {experienceDisplay}
         </StyleExperienceContainer>
     )
 }

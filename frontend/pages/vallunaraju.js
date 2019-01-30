@@ -48,7 +48,7 @@ const Vallunaraju = () => {
             <HeroImage src={heroImg} alt={name} base64={base64} />
             <InnerPageContainer>
                 <TripHeader>
-                    <h2>{title}</h2>
+                    <h2 className="overview-title">{title}</h2>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -68,10 +68,11 @@ const Vallunaraju = () => {
                     <ContentContainer>
                         <ContentSection>
                             <div className="overview-section">
-                                <h3 id="overview">Quilcayhuanca to Cojup Trek</h3>
+                                <h3 id="overview">Quilcayhuanca Trek</h3>
                                 <p className="overview-content">{overview[0]}</p>
                                 <h3>Vallunaraju Climb</h3>
                                 <p className="overview-content">{overview[1]}</p>
+                                <p className="overview-content">{overview[2]}</p>
                             </div>
                         </ContentSection>
                         <ContentSection>
@@ -94,10 +95,8 @@ const Vallunaraju = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="routes" className="trip-section-title"><RoutesIcon size={20} />Routes</h3>
-                            <h4 className="trip-section-sub-title">Vallunaraju Climb:</h4>  
-                            <p>{routes[0]}</p>
                             <h4 className="trip-section-sub-title">Vallunaraju Southwest Slopes</h4>
-                            <p>{routes[1]}</p>
+                            <p>{routes[0]}</p>
                         </ContentSection>
                         <ContentSection>
                             <h3 id="gear" className="trip-section-title"><GearIcon size={24} />Gear List</h3>
@@ -133,17 +132,26 @@ const Vallunaraju = () => {
                     </ContentContainer>
                     
                     <SidePanel>
-                        <Title className="side-panel-title">{title}</Title>
-                        <TripDates dates={dates} duration={duration} />
-                        <PriceChart trip="vallunaraju" renderTitle />
-                        <Skills skillLevel={skillLevel} />
-                        <DownloadLink 
-                            linkText="gear list" 
-                            text="Download a" 
-                            url={`/static/${gearList}`} 
-                        />
-                        <ElevationsChart elevations={elevations} />
-                        <ExperienceGainedChart experience={experience} />
+                        {({ scrollY }) => {
+                            return (
+                                <>
+                                    <Title className="side-panel-title">{title}</Title>
+                                    <TripDates dates={dates} duration={duration} />
+                                    <PriceChart trip="vallunaraju" renderTitle />
+                                    <Skills skillLevel={skillLevel} />
+                                    <DownloadLink
+                                        linkText="gear list"
+                                        text="Download a"
+                                        url={`/static/${gearList}`}
+                                    />
+                                    <ElevationsChart elevations={elevations} scrollY={scrollY} />
+                                    <ExperienceGainedChart 
+                                        experience={experience}
+                                        scrollY={scrollY} 
+                                    />
+                                </>
+                            )
+                        }}
                     </SidePanel>
                 </InnerPageContent>
             </InnerPageContainer>
