@@ -1,23 +1,22 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+const ContactButton = styled.button`
     position: relative;              
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: auto;
     width: ${props => props.width ? props.width : 'auto'};
     min-width: 3.2rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
     line-height: normal;
-    color: ${props => props.theme.black};
+    color: ${props => props.theme.dkBlue};
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: bold;
     white-space: nowrap;
-    border: 0;
     border-radius: 2px;
-    background: linear-gradient(to right, ${props => props.theme.blue}, ${props => props.theme.lightBlue});
+    background: ${props => props.theme.lightGrey};
     transition: transform 150ms ease-in-out, box-shadow 125ms ease-in;
     box-sizing: border-box;
     box-shadow: ${props => props.theme.bs};
@@ -30,7 +29,6 @@ const Button = styled.button`
     &:focus {
         transform: ${props => props.disabled ? 'scale(1)' : 'scale(1.035)'};
         filter: brightness(1.05);
-        box-shadow: ${props => props.theme.bs};
         outline: none;
         @media (max-width: 700px) {
             width: calc(100% - 10px);
@@ -42,4 +40,4 @@ const Button = styled.button`
     }
 `;
 
-export default Button;
+export default ContactButton;

@@ -5,6 +5,7 @@ import ContentSection from '../components/ContentSection';
 import GearInfo from '../components/GearInfo';
 import TripNav from '../components/TripNav';
 import Button from '../components/Button';
+import ContactButton from '../components/ContactButton';
 import HeroImage from '../components/HeroImage';
 import SidePanel from '../components/SidePanel';
 import TripHeader from '../components/TripHeader';
@@ -25,6 +26,7 @@ import {
     RoutesIcon,
 } from '../components/icons';
 import trips from '../static/trip-data';
+import theme from '../components/theme';
 
 const { 
     application, 
@@ -59,13 +61,14 @@ const Pisco = () => {
                         <li><a href="#prices">Prices</a></li>
                         <li>
                             <a href={`static/${application}`} download="Book_Trip">
-                                <Button>Book trip</Button>
+                                <Button>Book</Button>
                             </a>
                         </li>
                         <li>
-                            <a href={`static/${application}`} download="Book_Trip">
-                                <EmailIcon size={30} />
-                            </a>
+                            <ContactButton width="75px">
+                                <EmailIcon size={15} color={theme.dkBlue} />
+                                Email
+                            </ContactButton>
                         </li>
                     </TripNav>
                 </TripHeader>

@@ -1063,7 +1063,7 @@ var Nav = function Nav() {
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: this
   }, "About Us")))));
@@ -1088,7 +1088,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavMenu = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "NavMenu",
   componentId: "sc-18mu66q-0"
-})(["display:flex;flex-direction:column;font-family:", ";line-height:1.75;"], function (props) {
+})(["display:flex;flex-direction:column;font-family:", ";line-height:1.75;span{font-size:0.7rem;text-transform:uppercase;font-weight:bold;}"], function (props) {
   return props.theme.standardFont;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavMenu);

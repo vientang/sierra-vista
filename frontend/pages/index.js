@@ -123,9 +123,7 @@ const Intro = () => (
         <div>
             <h3>Sierra Vista Expeditions</h3>
             <p>
-            Here at Sierra Vista Expeditions, we offer a lower cost than most other companies based in the
-            United States. This is because we are a small company with all of our own staff and equipment based in
-            Peru. This allows us to pass on the savings to you.
+                Here at Sierra Vista Expeditions, we offer a lower cost than most other companies based in the United States. This is because we are a small company with all of our own staff and equipment based in Peru. This allows us to pass on the savings to you.
             </p>
         </div>
     </StyledIntro>
@@ -135,41 +133,28 @@ const InfoSection = () => (
     <StyledInfoSection>                
         <InfoCard 
             title="Assisted with animals" 
-            text="All of our trekking and climbing trips are assisted with animals, mainly burros (donkeys).
-                Everything we need for the trip including your personal gear and clothing will be transported by burros,
-                requiring you to carry only what you need for the day of hiking. This allows our guests to have lighter
-                backpacks, and more energy spent enjoying the lakes and beauty of the mountains." 
+            text="All of our trekking and climbing trips are assisted with animals, mainly burros (donkeys). Everything we need for the trip including your personal gear and clothing will be transported by burros, requiring you to carry only what you need for the day of hiking. This allows our guests to have lighter backpacks, and more energy spent enjoying the lakes and beauty of the mountains." 
             imgSrc="burro.jpg"
             imagePosition="left"
             icon="guide"
         />
         <InfoCard 
             title="Local food" 
-            text="The food we provide is excellent, hands down. We will be eating the local cuisine while on our
-                trek or climb. Examples of meals are pastas, rice, potatoes, trout, chicken, beef, oatmeal, quinoa,
-                puddings, eggs and breads. All of the food is purchased fresh in the local markets of Huaraz, and cooked
-                with a high degree of sanitation by our certified cooks. We may be able to accommodate certain dietary
-                restrictions with an advanced notice." 
+            text="The food we provide is excellent, hands down. We will be eating the local cuisine while on our trek or climb. Examples of meals are pastas, rice, potatoes, trout, chicken, beef, oatmeal, quinoa, puddings, eggs and breads. All of the food is purchased fresh in the local markets of Huaraz, and cooked with a high degree of sanitation by our certified cooks. We may be able to accommodate certain dietary restrictions with an advanced notice." 
             imgSrc="food.jpg"
             imagePosition="right"
             icon="food"
         />
         <InfoCard 
             title="Hospitality" 
-            text="We select excellent hotels in Lima and Huaraz with hot showers and continental breakfast
-            provided. They are located in the best affluent areas, close to restaurants and many attractions. All of the
-            transportation provided is with certified commercial drivers, and the vehicles are regularly inspected for
-            safety and maintenance." 
+            text="We select excellent hotels in Lima and Huaraz with hot showers and continental breakfast provided. They are located in the best affluent areas, close to restaurants and many attractions. All of the transportation provided is with certified commercial drivers, and the vehicles are regularly inspected for safety and maintenance." 
             imgSrc="girl_on_street.jpg"
             imagePosition="left"
             icon="hospitality"
         />
         <InfoCard 
             title="Equipment" 
-            text="The equipment we provide on our trips is of the highest quality. Popular brand names you may
-            recognize are selected for their durability and comfort. We provide a dining tent complete with tables and
-            chairs, plates and bowls, cups and cutlery. Also provided, is a complimentary 3 person tent with double
-            occupancy during our treks and climbs. All ropes are provided for trips requiring them." 
+            text="The equipment we provide on our trips is of the highest quality. Popular brand names you may recognize are selected for their durability and comfort. We provide a dining tent complete with tables and chairs, plates and bowls, cups and cutlery. Also provided, is a complimentary 3 person tent with double occupancy during our treks and climbs. All ropes are provided for trips requiring them." 
             imgSrc="man_w_gear.jpg"
             imagePosition="right"
             icon="gear"

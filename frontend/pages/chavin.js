@@ -4,7 +4,7 @@ import ContentContainer from '../components/ContentContainer';
 import ContentSection from '../components/ContentSection';
 import GearInfo from '../components/GearInfo';
 import TripNav from '../components/TripNav';
-import Button from '../components/Button';
+import ContactButton from '../components/ContactButton';
 import HeroImage from '../components/HeroImage';
 import SidePanel from '../components/SidePanel';
 import TripHeader from '../components/TripHeader';
@@ -14,9 +14,10 @@ import PriceChart from '../components/PriceChart';
 import InclusionChart from '../components/InclusionChart';
 import Skills from '../components/Skills';
 import Title from '../components/Title';
-import { AcclimatizeIcon, GearIcon, ItineraryIcon, PriceIcon } from '../components/icons';
+import { AcclimatizeIcon, EmailIcon, GearIcon, ItineraryIcon, PriceIcon } from '../components/icons';
 import DownloadLink from '../components/DownloadLink';
 import trips from '../static/trip-data';
+import theme from '../components/theme';
 
 const { 
     application, 
@@ -46,11 +47,12 @@ const Olleros = () => {
                         <li><a href="#gear">Gear List</a></li>
                         <li><a href="#acclimatization">Acclimatization</a></li>                     <li><a href="#prices">Prices</a></li>
                         <li>
-                            <a href={`static/${application}`} download="Book_Trip">
-                                <Button>Book this trip</Button>
-                            </a>
+                            <ContactButton width="75px">
+                                <EmailIcon size={15} color={theme.dkBlue} />
+                                Email
+                            </ContactButton>
                         </li>
-                    </TripNav>                    
+                    </TripNav>
                 </TripHeader>
                 
                 <InnerPageContent>

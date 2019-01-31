@@ -38,7 +38,12 @@ const Nav = () => {
             </Link>
             <Link href="/about-us">
                 <a className="nav-about-us">
-                    <Popover content={menu} placement="bottomRight" trigger="hover" mouseEnterDelay={0}>
+                    <Popover 
+                        content={menu} 
+                        placement="bottomRight" 
+                        trigger="hover" 
+                        mouseEnterDelay={0}
+                    >
                         <span>About Us</span>
                     </Popover>
                 </a>

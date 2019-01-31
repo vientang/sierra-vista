@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 const TripNav = styled.ul`
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    width: 55%;
+    flex: 0 1 65%;
     margin: 0;
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     list-style-type: none;
     a {
-        position: relative;                
-        white-space: nowrap;        
+        position: relative;
+        white-space: nowrap;
         border: 0;
         transition: transform 200ms ease-in-out, filter 200ms ease-in-out, box-shadow 200ms ease-in-out;
         cursor: pointer; 
@@ -38,12 +38,15 @@ const TripNav = styled.ul`
             }
         }
     }
-    @media (max-width: 1200px) {
+    li {
+        margin: 0 0.5rem;
+    }
+    /* @media (max-width: 1200px) {
         justify-content: center;
         width: 100%;
-        font-size: 1rem;    
+        font-size: 0.8rem;
         border-top: 1px solid ${props => props.theme.lightGrey};
-    }
+    } */
 `;
 
 export default TripNav;
