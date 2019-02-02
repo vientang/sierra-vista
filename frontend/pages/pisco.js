@@ -19,6 +19,7 @@ import Title from '../components/Title';
 import DownloadLink from '../components/DownloadLink';
 import {
     AcclimatizeIcon,
+    BookTripIcon,
     EmailIcon,
     GearIcon,
     ItineraryIcon,
@@ -51,7 +52,10 @@ const Pisco = () => {
             <HeroImage src={heroImg} alt={name} base64={base64} />
             <InnerPageContainer>
                 <TripHeader>
-                    <h2 className="overview-title">{title}</h2>
+                    <div className="overview-title">
+                        <h2>{title}</h2>
+                        <span>{elevations.summit[1]}</span>
+                    </div>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>
@@ -60,8 +64,15 @@ const Pisco = () => {
                         <li><a href="#acclimatization">Acclimatization</a></li>
                         <li><a href="#prices">Prices</a></li>
                         <li>
-                            <a href={`static/${application}`} download="Book_Trip">
-                                <Button>Book</Button>
+                            <a
+                                href={`static/${application}`}
+                                download="Book_Trip"
+                                style={{ margin: 0 }}
+                            >
+                                <Button>
+                                    <BookTripIcon size={15} color={theme.black} />
+                                    Book
+                                </Button>
                             </a>
                         </li>
                         <li>

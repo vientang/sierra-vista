@@ -215,7 +215,7 @@ class Home extends React.PureComponent {
                         <p>Cordillera Huayhuash</p>
                         <span>May 29th, 2019 - June 12th, 2019</span>
                         <Link href="/cordillera-huayhuash">
-                            <a><Button>Reserve a spot</Button></a>
+                            <a><Button>Book this trip</Button></a>
                         </Link>
                     </StyledOverlay>
                 </StyledHero>

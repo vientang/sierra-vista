@@ -6,6 +6,7 @@ const ContentContainer = styled.div`
     font-size: 0.9rem;
     margin: 0 3rem 5rem 0;
     padding-top: ${props => props.paddingTop ? props.paddingTop : 0};
+    box-sizing: border-box;
     h2 {
         font-family: ${props => props.theme.headingFont};
     }

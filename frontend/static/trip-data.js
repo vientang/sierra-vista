@@ -254,7 +254,7 @@ const trips = {
         dates: ['7/22/19 - 8/02/19'],
         duration: '(12 days)',
         skillLevel: 5,
-        title: 'Pisco 5,750m (18,870ft)',
+        title: 'Pisco',
         overview: [
             'Pisco is a classic mountain in the Cordillera Blanca. With relatively high altitude, This makes a great choice for those new to the Cordillera Blanca, and also for those who are short on time. Once on the summit, we will have one of the best 360 degree views in the Cordillera Blanca.',
             'Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques, and proper leadership. We want to emphasize, fast and light alpine climbing, while being well within our boundary\'s. This expedition is not guided, rather led. All expedition leaders have summited the mountains they are leading multiple times, and have adequate, sufficient experience to lead the team in a hazardous, high altitude environment.',
@@ -320,7 +320,7 @@ const trips = {
         dates: ['6/17/19 - 6/28/19'],
         duration: '(12 days)',
         skillLevel: 5,
-        title: 'Vallunaraju 5,686m (18,650ft)',
+        title: 'Vallunaraju',
         overview: [
             'This relatively relaxed two night three day trek is an ideal entry level trip to high altitude trekking. The first days trek to Tullpacocha is absolutely stunning. We will be hiking on soft grass areas know as pampas, all the while next to stunning alpine creeks, surrounded by incredible high valley walls, with high alpine wild flowers galore. Our active rest day includes a chance to explore a second valley, Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included. Our final day, we descend gradually out of the valley to meet our transportation and head back to Huraz.',
             'Nevado Vallunaraju sits directly above the city of Huaraz with a striking twin summit. After our acclimatization day hikes and our 3 day trek we will be well acclimatized. Vallunaraju offers wonderful views of the city of Huaraz and the peaks that surround it. This is en entry level climb with relatively high altitude, and a great chance to practice cramponing, ice axe, and roped glacial travel techniques.',

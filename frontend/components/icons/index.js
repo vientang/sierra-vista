@@ -1,6 +1,7 @@
 import AcclimatizeIcon from './AcclimatizeIcon';
 import AddIcon from './AddIcon';
 import AvatarIcon from './AvatarIcon';
+import BookTripIcon from './BookTripIcon';
 import DownloadIcon from './DownloadIcon';
 import EmailIcon from './EmailIcon';
 import FoodIcon from './FoodIcon';
@@ -17,6 +18,7 @@ export {
     AcclimatizeIcon,
     AddIcon,
     AvatarIcon,
+    BookTripIcon,
     DownloadIcon,
     EmailIcon,
     FoodIcon,

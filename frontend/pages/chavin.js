@@ -14,13 +14,18 @@ import PriceChart from '../components/PriceChart';
 import InclusionChart from '../components/InclusionChart';
 import Skills from '../components/Skills';
 import Title from '../components/Title';
-import { AcclimatizeIcon, EmailIcon, GearIcon, ItineraryIcon, PriceIcon } from '../components/icons';
+import { 
+    AcclimatizeIcon, 
+    EmailIcon, 
+    GearIcon, 
+    ItineraryIcon, 
+    PriceIcon 
+} from '../components/icons';
 import DownloadLink from '../components/DownloadLink';
 import trips from '../static/trip-data';
 import theme from '../components/theme';
 
 const { 
-    application, 
     base64,
     dates, 
     duration,
@@ -40,7 +45,9 @@ const Olleros = () => {
             <HeroImage src={heroImg} alt={name} base64={base64} />
             <InnerPageContainer>
                 <TripHeader>
-                    <h2 className="overview-title">{title}</h2>
+                    <div className="overview-title">
+                        <h2>{title}</h2>
+                    </div>
                     <TripNav>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#itinerary">Itinerary</a></li>

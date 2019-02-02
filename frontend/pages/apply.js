@@ -28,7 +28,8 @@ const ApplicationSection = styled.div`
     width: 60%;
     font-size: 0.9rem;
     margin-bottom: 5rem;
-    padding-top: 3rem;
+    padding: 3rem 1rem 0 0;
+    box-sizing: border-box;
     h2,
     .application-download {
         font-family: ${props => props.theme.headingFont};
