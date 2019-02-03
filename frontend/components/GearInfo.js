@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const GearInfo = () => (
+const GearInfo = ({ tripType }) => (
     <React.Fragment>
         <p>
             This list has been compiled to guide you on packing for your trip. The brands recommended are not
@@ -13,7 +13,14 @@ const GearInfo = () => (
         </p>
         <p>
             Most of these items are available for rent from Sierra Vista Expeditions on our 
-            <Link href="/gear-shop"><a className="print-gear-list">rental page</a></Link>. You must submit your rental 
+            <Link 
+                href={{
+                    pathname: '/gear-shop',
+                    query: { active: tripType }
+                }}
+            >
+                <a className="print-gear-list">rental page</a>
+            </Link>. You must submit your rental 
             requests 60 days prior to your trip start date. Around 30 days before your start date you will receive your 
             rental equipment in the mail. You are responsible for this equipment until it is shipped back to us once you 
             have arrived home.

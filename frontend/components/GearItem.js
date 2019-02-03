@@ -7,19 +7,22 @@ import { AddIcon } from './icons';
 const StyledItemGroup = styled.div`    
     position: relative;
     display: grid;
-    grid-template-columns: 7% 83% 10%;
+    grid-template-columns: 10% 83% 7%;
     padding: 0.8rem;
     border: 1px solid ${props => props.theme.offWhite};
     .gear-title {
+        font-size: 0.85rem;
         font-weight: bold;
-    }
-    .gear-desc {
-        font-weight: 450;
-        margin: 0.5rem 0;
+        line-height: 1.5;
     }
     .gear-brand {
         font-size: 0.75rem;
         font-weight: bold;
+        color: ${props => props.theme.mdGrey};
+    }
+    .gear-desc {
+        margin: 0.5rem 0.5rem;
+        font-weight: 450;
         color: ${props => props.theme.mdGrey};
     }
     .add-icon {
@@ -32,9 +35,11 @@ const StyledItemGroup = styled.div`
         }
     }
     img {
-        width: 40px;
-        height: 40px;
-        min-width: 100%;
+        object-fit: cover;
+        min-width: 40px;
+        max-width: 100%;
+        min-height: 40px;
+        max-height: 100%;
     }
     @media(max-width: 1300px) {
         padding: 0.5rem 1rem;
@@ -55,8 +60,8 @@ class GearItem extends Component {
                 <img src={imagePath} />
                 <ItemContent>
                     <p className="gear-title">{title}</p>
-                    <p className="gear-desc">{desc}</p>
                     <p className="gear-brand">{brand}</p>
+                    <p className="gear-desc">{desc}</p>
                 </ItemContent>
                 {rentable && (
                     <AddIcon className="add-icon" onClick={this.handleRentGear} size={20} />

@@ -65,17 +65,33 @@ class GearShopPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            active: 'trekking',
+            activeTab: 'trekking',
             cartItems: [],
             feedback: 'This is a test email',
             firstName: '',
             formEmailSent: false,
             formSubmitted: false,
+            initiatedBy: '',
             lastName: '',
             recipientEmail: '',
         }
     }
-    
+
+    static getDerivedStateFromProps(props, state) {
+        const { query } = props;
+        
+        if (query.active && query.active !== state.activeTab) {
+            return {
+                activeTab: state.initiatedBy === 'user' ? state.activeTab : query.active,
+                initiatedBy: '',
+            }
+        }
+
+        return {
+            initiatedBy: '',
+        };
+    }
+
     getGearList = (type) => {
         const gearList = type === 'trekking' ? trekkingGearData : climbingGearData;
         return gearList.map((item, i) => (
@@ -85,7 +101,8 @@ class GearShopPage extends React.Component {
                     <GearItem
                         key={`${gearItem.brand}-${i}`}
                         item={gearItem}
-                        addToCart={this.handleUpdateCartItems} />
+                        addToCart={this.handleUpdateCartItems} 
+                    />
                 ))}
             </StyledGearList>
         ));
@@ -138,8 +155,8 @@ class GearShopPage extends React.Component {
     }
 
     handleUpdateCartItems = (title) => {
-        const { active } = this.state;
-        const gearList = active === 'trekking' ? trekkingGearData : climbingGearData;
+        const { activeTab } = this.state;
+        const gearList = activeTab === 'trekking' ? trekkingGearData : climbingGearData;
         let item = {};
         gearList.some(category => {
             const foundItem = category.items.find(item => item.title === title);
@@ -155,30 +172,31 @@ class GearShopPage extends React.Component {
 
     handleTabSwitch = () => {
         this.setState((prevState) => ({
-            active: prevState.active === 'trekking' ? 'climbing' : 'trekking'
+            activeTab: prevState.activeTab === 'trekking' ? 'climbing' : 'trekking',
+            initiatedBy: 'user',
         }));
     }
 
     render() {
-        const { active, cartItems } = this.state;
+        const { activeTab, cartItems } = this.state;
 
-        const packingTips = active === 'trekking' 
-            ? trekkingGearData[0].tips 
+        const packingTips = activeTab === 'trekking'
+            ? trekkingGearData[0].tips
             : climbingGearData[0].tips;
-            
+
         return (
             <StyledGearShop>
                 <StyledGearSection>
                     <h2>Gear Shop</h2>
                     <Tabs>
                         <span
-                            className={active === 'trekking' ? 'active-tab' : ''}
+                            className={activeTab === 'trekking' ? 'active-tab' : ''}
                             onClick={this.handleTabSwitch}
                         >
                             Trekking
                         </span>
                         <span
-                            className={active === 'climbing' ? 'active-tab' : ''}
+                            className={activeTab === 'climbing' ? 'active-tab' : ''}
                             onClick={this.handleTabSwitch}
                         >
                             Climbing
@@ -190,7 +208,7 @@ class GearShopPage extends React.Component {
                         This list is based on our personal experience and to be used as a guide.
                         <a href="mailto:info@sierravistaexpeditions.com.com">E-mail</a> for details.
                     </p>
-                    {this.getGearList(active)}
+                    {this.getGearList(activeTab)}
                 </StyledGearSection>
                 <SidePanel paddingTop="2rem" fixed>
                     <RentalCartPanel>

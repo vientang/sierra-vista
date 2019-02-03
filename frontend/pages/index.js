@@ -33,7 +33,7 @@ const StyledOverlay = styled.div`
     bottom: 0;
     left: 0;
     margin-bottom: 5rem;
-    padding: ${props => props.theme.padding};
+    padding: 0 8rem;
     background: radial-gradient(closest-corner, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
     h2,
     a {

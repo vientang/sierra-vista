@@ -114,7 +114,7 @@ const Pisco = () => {
                         </ContentSection>
                         <ContentSection>
                             <h3 id="gear" className="trip-section-title"><GearIcon size={24} />Gear List</h3>
-                            <GearInfo />
+                            <GearInfo tripType="climbing" />
                             <DownloadLink linkText="printable version" text="Download a" url={`/static/${gearList}`} />
                         </ContentSection>
                         <ContentSection>

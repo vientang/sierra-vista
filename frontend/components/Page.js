@@ -34,6 +34,20 @@ injectGlobal`
         text-decoration: none;
         color: ${theme.black};
     }
+    .ant-popover-menu {
+        .ant-popover-inner-content {
+            border-radius: 2px;
+            background: ${theme.grey};
+        }
+        .ant-popover-content {
+            .ant-popover-arrow {
+                border-top-color: ${theme.grey};
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                border-left-color: ${theme.grey};
+            }
+        }
+    }
 `;
 
 const StyledPage = styled.div`

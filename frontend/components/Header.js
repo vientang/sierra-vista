@@ -23,11 +23,6 @@ const LogoContainer = styled.div`
     a {
         line-height: 0;
     }
-    @media(max-width: 1300px) {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        margin: 1rem 0;        
-    }
 `;
 
 const StyledHeader = styled.header`
@@ -40,7 +35,7 @@ const StyledHeader = styled.header`
     width: 100%;
     max-width: 100%;
     min-height: 5rem;    
-    padding: 0 5rem;
+    padding: 0 8rem;
     background-color: white;
     border-bottom: 10px solid ${props => props.theme.black};
     box-sizing: border-box;
@@ -54,14 +49,6 @@ const StyledHeader = styled.header`
     a {
         &:focus {
             text-decoration: none;
-        }
-    }
-    @media(max-width: 1300px) {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        padding: 0;
-        h3 {
-            margin: 0.4rem auto;
         }
     }
 `;
@@ -78,4 +65,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default React.memo(Header);

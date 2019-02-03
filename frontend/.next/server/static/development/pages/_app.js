@@ -470,11 +470,11 @@ next_router__WEBPACK_IMPORTED_MODULE_2___default.a.onRouteChangeError = function
 var LogoContainer = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
   displayName: "Header__LogoContainer",
   componentId: "sc-1i3qtuf-0"
-})(["position:relative;display:flex;align-items:center;a{line-height:0;}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;margin:1rem 0;}"]);
+})(["position:relative;display:flex;align-items:center;a{line-height:0;}"]);
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-1i3qtuf-1"
-})(["position:fixed;display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;top:0;width:100%;max-width:100%;min-height:5rem;padding:0 5rem;background-color:white;border-bottom:10px solid ", ";box-sizing:border-box;z-index:2;h3{font-size:1rem;line-height:normal;padding:0 1rem;margin:0;}a{&:focus{text-decoration:none;}}@media(max-width:1300px){grid-template-columns:1fr;justify-content:center;padding:0;h3{margin:0.4rem auto;}}"], function (props) {
+})(["position:fixed;display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;top:0;width:100%;max-width:100%;min-height:5rem;padding:0 8rem;background-color:white;border-bottom:10px solid ", ";box-sizing:border-box;z-index:2;h3{font-size:1rem;line-height:normal;padding:0 1rem;margin:0;}a{&:focus{text-decoration:none;}}"], function (props) {
   return props.theme.black;
 });
 
@@ -482,64 +482,64 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: "50px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 60
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 61
     },
     __self: this
   }, "Sierra Vista Expeditions")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 63
     },
     __self: this
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Header);
+/* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(Header));
 
 /***/ }),
 
@@ -862,6 +862,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _NavMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavMenu */ "./components/NavMenu.js");
 /* harmony import */ var _NavStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NavStyles */ "./components/NavStyles.js");
+/* harmony import */ var _static_trip_data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/trip-data */ "./static/trip-data.js");
 
 
 var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/components/Nav.js";
@@ -869,185 +870,409 @@ var _jsxFileName = "/Users/vientang/Documents/playground/sierra-vista/frontend/c
 
 
 
+
+
+var getDateString = function getDateString(dates) {
+  var start = dates[0].split(' ')[0];
+  return new Date(start).toDateString();
+};
+
 var menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NavMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 14
   },
   __self: undefined
 }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
   href: "/apply",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 15
   },
   __self: undefined
 }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 16
   },
   __self: undefined
-}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 17
   },
   __self: undefined
-}, "Trip application"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+}, "Trip application"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
+  className: "menu-list",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/static/rental_terms_release_of_liability.pdf",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  className: "menu-list-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}, "Rental Agreement"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 26
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/static/terms-and-conditions.pdf",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  className: "menu-list-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}, "Terms and Conditions"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 31
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/static/assumption-of-risk-release-of-liability.pdf",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 32
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  className: "menu-list-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33
+  },
+  __self: undefined
+}, "Assumption of Risk and Liability")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
   href: "/gear-shop",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 37
   },
   __self: undefined
 }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 38
   },
   __self: undefined
-}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 39
   },
   __self: undefined
-}, "Gear shop"))));
+}, "Gear shop"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
+  className: "menu-list",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 42
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 43
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: {
+    pathname: '/gear-shop',
+    query: {
+      active: 'trekking'
+    }
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 44
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  className: "menu-list-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 50
+  },
+  __self: undefined
+}, "Trekking gear"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 53
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: {
+    pathname: '/gear-shop',
+    query: {
+      active: 'climbing'
+    }
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 54
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  className: "menu-list-item",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 60
+  },
+  __self: undefined
+}, "Climbing gear")))));
+var trekMenu = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NavMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 68
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/cordillera-huayhuash",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 69
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 70
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 71
+  },
+  __self: undefined
+}, "Cordillera Huayhuash"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  className: "menu-item-desc",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 72
+  },
+  __self: undefined
+}, getDateString(_static_trip_data__WEBPACK_IMPORTED_MODULE_6__["default"].huayhuash.dates)))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/chavin",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 75
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 76
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 77
+  },
+  __self: undefined
+}, "Chavin de Huantar"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  className: "menu-item-desc",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 78
+  },
+  __self: undefined
+}, "Inquire for dates"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/quilcayhuanca",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 81
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 82
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 83
+  },
+  __self: undefined
+}, "Quilcayhuanca Valley"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  className: "menu-item-desc",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 84
+  },
+  __self: undefined
+}, getDateString(_static_trip_data__WEBPACK_IMPORTED_MODULE_6__["default"].quilcayhuanca.dates)))));
+var climbMenu = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NavMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 91
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/ishinca",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 92
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 93
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 94
+  },
+  __self: undefined
+}, "Ishinca Valley"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  className: "menu-item-desc",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 95
+  },
+  __self: undefined
+}, getDateString(_static_trip_data__WEBPACK_IMPORTED_MODULE_6__["default"].ishinca.dates)))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/pisco",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 98
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 99
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 100
+  },
+  __self: undefined
+}, "Pisco"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  className: "menu-item-desc",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 101
+  },
+  __self: undefined
+}, getDateString(_static_trip_data__WEBPACK_IMPORTED_MODULE_6__["default"].pisco.dates)))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: "/vallunaraju",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 104
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 105
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: "menu-item-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 106
+  },
+  __self: undefined
+}, "Vallunaraju"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  className: "menu-item-desc",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 107
+  },
+  __self: undefined
+}, getDateString(_static_trip_data__WEBPACK_IMPORTED_MODULE_6__["default"].vallunaraju.dates)))));
 
 var Nav = function Nav() {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NavStyles__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 115
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/cordillera-huayhuash",
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd_lib_popover__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    content: trekMenu,
+    placement: "bottomRight",
+    trigger: "hover",
+    mouseEnterDelay: 0,
+    overlayClassName: "ant-popover-menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 116
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+    className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 123
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, "Treks")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd_lib_popover__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    content: climbMenu,
+    placement: "bottomRight",
+    trigger: "hover",
+    mouseEnterDelay: 0,
+    overlayClassName: "ant-popover-menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 126
     },
     __self: this
-  }, "Cordillera Huayhuash"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/chavin",
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+    className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 133
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, "Chavin de Huantar"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/quilcayhuanca",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, "Quilcayhuanca Valley"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/ishinca",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, "Ishinca Valley"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/pisco",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, "Pisco"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/vallunaraju",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, "Vallunaraju"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, "Climbs")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/about-us",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-    className: "nav-about-us",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 136
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd_lib_popover__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -1055,15 +1280,23 @@ var Nav = function Nav() {
     placement: "bottomRight",
     trigger: "hover",
     mouseEnterDelay: 0,
+    overlayClassName: "ant-popover-menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 137
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 144
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
     },
     __self: this
   }, "About Us")))));
@@ -1088,8 +1321,14 @@ __webpack_require__.r(__webpack_exports__);
 var NavMenu = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "NavMenu",
   componentId: "sc-18mu66q-0"
-})(["display:flex;flex-direction:column;font-family:", ";line-height:1.75;span{font-size:0.7rem;text-transform:uppercase;font-weight:bold;}"], function (props) {
+})(["display:flex;flex-direction:column;min-width:200px;font-family:", ";line-height:2;a:focus{text-decoration:none;}.menu-item-title,.menu-item-desc,.menu-list-item{padding:0;color:", ";&:hover,&:focus{color:", ";}}.menu-item-desc,.menu-list-item{margin:0 1rem;font-size:0.75rem;}.menu-item-title{position:relative;margin:0;font-size:0.8rem;text-transform:uppercase;font-weight:bold;&:after{content:'';position:absolute;top:1.5rem;left:0;width:100%;height:2px;background-color:", ";}}.menu-list{list-style:none;margin:0.5rem 0;padding:0;line-height:1.75;}"], function (props) {
   return props.theme.standardFont;
+}, function (props) {
+  return props.theme.offWhite;
+}, function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.lightGrey;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavMenu);
 
@@ -1110,14 +1349,12 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "NavStyles",
   componentId: "tzvia0-0"
-})(["position:relative;display:flex;justify-self:end;margin:0;padding:0;max-width:100%;font-size:1rem;a{display:flex;align-items:center;position:relative;padding:0.5rem 1rem;color:", ";letter-spacing:0.5px;font-size:0.75rem;white-space:nowrap;background:none;border:0;cursor:pointer;@media (max-width:700px){font-size:0.8rem;padding:0 15px;}&:before{content:'';position:absolute;width:1px;height:40%;margin:auto 0;background:", ";left:0;top:0;bottom:0;}&:focus{text-decoration:none;}span{position:relative;transition:transform 100ms ease-in-out;&:after{content:'';position:absolute;height:4px;width:0;background:", ";margin-top:1rem;left:50%;opacity:0;transform:translateX(-50%);transition:opacity 250ms ease-in-out,width 250ms ease-in-out;transition-timing-function:cubic-bezier(1,-0.65,0,1.31);z-index:-1;}&:hover,&:focus{transform:scale(1.15);outline:none;&:after{opacity:1;width:calc(100% - 20px);}@media (max-width:700px){opacity:1;width:calc(100% - 10px);}}}}.nav-about-us{&:before{content:'';position:absolute;width:2px;height:40%;margin:auto 0;background:", ";left:0;top:0;bottom:0;}}@media (max-width:1300px){justify-content:center;width:100%;a{font-size:0.7rem;}}"], function (props) {
+})(["position:relative;display:flex;justify-self:end;align-items:center;margin:0;padding:0;max-width:100%;list-style:none;.nav-item{position:relative;margin:0;padding:0 1rem;color:", ";font-size:0.75rem;letter-spacing:0.5px;text-transform:uppercase;line-height:normal;transition:transform 100ms ease-in-out,opacity 100ms ease-in-out,width 100ms ease-in-out;cursor:pointer;&:before{content:'';position:absolute;width:1px;height:100%;margin:auto 0;background:", ";left:0;top:0;bottom:0;}&:after{content:'';position:absolute;height:4px;width:0;background:", ";margin-top:1rem;left:50%;opacity:0;transform:translateX(-50%);transition:opacity 250ms ease-in-out,width 250ms ease-in-out;transition-timing-function:cubic-bezier(1,-0.65,0,1.31);z-index:-1;}&:hover,&:focus{transform:scale(1.1);outline:none;&:after{opacity:1;width:calc(100% - 2rem);}@media (max-width:700px){opacity:1;width:calc(100% - 1rem);}}}"], function (props) {
   return props.theme.black;
 }, function (props) {
   return props.theme.lightGrey;
 }, function (props) {
   return props.theme.lightBlue;
-}, function (props) {
-  return props.theme.dkBlue;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavStyles);
 
@@ -1161,7 +1398,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    @font-face {\n        font-family: 'radnika_next';\n        src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');\n        font-weight: normal;\n        font-style: normal;\n    }\n    html: {\n        box-sizing: border-box;\n        font-size: 10px;\n    }\n    *, *:before, *:after {\n        box-sizing: inherit;\n    }\n    body {\n        margin: 0;\n        padding: 0;\n        font-family: 'radnika_next';\n        font-size: 1.2rem;\n        line-height: 2;\n    }\n    a {\n        text-decoration: none;\n        color: ", ";\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    @font-face {\n        font-family: 'radnika_next';\n        src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');\n        font-weight: normal;\n        font-style: normal;\n    }\n    html: {\n        box-sizing: border-box;\n        font-size: 10px;\n    }\n    *, *:before, *:after {\n        box-sizing: inherit;\n    }\n    body {\n        margin: 0;\n        padding: 0;\n        font-family: 'radnika_next';\n        font-size: 1.2rem;\n        line-height: 2;\n    }\n    a {\n        text-decoration: none;\n        color: ", ";\n    }\n    .ant-popover-menu {\n        .ant-popover-inner-content {\n            border-radius: 2px;\n            background: ", ";\n        }\n        .ant-popover-content {\n            .ant-popover-arrow {\n                border-top-color: ", ";\n                border-right-color: transparent;\n                border-bottom-color: transparent;\n                border-left-color: ", ";\n            }\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1183,7 +1420,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
  * Just need to call it here
  */
 
-Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_templateObject(), _theme__WEBPACK_IMPORTED_MODULE_5__["default"].black);
+Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_templateObject(), _theme__WEBPACK_IMPORTED_MODULE_5__["default"].black, _theme__WEBPACK_IMPORTED_MODULE_5__["default"].grey, _theme__WEBPACK_IMPORTED_MODULE_5__["default"].grey, _theme__WEBPACK_IMPORTED_MODULE_5__["default"].grey);
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Page__StyledPage",
   componentId: "sc-1yp396i-0"
@@ -1215,37 +1452,37 @@ function (_Component) {
         theme: _theme__WEBPACK_IMPORTED_MODULE_5__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 69
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 70
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InnerPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 71
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 74
         },
         __self: this
       })));
@@ -1276,12 +1513,12 @@ var theme = {
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
   black: '#393939',
   blue: '#00BDFF',
-  mdBlue: '#1c85f5',
   lightBlue: '#00dcff',
+  mdBlue: '#1c85f5',
   dkBlue: '#137bc2',
   lightGrey: '#E1E1E166',
-  mdGrey: '#555555',
   grey: '#3A3A3A',
+  mdGrey: '#555555',
   offWhite: '#EDEDED',
   red: '#FF0000',
   blueGradient: 'linear-gradient(to right, #00BDFF, #00dcff)',
@@ -1516,6 +1753,188 @@ function (_App) {
 }(next_app__WEBPACK_IMPORTED_MODULE_2___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_lib_withData__WEBPACK_IMPORTED_MODULE_4__["default"])(Application));
+
+/***/ }),
+
+/***/ "./static/trip-data.js":
+/*!*****************************!*\
+  !*** ./static/trip-data.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var trips = {
+  huayhuash: {
+    name: 'Cordillera Huayhuash',
+    url: '/cordillera-huayhuash',
+    application: 'trip_application.pdf',
+    heroImg: 'static/images/boat.jpg',
+    base64: 'static/images/boat-blur.jpg',
+    gearList: 'trekking_gear_check_list.pdf',
+    dates: ['5/29/19 - 6/12/19', '8/7/19 - 8/21/19'],
+    duration: '(15 days)',
+    skillLevel: 4,
+    title: 'Cordillera Huayhuash 10 Day Circuit',
+    overview: ['The Cordillera Huayhuash is an isolated and compact collection of mountains in the Peruvian Andes. Lying 100km south of Huaraz, this range hosts less trekkers and climbers, due to it\'s isolation. Ranked one of the top 10 treks in the world, trekking in the Huayhuash will never disappoint. Our Itinerary is a shortened version of the traditional 12-16 day trek. Due to recent improvements with access, this is made possible.', 'The Cordillera Huayhuash was a completely unprotected area until 2002, when the Peruvian government declared it a reserved area. However, the actual owners of this land, the communities situated around the range, have designated their own respective holdings, which they themselves manage. April through October is considered the dry season, with low chances of wind and rain. Temperatures can be up to 70 degrees on a bright sunny day, while dropping at or just below freezing in the early morning.'],
+    itinerary: {
+      basic: ['Arrive in Lima', 'Luxury Bus Lima to Huaraz', 'Acclimatization day hike', 'Acclimatization day hike', 'Drive Huaraz to Mantacancha camp at Cuartelhuain', 'Hike to laguna Mitucocha camp at laguna Carhuacocha', 'Rest day at laguna Carhuacocha', 'Hike Carnicero pass to Huayhuash camp', 'Hike Portachuelo pass to camp at laguna Viconga', 'Rest day at laguna Viconga', 'Hike Cuyoc pass camp at Rinconada', 'Hike to Huatiac camp', 'Hike Tapush pass and Yaucha pass camp at laguna Jahuacocha', 'Hike Pampa Llamac pass to Llamac, transport back to Huaraz', 'Luxury bus Huaraz to Lima, depart Lima'],
+      detailed: ['Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you. Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.', 'Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz 3,050m (10,000 ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.', 'Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200 ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'Starting early again we will take our transportation to the trail head of Laguna Churup, our second acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600 ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'After an early breakfast we will drive 3-4 hours to the village of Llamac 3,300m (10,825 ft). Once we arrive we will meet our burro team and the handlers. While we are eating lunch, the animals will be packed with all necessary group and personal gear for the next 8 days. After lunch we will begin hiking along the Quero river to our first nights camp at Cuartelhain 4,150m (13,615 ft). 5-6 hours total hiking time. All meals included.', 'After departing camp we will hike the Cacananpunta pass at 4,700m (15,420 ft). This pass marks the Andean Continental Divide, which is the watershed from the Andes to the Amazon and South Atlantic Ocean. Once over our second pass, Carhuac 4,650m (15,255 ft), we will be struck with the mighty views of Yerupaja 6,634m (21,765 ft) and Siula Grande 6,344m (20,813 ft). Siula Grande was made famous from the book and film Touching the Void, Simon Yates and Joe Simpson. We will descend the pass into a grassy valley and make our camp at laguna Carhuacocha 4,150m (13,615ft). This lake is renowned for its crystal turquoise water. On clear calm days, the lake has a perfect reflection of the mountains surrounding it. 6-7 hours hiking time. All meals included.', 'A well deserved rest. You can take a stroll around the lake, or just lay down, looking up at the peaks. All meals included.', 'Departing camp early we begin heading towards Carnicero pass 4,800m (15,750 ft). The pass is in between Nevado Carnicero 5,960m (19,550 ft) and Nevado Trapecio 5,653 (18,545 ft). Beautiful views of Lake Carnicero and Lake Atocshiac come into view. We descend into the small village of Huayhuash 4750m (15,585ft) and make our camp. Hiking time 6-7 hours. All meals included.', 'This morning we hike the Portachuelo de Huayhuash pass 4,750m (15,585 ft). From atop the pass will reveal outstanding views of the Cordillera Raura, another separate mountain range. Once we reach the lake of Viconga 4,395m (14,420 ft), we will soak our tired bodies in the warm natural hot springs. 5-6 hours total hiking time. All meals included.', 'Another well deserved rest day complete with a morning soak in the hot springs. Naps, hydration, and extra calories are key on this day. All meals included.', 'Once camp is departed we hike the Cuyoc pass 5,000m (16,405 ft). For those that opt out on a climb, this will be your high point. From here we have incredible views of the northern Huayhuash mountains and the southern Raura mountains. We descend and continue hiking to set up our camp in Rinconada 4,300m (14,110 ft). Hiking time 5-6 hours. All meals included.', 'Today the inclines decrease with easy walking to the village of Huayllap 3,700m (12,139 ft). Once in Huayllap, we continue up to the pastures of Huatiac 4,350m (14,270 ft) and make camp. 4-5 hours hiking time. All meals included.', 'Departing camp, we will hike the Yaucha pass at 4,800 (15,750 ft). Descending the pass we will trek into our camp at laguna Jahuacocha 4,150m (13,615ft). Hiking time 8 hours. All meals included.', 'Our last day of trekking, we depart the lake for the village of Llamac. Making a full circuit, this trek is not to be forgotten. At times it may test your physical and mental limits, but you just created memories that will last as long as you do. Once in the village, we will depart for our arranged accommodations in Huaraz. Hiking time 5-6 hours. Driving time 3-4 hours. Celebratory dinner provided by Sierra Vista Expeditions. All meals included.', 'Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima one additional night to enjoy fresh seafood and nightlife. Dinner not included.', 'Depart Lima for your next adventure.']
+    },
+    elevations: {
+      huaraz: ['Huaraz', '3,050m (10,000ft)'],
+      laguna: ['Laguna Wilcacocha', '3,720m (12,200ft)'],
+      churup: ['Laguna Churup', '4,450m (14,600ft)'],
+      llamac: ['Llamac', '3,300m (10,825ft)'],
+      cuartelhuain: ['Cuartelhuain camp', '4,150m (13,615ft)'],
+      cacananpunta: ['Cacananpunta pass', '4,700m (15,420ft)'],
+      carhuac: ['Carhuac pass', '4,650m (15,255ft)'],
+      carhuacocha: ['Laguna Carhuacocha', '4,150m (13,615ft)'],
+      carnicero: ['Carnicero pass', '4,800m (15,750ft)'],
+      huayhuash: ['Huayhuash village', '4,750m (15,585ft)'],
+      portachuelo: ['Portachuelo de Huayhuash pass', '4,750m (15,585ft)'],
+      viconga: ['Laguna Viconga', '4,395m (14,420ft)'],
+      cuyoc: ['Cuyoc pass', '5,000m (16,405ft)'],
+      rinconada: ['Rinconada camp', '4,300m (14,110ft)'],
+      huayllap: ['Huayllap village', '3,700m (12,139ft)'],
+      huatiac: ['Huatiac camp', '4,350m (14,270ft)'],
+      yaucha: ['Yaucha pass', '4,800m (15,750ft)'],
+      jahuacocha: ['Laguna Jahuacocha', '4,150m (13,615ft)']
+    }
+  },
+  quilcayhuanca: {
+    name: 'Quilcayhuanca Valley',
+    url: '/quilcayhuanca',
+    application: 'trip_application.pdf',
+    heroImg: 'static/images/quilcayhuanca-valley-sharp.jpg',
+    base64: 'static/images/quilcayhuanca-valley-blur.jpg',
+    gearList: 'trekking_gear_check_list.pdf',
+    dates: ['8/26/19 - 9/4/19'],
+    duration: '(10 days)',
+    skillLevel: 2,
+    title: 'Quilcayhuanca Trek',
+    overview: ['This relatively relaxed three night four day trek is an ideal entry level trip to high altitude trekking. The first days trek to Maparaju base camp is absolutely stunning. We will be hiking on soft grass areas know as pampas, all the while next to stunning alpine creeks, surrounded by incredible high valley walls, with high alpine wild flowers galore. Our second day will be spent hiking further into the valley to make our camp at the beautiful lake of Tullpacochca. Our active rest day includes a chance to explore a second valley, Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included. Our final day, we descend gradually out of the valley to meet our transportation. For those that do not wish to add on a climb, you will be heading back to Lima for your flights home.'],
+    itinerary: {
+      basic: ['Arrive in Lima', 'Luxury Bus Lima to Huaraz', 'Acclimatization day hike', 'Acclimatization day hike', 'Drive to the base of Quilcayhuanca, hike to first camp', 'Hike to Laguna Tullpacocha', 'Active rest day', 'Hike out, stay in Huaraz', 'Luxury bus Huaraz to Lima', 'Depart Lima'],
+      detailed: ['Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you. Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.', 'Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz 3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.', 'Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'Starting early again we will take our transportation to the trail head of Laguna Churup, our second acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'We will depart our hotel in Huaraz at 8am and drive with private transportaion to the base of the Quilcayhuanca valley. Here we will organize our burros and begin hiking to the base camp of Maparaju. 2-3 hours walking. All meals included.', 'After a leisurely morning, we will pack up camp and begin hiking to Lake Tullpacocha 4,250m (13,940). Here we will make our second nights camp. All meals included.', 'Today we have a nice active rest day. In the mid morning,, we will take a day hike up into the Cayesh valley. Or for those who wish to relax, you can spend your day hiking around the lake or just, read a book while looking at the mountains. All meals included.', 'Once breakfast is finished and the camp is packed, we will begin hiking out of the Quilcayhuanca valley. Once at the entrance, our transportation will be waiting to take us back to Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.', 'Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima one additional night to enjoy fresh seafood and nightlife. Dinner not included.', 'Depart Lima for your next adventure.']
+    },
+    elevations: {
+      huaraz: ['Huaraz', '3,050m (10,000ft)'],
+      laguna: ['Laguna Wilcacocha', '3,720m (12,200ft)'],
+      churup: ['Laguna Churup', '4,450m (14,600ft)'],
+      tullpacocha: ['Laguna Tullpacocha', '4,250m (13,940ft)']
+    }
+  },
+  chavin: {
+    name: 'Olleros to Chavin',
+    url: '/chavin',
+    application: 'trip_application.pdf',
+    heroImg: 'static/images/chinchey-1.jpg',
+    base64: 'static/images/chinchey-blur.jpg',
+    gearList: 'trekking_gear_check_list.pdf',
+    dates: ['Please inquire about trip dates'],
+    duration: '',
+    skillLevel: 3,
+    title: 'Olleros to Chavin Cultural Trek 4 Days',
+    overview: ['This 3 night 4 day trek is one of our easiest and entry level treks. The trekking route takes us from the west side of the Cordillera Blanca, over the Yanashallah pass, and down to the east side ending at Chavin de Huantar. Following an ancient Chavin civilization path, this trek is sacred. Chavin culture is considered the mother culture to all Peruvian people, including the Incas. We use Llamas on this trek, as was tradition, in ancient Chavin transportation methods.', 'Chavin de Huantar is an ancient archaeological site containing ruins and artifacts constructed at least by 3000BC. This area was occupied until 400-500BC by the Chavin, a major Pre-Incan Culture. This area is a UNESCO World Heritage Site. Primarily a Cermonial site, Chavin de Huantar provided a centralized location for all people of the region to gather for ceremony and worship. The site is located at the meeting point of two rivers, the Mosna river and the Huanchesca river. The meeting point of two rivers is referred to as tinkuy, in Quechua. Tinkuy can be defined as the harmonious meeting of opposing forces. It is suggested and well known that Chavin de Huantar did serve and continues to serve as the meeting place of the natural and cosmic forces.'],
+    itinerary: {
+      basic: ['Arrive in Lima', 'Luxury Bus Lima to Huaraz', 'Acclimatization day hike', 'Acclimatization day hike', 'Drive to Olleros, Hike to Sacracancha camp', 'Hike Yanashallash pass to Shonkoruri camp', 'Hike to Chavin de Huantar, stay in lodge', 'Private transportation back to Huaraz', 'Luxury bus Huaraz to Lima'],
+      detailed: ['Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you. Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.', 'Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz 3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.', 'Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'Starting early again we will take our transportation to the trail head of Laguna Churup, our second acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'After breakfast in our hotel we will be transferred to the small town of Olleros 3,500m (11,480ft). Here we will meet and pack our llamas and begin hiking to our first nights camp Sacracancha 3,850m (12,630ft). A gradual ascent will lead us to a small lake with amazing views of the surrounding mountains. 4-5 hours hiking total. All meals included.', 'Departing our camp we begin to hike towards the Yanashallash pass 4,700m (15,420ft). This is our high point of the trek. Once over the pass, we begin a section of downhill to our second nights camp at Shonkoruri 4,090m (13,420ft). 5-6 hours total hiking. All meals included.', 'Once camp is packed, we make our way to the ancient ruins of Chavin de Huantar 3,150m (10,335ft). Today we are hiking through small Quechua farming communities, witnessing traditional living and peaceful lifestyles. Tonight we will stay in basic accommodations in Chavin. 3-4 hours hiking total. All meals included.', 'Departing in the morning after breakfast, Private transportation takes us back to our hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.', 'Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima one additional night to enjoy fresh seafood and nightlife. Dinner not included.', 'Depart Lima for your next adventure.']
+    },
+    elevations: {
+      huaraz: ['Huaraz', '3,050m (10,000ft)'],
+      laguna: ['Laguna Wilcacocha', '3,720m (12,200ft)'],
+      olleros: ['Olleros', '3,500m (11,480ft)'],
+      sacracancha: ['Sacracancha', '3,850m (12,630ft)'],
+      yanashallash: ['Yanashallash pass', '4,700m (15,420ft)'],
+      shonkoruri: ['Shonkoruri', '4,090m (13,420ft)'],
+      chavin: ['Chavin de Huantar', '3,150m (10,335)']
+    }
+  },
+  ishinca: {
+    name: 'Ishinca Valley',
+    url: '/ishinca',
+    application: 'trip_application.pdf',
+    heroImg: 'static/images/ishinca-climb-sharp.jpg',
+    base64: 'static/images/ishinca-climb-blur.jpg',
+    gearList: 'climbing_gear_check_list.pdf',
+    dates: ['7/03/19 - 7/15/19'],
+    duration: '(13 days)',
+    skillLevel: 5,
+    title: 'Ishinca Valley Expedition',
+    overview: ['The Cordillera Blanca is the perfect destination for novice and advanced climbers alike. Also, for those looking to develop glacier experience, high altitude snow and ice climbing, climbers looking for partners or just to broaden your alpine climbing resume.', 'Sierra Vista Expeditions offers a cost effective high altitude expedition to 2 incredible introductory peaks. This expedition is limited to 6 climbers and two expedition leaders. With a 1:3 leader climber ratio.', 'Our experience shows that with a high level of fitness and basic crampon skills, you will enjoy the adventure more and perform better. We will review and discuss all practices needed for a safe, fast, light expedition of two 5,000 meter summits.', 'Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques, and proper leadership. We want to emphasize, fast and light alpine climbing, while being well within our boundary\'s. This expedition is not guided, rather led. All expedition leaders have summited the mountains they are leading multiple times, and have adequate, sufficient experience to lead the team in a hazardous, high altitude environment.'],
+    itinerary: {
+      basic: ['Arrive in Lima, hotel in Lima', 'Luxury bus to Huaraz', 'Acclimatization hike to Laguna Wilcacocha, hotel in Huaraz', 'Acclimatization hike to Laguna Churup, hotel in Huaraz', 'Private transport to Pashpa, hike to Ishinca Valley base camp', 'Rest Day at base camp', 'Glacier review day on Ishinca', 'Climb Ishinca', 'Rest day at base camp', 'Climb Urus Este', 'Hike to Pashpa, private transport to hotel in Huaraz', 'Luxury bus to Lima, hotel in Lima', 'Depart Lima'],
+      detailed: ['Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you. Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.', 'Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz 3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.', 'Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike.  Dinner not included.', 'Starting early again we will take our transportation to the trail head of Laguna Churup, our second acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'Our team will begin with breakfast at our hotel in Huaraz and depart at 8am. We will then make the one hour drive, as a team, with private transportation to Pashpa at the mouth of the Ishinca Valley. This is where we will meet the burros and arrieros. After loading, we will begin our 3 to 4 hour trek into Ishinca Valley base camp 4,350m (14,270ft) with light packs and lunch on the trail. Once camp is set up, we will enjoy a delicious and wholesome dinner surrounded with incredible views. All meals included.', 'Rest day at base camp. Today is a day for catching up on hydration and calories. We continue to acclimatize in anticipation for our summit days. All meals included.', 'Today we will depart base camp and hike 3 hours to the toe of the Ishinca glacier. Once on the glacier, we will practice roped travel, building anchors, crampon placement, ice axe placement, and crevasse rescue. We will stash all of our climbing gear and return to base camp. All meals included.', 'Departing base camp at 4 am, out by 5 am we will head back to the Ishinca gacier. Once on the glacier, our climb begins. After the summit 5,530m (18,145ft) and once off the glacier, we return to base camp. All meals included.', 'Relaxed morning and rest. After lunch, we will review crevasse rescue and anchor construction. All meals included.', 'Another alpine start leaving base camp by 5 am we will climb Urus Este 5,420m (17,782ft). Once off the glacier, we return to base camp in time for lunch. All meals included.', 'Depart base camp in the morning and trek back to Pashpa. Private transportation back to our hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.', 'Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima one additional night to enjoy fresh seafood and nightlife. Dinner not included.', 'Depart Lima for your next adventure.']
+    },
+    routes: ['We will begin on a trail immediately out of base camp on the north side of the valley. The trail is well marked and climbs 400 meters to the edge of the moraine ridge. Snow line is reached in 2-3 hours from base camp.', 'Climbing begins with a 45 degree snow slope while crossing over rock slabs leading to the base of the south east face snow slopes. The slopes climb 45 degree snow and relaxing gradually to the base of the east ridge.', 'The east ridge climbs at 45-50 degrees on snow, with some granite rock scrambling. The ridge leads to a 30 degree snow slope to the summit. The summit takes on average 1-3 hours from the base of the snow line.', 'Leading out of the south end of base camp lies a trail to take us to Laguna Ishinca. Once past the lake, the trail steepens and ends at the foot of the Ishinca glacier. 3-4 hours expected from base camp.', 'Once on the glacier the route takes us gradually onto the north west ridge, gaining the summit with a short but steep 50 degree snow climb. 2-3 hours from the edge of the glacier to summit.', 'Making a full traverse of the mountain, we will descend the south west ridge with gentle snow slopes leading off the glacier. Time to base camp can be anywhere from 3-5 hours total.'],
+    elevations: {
+      huaraz: ['Huaraz', '3,050m (10,000ft)'],
+      laguna: ['Laguna Wilcacocha', '3,720m (12,200ft)'],
+      churup: ['Laguna Churup', '4,450m (14,600ft)'],
+      summit: ['Ishinca Summit', '5,530m (18,145ft)'],
+      base: ['Ishinca Base Camp', '4,350m (14,270ft)'],
+      uruseste: ['Urus Este', '5,420m (17,782ft)']
+    },
+    experience: ['Crampon and ice axe technique', 'Snow and ice anchors', 'Crevasse rescue', 'Moving as a rope team on a glacier', 'Snow and moderate ice climbing at altitude', 'Route finding and glacier navigation', 'Cold weather camping']
+  },
+  pisco: {
+    name: 'Pisco',
+    url: '/pisco',
+    application: 'trip_application.pdf',
+    heroImg: 'static/images/pisco.jpg',
+    base64: 'static/images/pisco-blur.jpg',
+    gearList: 'climbing_gear_check_list.pdf',
+    dates: ['7/22/19 - 8/02/19'],
+    duration: '(12 days)',
+    skillLevel: 5,
+    title: 'Pisco',
+    overview: ['Pisco is a classic mountain in the Cordillera Blanca. With relatively high altitude, This makes a great choice for those new to the Cordillera Blanca, and also for those who are short on time. Once on the summit, we will have one of the best 360 degree views in the Cordillera Blanca.', 'Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques, and proper leadership. We want to emphasize, fast and light alpine climbing, while being well within our boundary\'s. This expedition is not guided, rather led. All expedition leaders have summited the mountains they are leading multiple times, and have adequate, sufficient experience to lead the team in a hazardous, high altitude environment.'],
+    itinerary: {
+      basic: ['Arrive in Lima', 'Luxury Bus Lima to Huaraz', 'Acclimatization day hike', 'Drive to Pisco base camp', 'Move to Pisco cave camp', 'Rest day in cave camp', 'Carry to moraine camp, return to cave camp', 'Move to moraine camp, review climbing skills on glacier', 'Summit day back to cave camp', 'Return to Huaraz', 'Luxury bus Huaraz to Lima', 'Depart Lima'],
+      detailed: ['Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you. Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.', 'Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz 3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.', 'Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'We will depart our hotel in Huaraz at 8am and drive as a team to Pisco base camp 3,810m (12,500ft) in the Llanganuco valley. The scenic 3 hour drive will take us through beautiful farming communities and past the notorious ice blue Llanganuco lakes. Here we will set up base camp and continue to acclimatize. All meals included.', 'From base camp we will hike as a team to Pisco cave camp 4,265m (14,000ft). All meals included.', 'Active rest day in cave camp. Today we will review glacier and crevasse rescue skills. All meals included.', 'Carry loads to moraine camp 4,877m (16,000ft). This day crosses a challenging morainal glacier. Return to sleep in cave camp. All meals included.', 'Move as a team to moraine camp. After lunch and a rest we head onto the glacier. We will review all skills covered on day 6, now including crampon and ice axe skills. This day greatly aids in acclimatization and allows a huge gain in summit possibility making tomorrows climb shorter. Return to moraine camp for the night. All meals included.', 'Summit day 5,750m (18,870ft). With an early alpine start, we will gain the summit of Pisco and return to cave camp. All meals included.', 'Depart from cave camp in the morning and trek back to base camp. With our private transportation we drive back to our hotel in Huaraz. Celebratory dinner provided by Sierra Vista Expeditions. All meals included.', 'Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima one additional night to enjoy fresh seafood and nightlife. Dinner not included.', 'Depart Lima for your next adventure.']
+    },
+    routes: ['We will climb the normal route on Pisco\'s south west ridge beginning with 3rd class rock scrambles before the snow line. From the toe of the glacier we climb moderate slopes to the saddle between Huandoy este and Pisco. With a gradual sloping glacier weaving around crevasses we climb to the final summit wall. The wall is often steep, requiring 60 degree snow and ice climbing and excellent crampon and ice axe placement.'],
+    elevations: {
+      huaraz: ['Huaraz', '3,050m (10,000ft)'],
+      laguna: ['Laguna Wilcacocha', '3,720m (12,200ft)'],
+      base: ['Pisco base camp', '3,810m (12,500ft)'],
+      cave: ['Cave camp', '4,265m (14,000ft)'],
+      Moraine: ['Moraine camp', '4,877m (16,000ft)'],
+      summit: ['Pisco summit', '5750m (18,870ft)']
+    },
+    experience: ['Crampon and ice axe technique', 'Snow and ice anchors', 'Crevasse rescue', 'Moving as a rope team on a glacier', 'Snow and moderate ice climbing at altitude', 'Route finding and glacier navigation', 'Cold weather camping']
+  },
+  vallunaraju: {
+    name: 'Vallunaraju',
+    url: '/vallunaraju',
+    application: 'trip_application.pdf',
+    heroImg: 'static/images/mountain.jpg',
+    base64: 'static/images/mountain-blur.jpg',
+    gearList: 'climbing_gear_check_list.pdf',
+    dates: ['6/17/19 - 6/28/19'],
+    duration: '(12 days)',
+    skillLevel: 5,
+    title: 'Vallunaraju',
+    overview: ['This relatively relaxed two night three day trek is an ideal entry level trip to high altitude trekking. The first days trek to Tullpacocha is absolutely stunning. We will be hiking on soft grass areas know as pampas, all the while next to stunning alpine creeks, surrounded by incredible high valley walls, with high alpine wild flowers galore. Our active rest day includes a chance to explore a second valley, Quebrada Cayesh. Beautiful views of high mountains and opportunities to sight condors are included. Our final day, we descend gradually out of the valley to meet our transportation and head back to Huraz.', 'Nevado Vallunaraju sits directly above the city of Huaraz with a striking twin summit. After our acclimatization day hikes and our 3 day trek we will be well acclimatized. Vallunaraju offers wonderful views of the city of Huaraz and the peaks that surround it. This is en entry level climb with relatively high altitude, and a great chance to practice cramponing, ice axe, and roped glacial travel techniques.', 'Our main priority on this expedition is safety through proper acclimatization, proper skills, techniques, and proper leadership. We want to emphasize, fast and light alpine climbing, while being well within our boundary\'s. This expedition is not guided, rather led. All expedition leaders have summited the mountains they are leading multiple times, and have adequate, sufficient experience to lead the team in a hazardous, high altitude environment.'],
+    itinerary: {
+      basic: ['Arrive in Lima', 'Luxury Bus Lima to Huaraz', 'Acclimatization day hike', 'Acclimatization day hike', 'Drive to the base of Quilcayhuanca, hike to first camp Tullpacocha', 'Active rest day', 'Hike to base of Quilcayhuanca, Drive back to Huaraz', 'Huaraz rest day, gear check', 'Drive to Vallunaraju base camp, carry to moraine camp', 'Climb Vallunaraju, back to Huaraz', 'Luxury bus Huaraz to Lima', 'Depart Lima'],
+      detailed: ['Arrive into Lima Jorge Chavez International Airport, where the expedition leader will meet you. Private transportation will take us to our hotel in the district of Miraflores. Dinner not included.', 'Private transportation will take us as a team to the bus depot for our 7 hour journey to Huaraz 3,050m (10,000ft). Once in Huaraz we will have transport to our accommodations. Dinner not included.', 'Beginning early, we take private transportation to the trail head of Laguna Wilcacocha, to begin our first acclimatization day hike. Lunch will be provided at the lake 3,720m (12,200ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'Starting early again we will take our transportation to the trail head of Laguna Churup, our second acclimatization day hike. Lunch will be provided at the lake 4,450m (14,600ft). Once we return to the trail head, we will be transported back to our hotel in Huaraz. Gear check after our day hike. Dinner not included.', 'We will depart our hotel in Huaraz at 8am and drive with private transportaion to the base of the Quilcayhuanca valley. Here we will organize our burros and begin hiking to the head of the valley to make our first camp at Tullpacocha (4,250m) 13,940ft. 4-5 hours walking. All meals included.', 'Today we have a nice active rest day. In the mid morning,, we will take a day hike up into the Cayesh valley. Or for those who wish to relax, you can spend your day hiking around the lake or just read a book while looking at the mountains. All meals included.', 'Once breakfast is finished and the camp is packed, we will begin hiking out of the Quilcayhuanca valley. Once at the entrance, our transportation will be waiting to take us back to Huaraz. Dinner not included.', 'Active rest day in Huaraz. We have the recommended option of an additional acclimatization day hike to lake 69 4,550m (14,925ft) where lunch will be provided at the lake. Otherwise we will take a lazy rest day enjoying the town and restaurants, with a gear check in the evening. Dinner not included.', 'After breakfast in our hotel, we will depart for Vallunaraju base camp in our private transportation, driving right up to the camp. Here we will organize packs and begin our hike to moraine camp 4,760m (15,600ft) Total hiking 3-4 hours. Once camp is setup we will review glacier and crampon techniques. We will get a good nights rest in anticipation of our early morning summit bid. *Porters are provided for our carry to moraine camp. All meals included.', 'Leaving camp by 4am we will begin our climb to the summit of Vallunaraju 5,686m (18,650ft). A minimum of 4 hours climbing with a descent of 1-2 hours. Once back to moraine camp, we will spend 1-2 hours resting and make our way back to base camp. Here our transportation will be waiting to drive us back to our hotel in Huaraz. Celebratory dinner provided by SierraVista Expeditions. All meals included.', 'Depart Huaraz by bus for Lima. It is possible to fly out from Lima on this day for those with time constraints. Most flights back to North America depart late in the evening. Otherwise, stay in Lima one additional night to enjoy fresh seafood and nightlife. Dinner not included.', 'Depart Lima for your next adventure.']
+    },
+    routes: ['Departing moraine camp we will step onto the glacier after 20 minutes. Here we will gear up and begin our roped climb on the glacier. Walking on gradual glacial slopes while weaving around crevasses will take us to the col of the north and south summits. The north summit is higher and will be steeper, up to 40 degree snow climbing. If time allows, we will climb the south summit as well before returning to moraine camp. 4-5 hours to north summit, 1-2 hours descent.'],
+    elevations: {
+      huaraz: ['Huaraz', '3,050m (10,000ft)'],
+      laguna: ['Laguna Wilcacocha', '3,720m (12,200ft)'],
+      tullpacocha: ['Tullpacocha', '4,250m (13,940ft)'],
+      churup: ['Laguna Churup', '4,450m (14,600ft)'],
+      moraine: ['Vallunaraju Moraine Camp', '4,760m (15,600ft)'],
+      summit: ['Vallunaraju Summit', '5,686m (18,650ft)']
+    },
+    experience: ['Crampon and ice axe technique', 'Snow and ice anchors', 'Crevasse rescue', 'Moving as a rope team on a glacier', 'Snow and moderate ice climbing at altitude', 'Route finding and glacier navigation', 'Cold weather camping']
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (trips);
 
 /***/ }),
 
