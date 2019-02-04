@@ -73,6 +73,9 @@ const StyledIntro = styled.div`
     h3 {
         margin: 0;
     }
+    @media (max-width: 1300px) {
+        padding: 5rem 8rem;
+    }
 `;
 
 const StyledOutro = styled.div`
@@ -97,6 +100,9 @@ const StyledOutro = styled.div`
     h3 {
         margin: 0;
     }
+    @media (max-width: 1300px) {
+        padding: 5rem 8rem;
+    }
 `;
 
 const StyledInfoSection = styled.div`
@@ -115,7 +121,10 @@ const StyledInfoSection = styled.div`
     background-size: 100%;
 	background-repeat: no-repeat;
     animation: ${fadeIn} 0.5s ease-in;
-    box-sizing: border-box;    
+    box-sizing: border-box;  
+    @media (max-width: 1300px) {
+        padding: 5rem 8rem;
+    }  
 `;
 
 const Intro = () => (

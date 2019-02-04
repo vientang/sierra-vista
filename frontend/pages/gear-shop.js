@@ -27,8 +27,9 @@ const StyledGearShop = styled.div`
     a::before {
         content: ' ';
     }
-    @media(max-width: 1300px) {
-        top: 120px;
+    @media(max-width: 1200px) {
+        grid-template-columns: 100%;
+        grid-gap: 0;
     }
 `;
 
@@ -39,10 +40,8 @@ const StyledGearSection = styled.div`
     max-width: ${props => props.theme.maxWidth};
     padding: 3rem 5rem 6rem 0rem;
     font-size: 0.9rem;
-    @media(max-width: 1300px) {
-        h3 {
-            padding: 0 1rem;
-        }
+    @media(max-width: 1200px) {
+        padding-right: 0;
     }
 `;
 

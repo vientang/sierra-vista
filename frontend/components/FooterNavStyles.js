@@ -10,34 +10,38 @@ const FooterNavStyles = styled.ul`
     p {
         display: inline-block;
         margin: 0;
-        line-height: 1.5;
+    }
+    .footer-site-name,
+    .footer-trips-heading,
+    .footer-trips,
+    .footer-links {
+        color: ${props => props.theme.offWhite};
     }
     .footer-site-name {
+        width: 100%;
+        font-size: 1rem;
         font-family: 'radnika_next';
-        margin: 0 0 0 0.5rem;
-    }
-    .footer-logo {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
+        white-space: nowrap;
+        margin: 0 0 0 1.2rem;
     }
     .footer-trips-heading {
         align-self: flex-end;
         font-size: 0.8rem;
         line-height: 2;
         text-transform: uppercase;
-        color: white;
     }
     .footer-trips {
         align-self: flex-end;
     }
-    a {
+    .footer-links,
+    .footer-trips {
         position: relative;
-        display: flex;
+        display: inline-block;
         padding: 0;
         font-family: ${props => props.theme.standardFont};
         font-weight: normal;
         font-size: 0.9rem;
-        color: white;
+        line-height: 2.2;
         white-space: nowrap;
         background: none;
         border: 0;
@@ -53,18 +57,6 @@ const FooterNavStyles = styled.ul`
         }
         span {
             display: inline-block;
-        }
-    }
-    .footer-links {
-        display: inline-block;
-        line-height: 2;
-    }
-    @media (max-width: 1300px) {
-        border-top: 1px solid ${props => props.theme.lightGrey};
-        width: 100%;
-        justify-content: center;
-        a {
-            font-size: 0.6rem;
         }
     }
 `;

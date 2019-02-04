@@ -57,6 +57,10 @@ const ApplicationSection = styled.div`
         font-style: italic; 
         line-height: 1.5;
     }
+    @media (max-width: 1200px) {
+        width: 100%;
+        padding-right: 1rem;
+    }
 `;
 
 const Application = () => {

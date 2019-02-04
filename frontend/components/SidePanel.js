@@ -49,10 +49,13 @@ const TripSidePanel = styled.div`
         position: relative;
         width: 100%;
         max-width: 100%;
-        /* min-height: 350px; */
+        min-height: 350px;
         top: 0;
         right: 0;
         margin-bottom: 2rem;
+        h3 {
+            font-size: 1.2rem;
+        }
     }
 `;
 class SidePanel extends React.Component {

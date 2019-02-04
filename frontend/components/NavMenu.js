@@ -16,7 +16,7 @@ const NavMenu = styled.div`
         color: ${props => props.theme.offWhite};
         &:hover,
         &:focus {
-            color: ${props => props.theme.blue};
+            color: ${props => props.theme.lightBlue};
         }
     }
     .menu-item-desc,
@@ -28,7 +28,7 @@ const NavMenu = styled.div`
         position: relative;
         margin: 0;
         font-size: 0.8rem;
-        color: ${props => props.theme.blue};
+        color: ${props => props.theme.lightBlue};
         text-transform: uppercase;
         font-weight: bold;
         &:after {

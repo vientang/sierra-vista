@@ -43,7 +43,7 @@ const {
 
 const CordilleraHuayhuash = () => {    
     return (
-        <React.Fragment>
+        <InnerPageContainer>
             <HeroImage src={heroImg} alt={name} base64={base64} />            
             <InnerPageContainer>
                 <TripHeader>
@@ -153,7 +153,7 @@ const CordilleraHuayhuash = () => {
                     </SidePanel>
                 </InnerPageContent>
             </InnerPageContainer>
-        </React.Fragment>        
+        </InnerPageContainer>        
     )
 }
 

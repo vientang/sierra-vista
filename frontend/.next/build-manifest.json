@@ -13,7 +13,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/vallunaraju": [
+    "/gear-shop": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/cordillera-huayhuash": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
@@ -21,6 +25,12 @@
     ],
     "/index": [
       "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/chavin": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
     "/": [

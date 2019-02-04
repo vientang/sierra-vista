@@ -6,13 +6,12 @@ import Logo from './Logo';
 
 const FooterImage = styled.img`
     position: absolute;
-    background-size: cover;
+    object-fit: cover;
     width: 100%;
     max-width: 100%;
-    height: auto;
-    margin: -50% 0;
-    box-shadow: ${props => props.theme.bs};
-    filter: contrast(1.1) brightness(15%);
+    max-height: 100%;
+    margin: 0;
+    filter: contrast(1.2) brightness(10%);
 `;
 
 const StyledFooter = styled.footer`
@@ -22,28 +21,39 @@ const StyledFooter = styled.footer`
     justify-content: space-between;
     width: 100%;
     max-width: 100%;
-    height: 20rem;
-    top: ${props => props.theme.top};
+    height: 25rem;
+    top: 115px;
     bottom: 0;
     overflow: hidden;
     padding: 2rem 5rem;
     background-color: ${props => props.theme.offWhite};
     border-top: 1px solid ${props => props.theme.lightGrey};
     box-sizing: border-box;
-    @media(max-width: 1300px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: flex-start;
+`;
+
+const LogoContainer = styled.div`
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    a {
+        line-height: 0;
     }
 `;
 
 const Footer = () => {
     return (
         <StyledFooter>
-            <FooterImage src="static/images/mountain-gear.jpg" alt="Photo by Blaise Vonlanthen on Unsplash" />
+            <FooterImage src="static/mountain-gear.jpg" alt="Photo by Blaise Vonlanthen on Unsplash" />
             <FooterNavStyles>
-                <Link href="/">
-                    <a className="footer-logo"><Logo size="25px" /><p className="footer-site-name">Sierra Vista Expeditions LLC</p></a>
-                </Link>
+                <LogoContainer>
+                    <Link href="/"><a><Logo size="45px" /></a></Link>
+                    <Link href="/">
+                        <a>
+                            <p className="footer-site-name">Sierra Vista Expeditions LLC</p>
+                        </a>
+                    </Link>
+                </LogoContainer>
                 <p>
                     <Link href="/gear-shop">
                         <a className="footer-links">Gear Shop</a>

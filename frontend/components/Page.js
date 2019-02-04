@@ -59,6 +59,7 @@ const InnerPage = styled.div`
     position: relative;
     max-width: 100%;
     top: ${props => props.theme.top};
+    z-index: 0;
 `;
 
 class Page extends Component {
