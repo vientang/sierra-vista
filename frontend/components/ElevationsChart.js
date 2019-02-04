@@ -56,7 +56,7 @@ const overlayStyle = {
 };
 
 const ElevationsChart = ({ elevations, scrollY }) => {
-    const elevationDisplay = scrollY > 790 
+    const elevationDisplay = scrollY > 860 
         ? <Tooltip
             autoAdjustOverflow={false}
             placement="right"

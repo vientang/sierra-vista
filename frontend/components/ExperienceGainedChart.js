@@ -53,7 +53,7 @@ const overlayStyle = {
 };
 
 const ExperienceGainedChart = ({ experience, scrollY }) => {
-    const experienceDisplay = scrollY > 790
+    const experienceDisplay = scrollY > 860
         ? <Tooltip
             autoAdjustOverflow={false}
             placement="right"

@@ -13,6 +13,9 @@ const TripHeader = styled.header`
         max-width: 50%;
         margin: 0;
         font-family: ${props => props.theme.headingFont};
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         h2 {
             display: inline;
             margin-right: 1rem;

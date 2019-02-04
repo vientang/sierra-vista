@@ -28,6 +28,7 @@ const NavMenu = styled.div`
         position: relative;
         margin: 0;
         font-size: 0.8rem;
+        color: ${props => props.theme.blue};
         text-transform: uppercase;
         font-weight: bold;
         &:after {

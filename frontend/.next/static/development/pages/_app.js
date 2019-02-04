@@ -1224,10 +1224,12 @@ __webpack_require__.r(__webpack_exports__);
 var NavMenu = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NavMenu",
   componentId: "sc-18mu66q-0"
-})(["display:flex;flex-direction:column;min-width:200px;font-family:", ";line-height:2;a:focus{text-decoration:none;}.menu-item-title,.menu-item-desc,.menu-list-item{padding:0;color:", ";&:hover,&:focus{color:", ";}}.menu-item-desc,.menu-list-item{margin:0 1rem;font-size:0.75rem;}.menu-item-title{position:relative;margin:0;font-size:0.8rem;text-transform:uppercase;font-weight:bold;&:after{content:'';position:absolute;top:1.5rem;left:0;width:100%;height:2px;background-color:", ";}}.menu-list{list-style:none;margin:0.5rem 0;padding:0;line-height:1.75;}"], function (props) {
+})(["display:flex;flex-direction:column;min-width:200px;font-family:", ";line-height:2;a:focus{text-decoration:none;}.menu-item-title,.menu-item-desc,.menu-list-item{padding:0;color:", ";&:hover,&:focus{color:", ";}}.menu-item-desc,.menu-list-item{margin:0 1rem;font-size:0.75rem;}.menu-item-title{position:relative;margin:0;font-size:0.8rem;color:", ";text-transform:uppercase;font-weight:bold;&:after{content:'';position:absolute;top:1.5rem;left:0;width:100%;height:2px;background-color:", ";}}.menu-list{list-style:none;margin:0.5rem 0;padding:0;line-height:1.75;}"], function (props) {
   return props.theme.standardFont;
 }, function (props) {
   return props.theme.offWhite;
+}, function (props) {
+  return props.theme.blue;
 }, function (props) {
   return props.theme.blue;
 }, function (props) {

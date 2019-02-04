@@ -1,14 +1,12 @@
 import styled from 'styled-components';
+import EmailIcon from './icons/EmailIcon';
+import theme from '../components/theme';
 
-const ContactButton = styled.button`
+const StyledContactButton = styled.button`
     position: relative;              
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    width: ${props => props.width ? props.width : 'auto'};
+    width: 4.5rem;
     min-width: 3.2rem;
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
     line-height: normal;
     color: ${props => props.theme.dkBlue};
     text-transform: uppercase;
@@ -17,7 +15,6 @@ const ContactButton = styled.button`
     white-space: nowrap;
     border-radius: 2px;
     background: ${props => props.theme.lightGrey};
-    transition: transform 150ms ease-in-out, box-shadow 125ms ease-in;
     box-sizing: border-box;
     box-shadow: ${props => props.theme.bs};
     cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
@@ -25,10 +22,14 @@ const ContactButton = styled.button`
         font-size: 0.8rem;      
         padding: 0 1rem;
     }
+    div {
+        transition: transform 100ms ease-out;
+    }
     &:hover,
     &:focus {
-        transform: ${props => props.disabled ? 'scale(1)' : 'scale(1.035)'};
-        filter: brightness(1.05);
+        div {
+            transform: ${props => props.disabled ? 'scale(1)' : 'scale(1.1)'};
+        }
         outline: none;
         @media (max-width: 700px) {
             width: calc(100% - 10px);
@@ -39,5 +40,22 @@ const ContactButton = styled.button`
         filter: brightness(1);
     }
 `;
+
+const StyledButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`;
+
+const ContactButton = () => {
+    return (
+        <StyledContactButton>
+            <StyledButtonContainer>
+                <EmailIcon size={15} color={theme.dkBlue} />
+                Email
+            </StyledButtonContainer>
+        </StyledContactButton>
+    )
+}
 
 export default ContactButton;

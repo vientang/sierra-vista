@@ -4,7 +4,7 @@ import ContentContainer from '../components/ContentContainer';
 import ContentSection from '../components/ContentSection';
 import GearInfo from '../components/GearInfo';
 import TripNav from '../components/TripNav';
-import Button from '../components/Button';
+import BookTripButton from '../components/BookTripButton';
 import ContactButton from '../components/ContactButton';
 import HeroImage from '../components/HeroImage';
 import SidePanel from '../components/SidePanel';
@@ -19,7 +19,6 @@ import Title from '../components/Title';
 import DownloadLink from '../components/DownloadLink';
 import { 
     AcclimatizeIcon, 
-    BookTripIcon,
     EmailIcon,
     GearIcon, 
     ItineraryIcon, 
@@ -56,22 +55,19 @@ const IshincaValley = () => {
                         <h2>{title}</h2>
                     </div>
                     <TripNav>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#itinerary">Itinerary</a></li>
-                        <li><a href="#routes">Routes</a></li>
-                        <li><a href="#gear">Gear List</a></li>
-                        <li><a href="#acclimatization">Acclimatization</a></li>
-                        <li><a href="#prices">Prices</a></li>
+                        <li><a href="#overview" className="trip-nav-link">Overview</a></li>
+                        <li><a href="#itinerary" className="trip-nav-link">Itinerary</a></li>
+                        <li><a href="#routes" className="trip-nav-link">Routes</a></li>
+                        <li><a href="#gear" className="trip-nav-link">Gear List</a></li>
+                        <li><a href="#acclimatization" className="trip-nav-link">Acclimatization</a></li>
+                        <li><a href="#prices" className="trip-nav-link">Prices</a></li>
                         <li>
                             <a
                                 href={`static/${application}`}
                                 download="Book_Trip"
                                 style={{ margin: 0 }}
                             >
-                                <Button>
-                                    <BookTripIcon size={15} color={theme.black} />
-                                    Book
-                                </Button>
+                                <BookTripButton />
                             </a>
                         </li>
                         <li>

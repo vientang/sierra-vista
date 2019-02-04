@@ -2,13 +2,10 @@ import styled from 'styled-components';
 
 const Button = styled.button`
     position: relative;              
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: auto;
     width: ${props => props.width ? props.width : 'auto'};
     min-width: 3.2rem;
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
     line-height: normal;
     color: ${props => props.theme.black};
     text-transform: uppercase;
@@ -18,8 +15,6 @@ const Button = styled.button`
     border: 1px solid ${props => props.theme.blue};
     border-radius: 2px;
     background: linear-gradient(to right, ${props => props.theme.blue}, ${props => props.theme.lightBlue});
-    transform: scale(1);
-    transition: transform 150ms ease-in-out, box-shadow 125ms ease-in;
     box-sizing: border-box;
     box-shadow: ${props => props.theme.bs};
     cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
@@ -27,11 +22,14 @@ const Button = styled.button`
         font-size: 0.8rem;      
         padding: 0 1rem;
     }
+    div {
+        transition: transform 100ms ease-out;
+    }
     &:hover,
     &:focus {
-        transform: ${props => props.disabled ? 'scale(1)' : 'scale(1.035)'};
-        filter: brightness(1.05);
-        box-shadow: ${props => props.theme.bs};
+        div {
+            transform: ${props => props.disabled ? 'scale(1)' : 'scale(1.1)'};
+        }
         outline: none;
         @media (max-width: 700px) {
             width: calc(100% - 10px);

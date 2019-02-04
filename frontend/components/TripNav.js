@@ -9,7 +9,7 @@ const TripNav = styled.ul`
     padding: 0;
     font-size: 0.8rem;
     list-style-type: none;
-    a {
+    .trip-nav-link {
         position: relative;
         white-space: nowrap;
         border: 0;
