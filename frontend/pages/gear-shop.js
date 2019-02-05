@@ -90,7 +90,7 @@ class GearShopPage extends React.Component {
             initiatedBy: '',
         };
     }
-
+    
     getGearList = (type) => {
         const gearList = type === 'trekking' ? trekkingGearData : climbingGearData;
         return gearList.map((item, i) => (

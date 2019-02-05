@@ -1,97 +1,27 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_0a5735af42686c2a38b2.js"
+  ],
   "pages": {
     "/_app": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/about-us": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/apply": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/chavin": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/cordillera-huayhuash": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/gear-shop": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/ishinca": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/pisco": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/quilcayhuanca": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
-    ],
-    "/vallunaraju": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/css/styles.0d6046b3.chunk.css",
-      "static/chunks/styles.e7ce4d2e27a913798426.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.097e4e87.chunk.css",
-      "static/chunks/commons.f01ee558c983d75696cc.js",
-      "static/runtime/main-8fe29a291e48a142cdd5.js"
+    "/cordillera-huayhuash": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ],
+    "/gear-shop": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
