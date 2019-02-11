@@ -80,7 +80,7 @@ class HeroImage extends React.PureComponent {
 
         return (
             <StyledImageContainer>
-            <StyledImage {...this.props} src={currentSrc} alt={alt} />
+                <StyledImage {...this.props} src={currentSrc} alt={alt} />
             </StyledImageContainer>
         )
     }
