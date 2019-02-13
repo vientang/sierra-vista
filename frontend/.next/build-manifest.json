@@ -13,13 +13,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/cordillera-huayhuash": [
+    "/index": [
       "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/gear-shop": [
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
