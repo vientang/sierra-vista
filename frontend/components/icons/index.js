@@ -4,6 +4,7 @@ import AvatarIcon from './AvatarIcon';
 import BookTripIcon from './BookTripIcon';
 import DownloadIcon from './DownloadIcon';
 import EmailIcon from './EmailIcon';
+import FileDownloadIcon from './FileDownloadIcon';
 import FoodIcon from './FoodIcon';
 import GearIcon from './GearIcon';
 import GroupIcon from './GroupIcon';
@@ -21,6 +22,7 @@ export {
     BookTripIcon,
     DownloadIcon,
     EmailIcon,
+    FileDownloadIcon,
     FoodIcon,
     GearIcon,
     GroupIcon,

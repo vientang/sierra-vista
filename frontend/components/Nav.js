@@ -3,7 +3,9 @@ import Link from 'next/link';
 import { Popover } from 'antd';
 import NavMenu from './NavMenu';
 import NavStyles from './NavStyles';
+import { FileDownloadIcon } from './icons';
 import tripData from '../static/trip-data';
+import theme from './theme';
 
 const getDateString = (dates) => {
     const start = dates[0].split(' ')[0];
@@ -20,17 +22,38 @@ const menu = (
         <ul className="menu-list">
             <li>
                 <Link href="/static/rental_terms_release_of_liability.pdf">
-                    <a className="menu-list-item">Rental Agreement</a>
+                    <a className="menu-list-item">
+                        <FileDownloadIcon 
+                            size={15} 
+                            color={theme.offWhite} 
+                            className="menu-list-item-icon" 
+                        />
+                        Rental Agreement
+                    </a>
                 </Link>
             </li>
             <li>
                 <Link href="/static/terms-and-conditions.pdf">
-                    <a className="menu-list-item">Terms and Conditions</a>
+                    <a className="menu-list-item">
+                        <FileDownloadIcon
+                            size={15}
+                            color={theme.offWhite}
+                            className="menu-list-item-icon"
+                        />
+                        Terms and Conditions
+                    </a>
                 </Link>
             </li>
             <li>
                 <Link href="/static/assumption-of-risk-release-of-liability.pdf">
-                    <a className="menu-list-item">Assumption of Risk and Liability</a>
+                    <a className="menu-list-item">
+                        <FileDownloadIcon
+                            size={15}
+                            color={theme.offWhite}
+                            className="menu-list-item-icon"
+                        />
+                        Assumption of Risk and Liability
+                    </a>
                 </Link>
             </li>
         </ul>

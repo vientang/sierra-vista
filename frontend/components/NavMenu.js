@@ -17,12 +17,22 @@ const NavMenu = styled.div`
         &:hover,
         &:focus {
             color: ${props => props.theme.lightBlue};
+            .menu-list-item-icon path {
+                fill: ${props => props.theme.lightBlue};
+            }
         }
     }
     .menu-item-desc,
     .menu-list-item {
         margin: 0 1rem;
         font-size: 0.75rem;
+    }
+    .menu-list-item {
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 0.3rem;
+        }
     }
     .menu-item-title {
         position: relative;
