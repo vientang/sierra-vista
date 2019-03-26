@@ -13,11 +13,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/apply": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/cordillera-huayhuash": [
+    "/chavin": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
